@@ -2,7 +2,7 @@ favicon: /img/favicon.png
 # Change to your profile picture
 avatar: /img/avatar.jpg
 # if author sets in hexo_config, this string doesn't work
-author: 'Hiraeth'
+author: 'Yanze Wang'
 author_bio: 'author_bio'
 
 since: 2023
@@ -14,6 +14,7 @@ menu:
   Publications: /#Publications
   About: /about
   Blog: https://HiraethEcho.github.io/hexo
+  # Archives:
 
 # flink picture will load if avator link calls on error
 loading_bg:
@@ -30,10 +31,10 @@ social_links:
   fab fa-github: https://github.com/HiraethEcho
   # fab fa-stack-overflow: /
   # fab fa-linkedin: /
-  fab fa-weibo: /
-  fab fa-weixin: /
-  fab fa-qq: /
-  fas fa-envelope: / #E-mail
+  # fab fa-weibo: /
+  # fab fa-weixin: /
+  fab fa-qq: tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=[1255217979]
+  fas fa-envelope: mailto:wyz2016zxc@outlook.com #E-mail
   # fas fa-rss: /  #rss
 
 # Additional social_links，额外添加自定义链接，可显示链接名称
@@ -42,7 +43,7 @@ e_social:
   enable: false
 e_social_links:
   Google Scholar: / || fas fa-graduation-cap
-  ORCID: / || fab fa-orcid
+  # ORCID: / || fab fa-orcid
 
 # CV download link
 cv_dl:
