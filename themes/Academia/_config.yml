@@ -12,7 +12,7 @@ since: 2023
 # 可以选择外链或其他页面
 menu:
   Publications: /#Publications
-  About: /#about
+  About: /about
   Blog: https://HiraethEcho.github.io/hexo
 
 # flink picture will load if avator link calls on error
