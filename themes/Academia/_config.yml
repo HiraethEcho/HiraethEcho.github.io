@@ -14,7 +14,7 @@ menu:
   Publications: /#Publications
   About: /about
   Blog: https://HiraethEcho.github.io/hexo
-  Note: https://HiraethEcho.github.io/mkdocs
+  Wiki: https://HiraethEcho.github.io/wiki
   # Archives:
 
 # flink picture will load if avator link calls on error
@@ -48,7 +48,7 @@ e_social_links:
 
 # CV download link
 cv_dl:
-  enable: true
+  enable: false
   dir: /attaches/CV.pdf
   description: My Detail CV.
 
