@@ -58,32 +58,7 @@ The default delimiters of `$$...$$` and `\\[...\\]` are supported for displayed 
 ## Markdown guide
 
 Academic Pages uses [kramdown](https://kramdown.gettalong.org/index.html) for Markdown rendering, which has some differences from other Markdown implementations such as GitHub's. In addition to this guide, please see the [kramdown Syntax page](https://kramdown.gettalong.org/syntax.html) for full documentation.  
-
-### Header three
-
-#### Header four
-
-##### Header five
-
-###### Header six
-
-## Blockquotes
-
-Single line blockquote:
-
-> Quotes are cool.
-
 ## Tables
-
-### Table 1
-
-| Entry            | Item   |                                                              |
-| --------         | ------ | ------------------------------------------------------------ |
-| [John Doe](#)    | 2016   | Description of the item in the list                          |
-| [Jane Doe](#)    | 2019   | Description of the item in the list                          |
-| [Doe Doe](#)     | 2022   | Description of the item in the list                          |
-
-### Table 2
 
 | Header1 | Header2 | Header3 |
 |:--------|:-------:|--------:|
@@ -98,47 +73,9 @@ ll5   | cell6   |
 
 ## Definition Lists
 
-Definition List Title
-:   Definition list division.
-
-Startup
-:   A startup company or startup is a company or temporary organization designed to search for a repeatable and scalable business model.
-
-#dowork
-:   Coined by Rob Dyrdek and his personal body guard Christopher "Big Black" Boykins, "Do Work" works as a self motivator, to motivating your friends.
-
-Do It Live
-:   I'll let Bill O'Reilly [explain](https://www.youtube.com/watch?v=O_HyZ5aW76c "We'll Do It Live") this one.
-
-## Unordered Lists (Nested)
-
-  * List item one 
-      * List item one 
-          * List item one
-          * List item two
-          * List item three
-          * List item four
-      * List item two
-      * List item three
-      * List item four
-  * List item two
-  * List item three
-  * List item four
-
-## Ordered List (Nested)
-
-  1. List item one 
-      1. List item one 
-          1. List item one
-          2. List item two
-          3. List item three
-          4. List item four
-      2. List item two
-      3. List item three
-      4. List item four
-  2. List item two
-  3. List item three
-  4. List item four
+- [ ] check box
+- [-] check box ongoing
+- [x] check box done
 
 ## Buttons
 
@@ -180,10 +117,6 @@ This is the regular text.[^1] This is more regular text.[^note]
   1 Infinite Loop<br /> Cupertino, CA 95014<br /> United States
 </address>
 
-### Anchor Tag (aka. Link)
-
-This is an example of a [link](http://github.com "Github").
-
 ### Abbreviation Tag
 
 The abbreviation CSS stands for "Cascading Style Sheets".
@@ -194,41 +127,7 @@ The abbreviation CSS stands for "Cascading Style Sheets".
 
 "Code is poetry." ---<cite>Automattic</cite>
 
-### Code Tag
-
-You will learn later on in these tests that `word-wrap: break-word;` will be your best friend.
-
-You can also write larger blocks of code with syntax highlighting supported for some languages, such as Python:
-
-```python
-print('Hello World!')
-```
-
-or R:
-
-```R
-print("Hello World!", quote = FALSE)
-```
-
-### Details Tag (collapsible sections)
-
-The HTML `<details>` tag works well with Markdown and allows you to include collapsible sections, see [W3Schools](https://www.w3schools.com/tags/tag_details.asp) for more information on how to use the tag.
-
-<details>
-  <summary>Collapsed by default</summary>
-  This section was collapsed by default!
-</details>
-
-The source code:
-
-```HTML
-<details>
-  <summary>Collapsed by default</summary>
-  This section was collapsed by default!
-</details>
-```
-
-Or, you can leave a section open by default by including the `open` attribute in the tag:
+you can leave a section open by default by including the `open` attribute in the tag:
 
 <details open>
   <summary>Open by default</summary>
@@ -236,9 +135,6 @@ Or, you can leave a section open by default by including the `open` attribute in
 </details>
 
 
-### Emphasize Tag
-
-The emphasize tag should _italicize_ text.
 
 ### Insert Tag
 
@@ -246,7 +142,7 @@ This tag should denote <ins>inserted</ins> text.
 
 ### Keyboard Tag
 
-This scarcely known tag emulates <kbd>keyboard text</kbd>, which is usually styled like the `<code>` tag.
+This scarcely known tag emulates keyboard <kbd>esc</kbd>, which is usually styled like the `<code>` tag.
 
 ### Preformatted Tag
 
@@ -262,17 +158,13 @@ This tag styles large blocks of code.
 }
 </pre>
 
-### Quote Tag
-
-<q>Developers, developers, developers&#8230;</q> &#8211;Steve Ballmer
+> [!note]
+> call-outs test  
+> and others
 
 ### Strike Tag
 
 This tag will let you <strike>strikeout text</strike>.
-
-### Strong Tag
-
-This tag shows **bold text**.
 
 ### Subscript Tag
 

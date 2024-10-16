@@ -82,13 +82,13 @@ publication_category:
   conferences:
     title: 'Conference Papers'
   arxiv:
-    title: 'title'
+    title: 'arxiv'
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : true # true, false (default)
 words_per_minute         : 160
-future                   : true
+future                   : false
 read_more                : "disabled" # if enabled, adds "Read more" links to excerpts
 talkmap_link             : false #change to true to add link to talkmap on talks page
 comments:
@@ -131,7 +131,7 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               : &twitter
+  username               :
 facebook:
   username               :
   app_id                 :
@@ -202,7 +202,7 @@ incremental: false
 # Markdown Processing
 kramdown:
   input: GFM
-  hard_wrap: false
+  hard_wrap: true
   auto_ids: true
   footnote_nr: 1
   entity_output: as_char
@@ -331,16 +331,16 @@ tag_archive:
   type: liquid
   path: /tags/
 # https://github.com/jekyll/jekyll-archives
-# jekyll-archives:
-#   enabled:
-#     - categories
-#     - tags
-#   layouts:
-#     category: archive-taxonomy
-#     tag: archive-taxonomy
-#   permalinks:
-#     category: /categories/:name/
-#     tag: /tags/:name/
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layouts:
+    category: archive-taxonomy
+    tag: archive-taxonomy
+  permalinks:
+    category: /categories/:name/
+    tag: /tags/:name/
 
 
 # HTML Compression
