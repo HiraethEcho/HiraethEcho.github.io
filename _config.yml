@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Yanze Wang / Personal Site"
+title                    : "Yanze Wang"
 title_separator          : "-"
 name                     : &name "Yanze Wang"
 description              : &description "personal description"
@@ -24,9 +24,10 @@ author:
   avatar           : "profile.png"
   name             : "Yanze Wang"
   pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
+  # bio              : "Short biography for the left-hand sidebar"
+  bio              : "My biography"
   location         : "Earth"
-  employer         : "UCAS"
+  employer         : "AMSS"
   uri              : # URL
   email            : "wangyanze@amss.ac.cn" 
 
@@ -109,7 +110,7 @@ staticman:
   format                 : "yml"
   moderation             : true
   path                   : "_data/comments/{options.slug}"
-  requiredFields         : ['name', 'email', 'message']
+  requiredFields         : ['name']
   transforms:
     email                : "md5"
   generatedFields:
