@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://hiraethecho.github.io//sitemap.xml
