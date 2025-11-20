@@ -1,0 +1,42 @@
+name: Sync from content to site
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout blogs repository
+        uses: actions/checkout@v5
+        with:
+          repository: hiraethecho/blogs
+          ref: main
+          path: blogs
+      - name: commit
+        run: |
+          cd blogs
+          git log -1 --pretty=%B > ~/commit
+      - name: Checkout note repository
+        uses: actions/checkout@v5
+        with:
+          repository: hiraethecho/hiraethecho.github.io
+          ssh-key: ${{ secrets.OB_HOME_PRI }}
+          ref: dev
+          path: homepage
+      - name: push
+        run: |
+          rsync -av --delete --exclude='.git' --exclude='.obsidian' blogs/ homepage/content/
+          cd homepage
+          git config --global user.name "blogs"
+          git config --global user.email "wyz2016zxc@icloud.com"
+          git add .
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "No changes detected, skipping push."
+          else
+            git commit -m "Sync content $(cat ~/commit)"
+            git push
+          fi
