@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container max-w-3xl mx-auto px-4">
+  <div class="font-sans py-8">
+    <h1 class="font-bold font-sans break-normal text-gray-900 pb-2 text-3xl md:text-4xl">{{ section.title }}</h1>
+  </div>
+
+  <article class="prose prose-indigo max-w-3xl">
+    {{ section.content | safe }}
+  </article>
+
+  {% for publication_type in section.extra.publications_types -%}
+    <div class ="prose py-4">
+      <h2 class=""> {{publication_type.title}} </h2>
+    </div>
+
+    <ul>
+    {% for page in section.pages  -%}
+      {% if page.extra.type == publication_type.type -%}
+      <li class="pb-3">
+        {{<publication.summary config={config} page={page} lang={lang}/>}}
+      </li>
+      {% endif  -%}
+    {% endfor -%}
+    </ul>
+  {% endfor -%}
+</div>
+{% endblock content %}

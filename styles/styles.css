@@ -1,0 +1,17 @@
+/* ./styles/styles.css */
+
+@import 'tailwindcss';
+@plugin "@tailwindcss/typography";
+
+#header {
+  background-color: white;
+}
+
+.zola-anchor {
+  padding-left: 0.5rem;
+  opacity: .6;
+}
+
+.zola-anchor:hover {
+  opacity: 1;
+}

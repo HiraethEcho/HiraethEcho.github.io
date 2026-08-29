@@ -1,0 +1,51 @@
+# The URL the site will be built for
+base_url = "https://keinmal.top"
+
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = false
+
+title = "Home"
+
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = false
+
+[translations]
+Biography = "Biography"
+Interests = "Interests"
+Education = "Education"
+toc = "Table of Contents"
+Published = "Published"
+Abstract = "Abstract"
+volume = "volume"
+number = "number"
+pages = "pages"
+
+# Various slugification strategies, see below for details
+# Defaults to everything being a slug
+[slugify]
+paths = "on"
+taxonomies = "on"
+anchors = "on"
+
+[markdown.highlighting]
+# Whether to do syntax highlighting
+# Theme can be customised by setting the `theme` variable to a theme supported by Zola
+theme = "one-dark-pro"
+
+[extra]
+version = "1.0.1"
+
+avatar = "img/avatar.jpg"
+favicon = "img/avatar.jpg"
+
+# Enter your email
+email = "wyz2016zxc[at]outlook.com"
+
+contact_in_index = true
+
+# Additional menu items
+# `Name` is what it is displayed, `path` is the url
+menu_items = [
+   { path = "#contacts", name = "Contact" },
+   { path = "/about", name = "About" },
+]
