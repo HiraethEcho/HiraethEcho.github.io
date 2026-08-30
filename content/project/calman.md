@@ -6,8 +6,8 @@ description: A todo and event manager in terminal
 
 # Calman
 
-Inspired by taskwarrior, which is a wonderful and powerful task manager in cli.
-However it is not convient to sync tasks, and does not support event. Also it is too powerful for me.  
-Cfait uses ics files to store, which is easy to work with CalDav (I use radicale as a server and sync with my phone). But the UI is too fancy for me.
+Inspired by Taskwarrior, which is a wonderful and powerful task manager in the CLI.
+However it is not convenient to sync tasks, and it does not support events. Also it is too powerful for me.
+Cfait uses ICS files for storage, which is easy to work with CalDAV (I use Radicale as a server and sync with my phone). But the UI is too fancy for me.
 
-Therefore I vibe code [this one](https://github.com/hiraethecho/calman).
+Therefore I vibe-coded [this one](https://github.com/hiraethecho/calman).

@@ -5,9 +5,9 @@ date: 2026-03-19
 extra:
   type: journals
   authors: 
-    - Yifei, Chen
-    - Jihao, Liu
-    - Yanze, Wang
+    - Chen, Yifei
+    - Liu, Jihao
+    - Wang, Yanze
   featured: true
   abstract: "By applying the theory of the minimal model program for adjoint foliated structures, we establish the Sarkisov program for algebraically integrable foliations on klt varieties: any two Mori fiber spaces of such structure are connected by a sequence of Sarkisov links. Combining with a result of R. Mascharak, we establish the Sarkisov program for foliations in dimension at most $3$ with mild singularities. Log version and adjoint foliated version of the aforementioned Sarkisov programs are also established."
   publication: International Mathematics Research Notices, Volume 2026, Issue 6, March 2026

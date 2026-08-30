@@ -1,15 +1,15 @@
 ---
 title: "Markerss"
 date: 2026-08-29
-description: A tui rss reader
+description: A TUI RSS reader
 ---
 
-I used to use newsbout, which is great.
+I used to use Newsboat, which is great.
 But I want several features:
 
-- export markdwon file
-- save some articles i like, but not going to store content locally, only the url.
-- manage feeds not only use tags. nav in feeds esaier
+- export markdown files
+- save some articles I like, but not store content locally, only the URL
+- manage feeds not only with tags, but navigate feeds easier
 
-there are many great tui rss reader, but they are all a little bit different from my needs here and there.
-so I vibe code [this one](https://github.com/hiraethecho/markerss).
+There are many great TUI RSS readers, but they are all a little bit different from my needs here and there.
+So I vibe-coded [this one](https://github.com/hiraethecho/markerss).

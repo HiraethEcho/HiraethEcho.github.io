@@ -6,8 +6,8 @@ extra:
   type: preprint
   publication_type: preprint
   authors:
-    - Jihao, Liu
-    - Yanze, Wang
+    - Liu, Jihao
+    - Wang, Yanze
   featured: false
   abstract: "We prove that a general pencil of plane cubics over C has exactly 12 common flex lines. This answers a question of Ciliberto, Miranda, and Roe."
   url: https://arxiv.org/abs/2607.26396

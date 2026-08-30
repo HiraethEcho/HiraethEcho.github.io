@@ -5,8 +5,8 @@ description: A survey on Sarkisov Program. There are three approaches.
 extra:
   type: journals
   authors:
-    - Yifei, Chen
-    - Yanze, Wang
+    - Chen, Yifei
+    - Wang, Yanze
   featured: false
   abstract: "A note on the Sarkisov program."
   publication: "Higher Dimensional Algebraic Geometry: A Volume in Honor of V. V. Shokurov, London Mathematical Society Lecture Note Series, pages 231–263, Cambridge University Press, 2025"
