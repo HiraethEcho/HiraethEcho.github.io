@@ -28,7 +28,6 @@ extra:
       link: https://memex.keinmal.top
 ---
 
-Hi, I'm **Yanze Wang**, a Ph.D. candidate in Mathematics. My research lies mainly in **birational geometry**.
-I'm also interested in coding and developing software.
+Hi, I'm **Yanze Wang**, a Ph.D. candidate in Mathematics. My research lies mainly in **birational geometry**; I also enjoy coding and developing software.
 
 See more in [About](/about).
