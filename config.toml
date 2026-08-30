@@ -4,7 +4,7 @@ base_url = "https://keinmal.top"
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = false
 
-title = "Home"
+title = "Yanze Wang"
 
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = false
@@ -46,6 +46,5 @@ contact_in_index = true
 # Additional menu items
 # `Name` is what it is displayed, `path` is the url
 menu_items = [
-   { path = "#contacts", name = "Contact" },
    { path = "/about", name = "About" },
 ]

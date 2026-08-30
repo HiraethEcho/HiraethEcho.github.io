@@ -1,9 +1,9 @@
 +++
-title = "blog"
+title = "Blog"
 sort_by = "date"
 page_template = "blog-page.html"
-insert_anchor_links = "right"
-weight = 1
-
-extra.index_show = true
+extra.index_show = false
+extra.index_title = "Recent Posts"
 +++
+
+For more blogs, see my [memex](https://memex.keinmal.top)

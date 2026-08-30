@@ -14,5 +14,3 @@ extra:
     - title: "Preprint"
       type: preprint
 ---
-
-content in section \_index.md
