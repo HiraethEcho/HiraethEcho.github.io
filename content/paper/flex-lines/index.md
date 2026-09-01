@@ -2,6 +2,7 @@
 title: Twelve common flex lines in a general pencil of cubics
 date: 2026-07-30
 description: AI generated, human verified.
+weight: 4
 extra:
   type: preprint
   publication_type: preprint

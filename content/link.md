@@ -1,14 +1,14 @@
 ---
-title: Contact
-date: 2026-08-30
+title: Links
 template: links-page.html
-path: contacts
-
 extra:
   links:
-    - icon: mail
-      name: wangyanze@amss.ac.cn
-      link: mailto:wangyanze@amss.ac.cn
+    - icon: code
+      name: Notes
+      link: https://docs.keinmal.top
+    - icon: book
+      name: Memex
+      link: https://memex.keinmal.top
     - icon: github
       name: GitHub
       link: https://github.com/hiraethecho

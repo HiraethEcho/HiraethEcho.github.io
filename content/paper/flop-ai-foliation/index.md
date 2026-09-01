@@ -1,5 +1,6 @@
 ---
 title: Flop between algebraically integrable foliations on potentially KLT varieties
+weight: 2
 date: 2025-09-01
 description: "Two minimal models of two MMPs from one lc AI AFS are connected by flops."
 extra:

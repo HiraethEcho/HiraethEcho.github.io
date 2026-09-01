@@ -2,6 +2,7 @@
 title: A klt generalized pair with infinitely generated canonical ring
 date: 2026-08-04
 description: AI generated, human verified.
+weight: 5
 extra:
   type: preprint
   publication_type: preprint

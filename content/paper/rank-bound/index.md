@@ -2,6 +2,7 @@
 title: A counterexample to the odd-dimensional rank bound for abelian p-group actions
 date: 2026-07-06
 description: AI generated, human verified.
+weight: 6
 extra:
   type: preprint
   publication_type: preprint

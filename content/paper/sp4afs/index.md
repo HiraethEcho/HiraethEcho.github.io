@@ -2,6 +2,7 @@
 title: Sarkisov Program for algebraically integrable adjoint foliated structures
 description: Sarkisov Program for AFS, using double scaling.
 date: 2026-03-19
+weight: 1
 extra:
   type: journals
   authors: 

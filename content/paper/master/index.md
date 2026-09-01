@@ -2,11 +2,11 @@
 title: Sarkisov program for foliated pairs
 description: Sarkisov program for klt pairs and F-dlt foliated pairs.
 date: 2024-06-15
+weight: 7
 extra:
   type: thesis
   authors: 
     - Wang, Yanze
-  featured: true
   abstract: |
     One of the goals of birational geometry is to classify varieties up to birational equivalence. The minimal model program is to find a good representative in every fixed birational equivalence class.
     All of these good representatives can be divided into two classes. One is called the minimal model, and the other is called Mori fiber space, both of which are not unique.

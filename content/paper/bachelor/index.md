@@ -1,6 +1,7 @@
 ---
 title: Moduli of Curves
 date: 2020-06-01
+weight: 8
 description: GIT course moduli spaces and DM stack
 extra:
   type: thesis

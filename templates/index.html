@@ -74,23 +74,17 @@
     {% set_global index = index + 1 -%}
     {% endif -%}
   {% endfor -%}
-  {% endblock index_summaries -%}
 
-  {% block index_contact -%}
-
-    {% if lang == config.default_language -%}
-      {% set contact_data = config.extra.menu_items -%}
-    {% else -%}
-      {% set contact_data = config.extra[lang].menu_items -%}
-    {% endif -%}
-
-    {% if config.extra.contact_in_index == true -%}
+  {% set homepage_sections = section.extra.homepage_sections | default(value=[]) -%}
+  {% for sname in homepage_sections -%}
+    {% set spage = get_page(path="./" ~ sname ~ ".md", metadata_only=true) -%}
     <div class="{% if index % 2 != 0%} bg-white {% else %} bg-gray-50 {% endif %}">
-      <div class="container max-w-4xl mx-auto px-4">
-        {{<macros.contact_from_config config={config} lang={lang}/>}}
+      <div class="container max-w-4xl mx-auto px-4 py-8">
+        {{<macros.homepage_section page={spage} lang={lang}/>}}
       </div>
     </div>
-    {% endif -%}
-  {% endblock index_contact -%}
+    {% set_global index = index + 1 -%}
+  {% endfor -%}
+  {% endblock index_summaries -%}
 
 {% endblock content-%}

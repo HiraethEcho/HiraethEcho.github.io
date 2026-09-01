@@ -26,8 +26,13 @@ extra:
       link: https://docs.keinmal.top
     - icon: book
       link: https://memex.keinmal.top
+  homepage_sections:
+    - link
+    - contacts
+    - skills
+    - awards
 ---
 
 Hi, I'm **Yanze Wang**, a Ph.D. candidate in Mathematics. My research lies mainly in **birational geometry**; I also enjoy coding and developing software.
 
-See more in [About](/about).
+See more in [About](/about) and [cv](/cv.pdf).

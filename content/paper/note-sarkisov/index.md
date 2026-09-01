@@ -1,6 +1,7 @@
 ---
 title: A Note on the Sarkisov Program
 date: 2024-12-06
+weight: 3
 description: A survey on Sarkisov Program. There are three approaches.
 extra:
   type: journals
