@@ -16,6 +16,6 @@ Inspired by [ninve](https://github.com/Niedzwiedzw/ninve), I decide to build a T
 
 ## Progress
 
-This is far from finished; for now it is just an MVP (I haven't even decided whether to use Go or Rust).
+This is far from finished; for now it is just an MVP, written in Rust.
 
 GitHub: [hiraethecho/cutui](https://github.com/hiraethecho/cutui)

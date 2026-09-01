@@ -13,3 +13,5 @@ But I want several features:
 
 There are many great TUI RSS readers, but they are all a little bit different from my needs here and there.
 So I vibe-coded [this one](https://github.com/hiraethecho/markerss).
+
+Written in Rust (ratatui + feed-rs), design-first: main branch holds [SPEC](https://github.com/hiraethecho/markerss/blob/main/SPEC.md)/PLAN/DESIGN, implementations live on per-language branches (rust/go/cpp). Status: basically complete.
