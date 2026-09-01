@@ -29,7 +29,7 @@
 <body class="bg-white">
   <!-- Top nav bar -->
   {% block nav -%}
-  {{<nav.navigation config={config} section={section | default(value=none)} page={page | default(value=none)} current_path={current_path | default(value=none)} lang={lang} website_title={config.title}/>}}
+  {{<nav.navigation config={config} section={section | default(value=none)} page={page | default(value=none)} current_path={current_path | default(value=none)} lang={lang} website_title={config.extra.header_title | default(value=config.title)}/>}}
   {% endblock nav -%}
   <!-- Container -->
   {% block content -%}

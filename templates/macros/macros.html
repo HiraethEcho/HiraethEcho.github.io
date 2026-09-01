@@ -54,7 +54,7 @@
   <div class="flex sm:flex-row flex-col py-4">
     <div class="sm:basis-2/5 grow pb-4 sm:pb-0">
       <div class="prose">
-        <h2>{{ title }}</h2>
+      <h2> {{ title }}</h2>
         {% if section.description -%}{{ section.description }}{% endif -%}
       </div>
     </div>
@@ -65,7 +65,7 @@
             {{<blog.page_summary config={config} page={page} lang={lang} show_wordcount={show_wordcount} show_description={show_description}/>}}
           </li>
         {% endfor %}
-        <li><a href="{{section.permalink | safe}}" class="text-blue-600 hover:text-blue-800">...</a></li>
+        <li><a href="{{section.permalink | safe}}" class="text-blue-600 hover:text-blue-800">more</a></li>
       </ul>
     </div>
   </div>
