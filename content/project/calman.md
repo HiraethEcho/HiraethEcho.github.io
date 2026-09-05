@@ -1,7 +1,7 @@
 ---
 title: "Calman"
 date: 2026-08-29
-description: A task & event manager with CLI and TUI
+description: A task & event manager in the terminal. Rust, iCalendar.
 ---
 
 # Calman

@@ -2,6 +2,7 @@
 title: "Cutui"
 date: 2026-08-29
 description: 一款基于终端界面的视频编辑工具
+draft: true
 ---
 
 ## 项目缘起

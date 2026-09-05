@@ -1,7 +1,7 @@
 ---
 title: "Markerss"
 date: 2026-08-29
-description: 一款基于终端界面的 RSS 订阅阅读器
+description: 基于终端界面的 RSS 阅读器，以 Rust 编写。
 ---
 
 我此前长期使用 Newsboat，其表现可圈可点。但我希望引入若干额外功能：

@@ -1,7 +1,7 @@
 ---
 title: "Suckless"
 date: 2026-08-29
-description: Forks of desktop environment components
+description: Forks of desktop environment components, mainly written in C.
 ---
 
 # Suckless

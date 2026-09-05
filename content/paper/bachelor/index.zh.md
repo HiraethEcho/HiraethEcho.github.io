@@ -2,7 +2,7 @@
 title: 曲线模空间
 date: 2020-06-01
 weight: 8
-description: GIT 课程：模空间与 DM 叠
+description: GIT 粗模空间与 DM 叠上的模空间
 extra:
   type: thesis
   authors:

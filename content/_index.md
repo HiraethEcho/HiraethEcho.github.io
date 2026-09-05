@@ -8,10 +8,9 @@ extra:
     - { type: page, name: experience }
     - { type: section, name: paper }
     - { type: section, name: project }
-    - { type: page, name: skills }
     - { type: page, name: links }
 ---
 
-Hi, I'm **Yanze Wang**, a Ph.D. candidate in Mathematics. My research lies mainly in **birational geometry**; I also enjoy coding and developing software.
+Hi, I'm **Yanze Wang**, a Ph.D. candidate in Mathematics at UCAS. My research lies mainly in **birational geometry** — the minimal model program and foliation theory in particular. Beyond research, programming and software development have long been a passion of mine.
 
-See more in [About](/about) and [cv](/cv.pdf).
+See more on the [About](/about) page, or in my [CV](/cv.pdf).

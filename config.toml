@@ -63,9 +63,6 @@ avatar = "img/avatar.jpg"
 favicon = "img/avatar.jpg"
 
 # Enter your email
-email = "wyz2016zxc[at]outlook.com"
-
-contact_in_index = true
 
 # Language switch links in nav (order matters)
 language_codes = ["en", "zh"]
@@ -86,8 +83,6 @@ avatar = "img/avatar.jpg"
 favicon = "img/avatar.jpg"
 
 email = "wyz2016zxc[at]outlook.com"
-
-contact_in_index = true
 
 menu_items = [
    { path = "/about", name = "关于" },

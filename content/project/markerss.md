@@ -1,7 +1,7 @@
 ---
 title: "Markerss"
 date: 2026-08-29
-description: A TUI RSS reader
+description: A TUI RSS reader, written in Rust.
 ---
 
 I used to use Newsboat, which is great.

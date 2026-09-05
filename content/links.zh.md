@@ -16,6 +16,6 @@ extra:
       name: 技术笔记
       link: https://docs.keinmal.top
     - icon: book
-      name: 个人 Memex
+      name: 个人网站 MEMEX
       link: https://memex.keinmal.top
 ---

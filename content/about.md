@@ -1,29 +1,30 @@
 ---
 title: About
-description: Yanze Wang — PhD candidate in Mathematics at UCAS, working on birational geometry.
+description: Yanze Wang — Ph.D. candidate in Mathematics at UCAS, working on birational geometry.
 ---
 
-## Math
+## Research
 
-I'm a Ph.D. candidate at the Academy of Mathematics and Systems Science, Chinese Academy of Sciences (AMSS, UCAS), advised by Prof. Yifei Chen. I expect to graduate in June 2027. Here is my [cv](/cv.pdf).
+I am a Ph.D. candidate at the Academy of Mathematics and Systems Science (AMSS), University of Chinese Academy of Sciences (UCAS), advised by Prof. Yifei Chen, expecting to graduate in June 2027.
 
-I work on the Sarkisov program for algebraically integrable foliations and related questions in the minimal model program. A list of my works is on the [Papers](/paper/) page.
+My research centers on the Sarkisov program for algebraically integrable foliations, together with related questions in the minimal model program. A complete list of my work is on the [Papers](/paper/) page.
 
-Lately I have also been exploring **AI4Math**, human-verifying AI-generated mathematical arguments and counterexamples.
+Recently, I have been exploring **AI4Math**: human verification of AI-generated mathematical papers, building research harnesses, and formalization in Lean 4. Beyond that, I am interested in AI infrastructure — LLM training and (mathematical) data annotation — including post-training tailored to mathematical research.
 
-I am open to research positions in both academia and industry.
+I am open to research positions in both academia and industry. Further details can be found in my [CV](/cv.pdf).
 
 ## Experience
 
 ### Education
 
-- **Ph.D. in Mathematics**, AMSS, UCAS — 2024–2027 (expected). Advisor: Prof. Yifei Chen
-- **M.S. in Mathematics**, AMSS, UCAS — 2024. Thesis: *Sarkisov program for foliated pairs*. Advisor: Prof. Yifei Chen
-- **B.S. in Mathematics**, Beihang University — 2020. Thesis: *Moduli space of curves*
+- **Ph.D. in Mathematics** (in progress), AMSS, UCAS — 2024–2027 (expected). Advisor: Prof. Yifei Chen
+- **M.S. in Mathematics**, AMSS, UCAS — 2024. Thesis: _Sarkisov program for foliated pairs_. Advisor: Prof. Yifei Chen
+- **B.S. in Mathematics**, Beihang University — 2020. Thesis: _Moduli space of curves_
 
 ### Awards
 
 - **MCM/ICM** — Meritorious Winner (twice)
+- **Hua Luogeng Scholarship**, Beihang University (twice)
 - **CAS** — Merit Student of the Chinese Academy of Sciences
 
 ### Talks
@@ -33,17 +34,17 @@ I am open to research positions in both academia and industry.
 ## Skills
 
 - **Mathematics**: birational geometry, minimal model program, Sarkisov program, algebraically integrable foliations
-- **Programming**: C, Rust, TUI applications, shell scripting, Git, Hugo theme development
+- **Programming**: C, Rust, TUI application development, Git; daily driver on Arch Linux with Neovim
 - **Languages**: Chinese (native), English (professional working)
 
 ## Code
 
-I also enjoy coding and exploring Linux. I've patched my version of dwm and other [suckless components](/project/suckless), wrote a Hugo theme (with which there are two sites of mine), and vibe-coded small command-line and TUI tools. See the [Project](/project/) page (e.g. Calman, Markerss, Cutui, Lichtung).
+Besides research, I am passionate about programming and exploring the Linux ecosystem. I maintain my own build of dwm (a dynamic tiling window manager on X11 for Linux) and several other [suckless components](/project/suckless), wrote a Hugo theme (powering two of my sites), and developed a number of command-line and TUI tools with AI assistance. See the [Project](/project/) page (e.g. Calman, Markerss, Lichtung).
 
 ## Links
 
-- **Email**: wangyanze@amss.ac.cn — contact for research or collaboration
+- **Email**: wangyanze@amss.ac.cn — feel free to reach out about research or collaboration
 - **GitHub**: [hiraethecho](https://github.com/hiraethecho) — code and open-source work
 - **ORCID**: [0009-0003-3661-1890](https://orcid.org/0009-0003-3661-1890) — publication record
-- **Notes**: [docs.keinmal.top](https://docs.keinmal.top) — technical notes
-- **Memex**: [memex.keinmal.top](https://memex.keinmal.top) — blogs and links
+- **Notes**: [docs.keinmal.top](https://docs.keinmal.top) — technical documentation and notes
+- **MEMEX**: [memex.keinmal.top](https://memex.keinmal.top) — miscellaneous blog

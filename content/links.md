@@ -16,6 +16,6 @@ extra:
       name: Notes
       link: https://docs.keinmal.top
     - icon: book
-      name: Memex
+      name: Personal Site - MEMEX
       link: https://memex.keinmal.top
 ---

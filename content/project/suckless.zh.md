@@ -1,7 +1,7 @@
 ---
 title: "Suckless"
 date: 2026-08-29
-description: 桌面环境相关组件的个性化分支合集
+description: 桌面环境组件的个性化分支合集，主要以 C 语言编写。
 ---
 
 # Suckless

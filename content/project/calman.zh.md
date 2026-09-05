@@ -1,7 +1,7 @@
 ---
 title: "Calman"
 date: 2026-08-29
-description: 一款同时提供命令行与 TUI 界面的任务与事件管理工具
+description: 终端下的任务与事件管理工具。Rust 编写，采用 iCalendar 格式存储。
 ---
 
 # Calman
