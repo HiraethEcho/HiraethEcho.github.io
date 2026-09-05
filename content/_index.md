@@ -6,9 +6,9 @@ extra:
   # title: Yanze Wang
   homepage_sections:
     - { type: page, name: experience }
-    - { type: page, name: skills }
     - { type: section, name: paper }
     - { type: section, name: project }
+    - { type: page, name: skills }
     - { type: page, name: links }
 ---
 

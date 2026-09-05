@@ -2,7 +2,8 @@
 <html lang="{{ lang | default(value=config.default_language)}}">
 
 <head>
-  {% set favicon = resize_image(path=config.extra.favicon, format="png", width=32, height=32) %}
+  {% set lang_extra = config.extra[lang] | default(value=config.extra) -%}
+  {% set favicon = resize_image(path=lang_extra.favicon, format="png", width=32, height=32) %}
   <link rel="shortcut icon" href="{{ favicon.url }}" type="image/png">
   <link rel="icon" href="{{ favicon.url }}" type="image/png">
 
@@ -29,7 +30,7 @@
 <body class="bg-white">
   <!-- Top nav bar -->
   {% block nav -%}
-  {{<nav.navigation config={config} section={section | default(value=none)} page={page | default(value=none)} current_path={current_path | default(value=none)} lang={lang} website_title={config.extra.header_title | default(value=config.title)}/>}}
+  {{<nav.navigation config={config} section={section | default(value=none)} page={page | default(value=none)} current_path={current_path | default(value=none)} lang={lang} website_title={lang_extra.header_title | default(value=config.title)}/>}}
   {% endblock nav -%}
   <!-- Container -->
   {% block content -%}

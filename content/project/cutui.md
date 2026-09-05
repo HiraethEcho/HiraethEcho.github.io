@@ -2,6 +2,7 @@
 title: "Cutui"
 date: 2026-08-29
 description: A TUI video editor
+draft: true
 ---
 
 ## Motivation

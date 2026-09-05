@@ -9,6 +9,9 @@ title = "Yanze Wang"
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = false
 
+# Default language (content/ root)
+default_language = "en"
+
 [translations]
 Biography = "Biography"
 Interests = "Interests"
@@ -19,6 +22,22 @@ Abstract = "Abstract"
 volume = "volume"
 number = "number"
 pages = "pages"
+
+[languages.en]
+
+[languages.zh]
+title = "王延泽"
+
+[languages.zh.translations]
+Biography = "简介"
+Interests = "兴趣"
+Education = "教育"
+toc = "目录"
+Published = "发表"
+Abstract = "摘要"
+volume = "卷"
+number = "期"
+pages = "页"
 
 # Various slugification strategies, see below for details
 # Defaults to everything being a slug
@@ -48,8 +67,28 @@ email = "wyz2016zxc[at]outlook.com"
 
 contact_in_index = true
 
+# Language switch links in nav (order matters)
+language_codes = ["en", "zh"]
+
 # Additional menu items
 # `Name` is what it is displayed, `path` is the url
 menu_items = [
    { path = "/about", name = "About" },
+]
+
+# Per-language overrides (accessed as config.extra[lang] in templates)
+[extra.zh]
+header_title = "主页"
+bio_title = "王延泽"
+subtitle = "数学博士生"
+
+avatar = "img/avatar.jpg"
+favicon = "img/avatar.jpg"
+
+email = "wyz2016zxc[at]outlook.com"
+
+contact_in_index = true
+
+menu_items = [
+   { path = "/about", name = "关于" },
 ]
