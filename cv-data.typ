@@ -62,8 +62,8 @@
 
     // ---- content ----
     interests: zh(lang,
-      [双有理几何、极小模型纲领；模空间。近期关注 AI 辅助数学（AI4Math）：AI 生成数学结果的人工验证，及 Lean 4 形式化。],
-      [Birational Geometry, Minimal Model Program; Moduli Spaces. Currently also working on AI-assisted mathematics (AI4Math): human verification of AI-generated results, and formalization in Lean 4.]),
+      [双有理几何、极小模型纲领；模空间。近期关注 AI 辅助数学（AI4Math）：AI 生成数学结果的人工验证、Lean 4 形式化、数学专用模型的训练思路，以及研究 harness 搭建。],
+      [Birational Geometry, Minimal Model Program; Moduli Spaces. Currently also working on AI-assisted mathematics (AI4Math): human verification of AI-generated results, Lean 4 formalization, training approaches for math-specialized models, and research-harness building.]),
 
     amss: zh(lang, "中国科学院数学与系统科学研究院（中国科学院大学）",
              "Academy of Mathematics and Systems Science, Chinese Academy of Sciences"),
@@ -116,8 +116,8 @@
 
     // ---- industry summary ----
     summary: zh(lang,
-      [数学博士生（双有理几何，中国科学院大学 AMSS），持续投入 AI4Math 实践：人工验证 AI 生成预印本 3 篇，搭建 AI 辅助数学研究 harness，探索 Lean 4 形式化。工程师型数学家：日常以 Rust / C 开发工具，正探索以 C++（libtorch）做 ML；Arch Linux 日常使用两年以上。求职方向：大模型数学能力的提升。感兴趣的方向包括：大模型训练、（数学）数据标注、面向推理的后训练（post-training）、PyTorch / libtorch 与 Lean 4 形式化。],
-      [Ph.D. candidate in pure mathematics (birational geometry, AMSS–UCAS), active in AI4Math: three AI-generated, human-verified preprints, a research harness for AI-assisted mathematics, and ongoing Lean 4 exploration. Engineer-mathematician hybrid: ships tools in Rust and C day-to-day; exploring C++/libtorch for ML; daily Linux (Arch) user for 2+ years. Seeking an AI4Math role improving LLM mathematical capability. Areas of interest: LLM training, (mathematical) data annotation, post-training for reasoning, PyTorch / libtorch, and Lean 4 formalization.]),
+      [数学博士生（双有理几何，中国科学院大学 AMSS），持续投入 AI4Math 实践：人工验证 AI 生成预印本 3 篇，搭建 AI 辅助数学研究 harness，探索 Lean 4 形式化。日常使用 Arch Linux（两年以上）与 Neovim，偏好 Rust / C，正学习 C++ / Python（libtorch / PyTorch）。求职方向：大模型数学能力的提升。感兴趣的方向包括：大模型训练、（数学）数据标注、面向推理的后训练（post-training）、PyTorch / libtorch 与 Lean 4 形式化。],
+      [Ph.D. candidate in pure mathematics (birational geometry, AMSS–UCAS), active in AI4Math: three AI-generated, human-verified preprints, a research harness for AI-assisted mathematics, and ongoing Lean 4 exploration. Daily user of Arch Linux (2+ years) and Neovim; prefers Rust and C, currently learning C++ / Python (libtorch / PyTorch). Seeking an AI4Math role improving LLM mathematical capability. Areas of interest: LLM training, (mathematical) data annotation, post-training for reasoning, PyTorch / libtorch, and Lean 4 formalization.]),
 
     sk_lang: zh(lang, [_编程语言：_ C++（libtorch）、Rust、C、Shell。],
                 [_Languages:_ C++ (libtorch), Rust, C, Shell.]),
@@ -129,8 +129,8 @@
     pj_calman: [Calman],
     pj_calman_short: "hiraethecho/calman",
     pj_calman_body: zh(lang,
-      [终端任务与事件管理器（CLI + TUI，Rust）。JSONL / ICS 存储，兼容 CalDAV，配合自建 Radicale 服务器多端同步；同步委托给 git / pimsync / rclone。],
-      [Task & event manager with CLI and TUI (Rust). JSONL/ICS storage, CalDAV-compatible; syncs across devices with a self-hosted Radicale server by delegating to git / pimsync / rclone.]),
+      [终端任务与事件管理器（CLI + TUI，Rust）。JSONL / ICS 存储，兼容 CalDAV，配合自建 Radicale 服务器多端同步；同步委托给 git / vdirsyncer / rclone。],
+      [Task & event manager with CLI and TUI (Rust). JSONL/ICS storage, CalDAV-compatible; syncs across devices with a self-hosted Radicale server by delegating to git / vdirsyncer / rclone.]),
     pj_markerss: [Markerss],
     pj_markerss_short: "hiraethecho/markerss",
     pj_markerss_body: zh(lang,
@@ -144,8 +144,8 @@
     pj_suckless: [suckless],
     pj_suckless_short: "hiraethecho/suckless",
     pj_suckless_body: zh(lang,
-      [自行 fork 的 dwm / dwmblocks（X11 动态平铺窗口管理器），以 C 手工打补丁维护（未经 AI 辅助）。],
-      [My personal fork of dwm / dwmblocks (the X11 dynamic tiling window manager), patched and maintained by hand in C (no AI assistance).]),
+      [自行 fork 的 dwm / dwmblocks（X11 动态平铺窗口管理器等桌面组件，C 语言），以手工补丁方式维护（未经 AI 辅助）。],
+      [My personal fork of dwm / dwmblocks (the X11 dynamic tiling window manager and related desktop components, written in C), patched and maintained by hand (no AI assistance).]),
   )
 })
 

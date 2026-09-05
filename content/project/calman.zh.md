@@ -10,6 +10,6 @@ description: 终端下的任务与事件管理工具。Rust 编写，采用 iCal
 
 因此，我设计并实现了[这一工具](https://github.com/hiraethecho/calman)，全部代码以 Rust 编写。
 
-该项目以 JSONL 或 ICS（兼容 CalDAV）格式存储任务与事件；数据同步则交由外部工具完成（如 git、pimsync、rclone）。
+该项目以 JSONL 或 ICS（兼容 CalDAV）格式存储任务与事件；数据同步则交由外部工具完成（如 git、vdirsyncer、rclone）。
 
 当前状态：核心功能已基本可用，但规划中的部分特性尚待实现。

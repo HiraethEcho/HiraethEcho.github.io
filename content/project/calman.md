@@ -13,5 +13,5 @@ Todoman is a cli that also uses ICS files, but I perfer Taskwarrior style comman
 
 Therefore I vibe-coded [this one](https://github.com/hiraethecho/calman). Written in Rust.
 
-Stores tasks and events as JSONL or ICS (CalDAV-compatible); sync is delegated to external tools (git, pimsync, rclone).
+Stores tasks and events as JSONL or ICS (CalDAV-compatible); sync is delegated to external tools (git, vdirsyncer, rclone).
 Status: mostly usable, but not every planned feature is implemented yet.
