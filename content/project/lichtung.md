@@ -13,4 +13,10 @@ Used by my own sites, e.g.
 - [docs.keinmal.top](https://docs.keinmal.top).
 - [memex.keinmal.top](https://memex.keinmal.top).
 
+## Usage
+
+It is a Hugo theme — drop the repo into a site's `themes/` directory and adapt `hugo.example.toml` (an `exampleSite/` is included).
+
+Features: search, comments (giscus / twikoo / waline / cwd), KaTeX math, mermaid, blockquote, heatmap, password-protected pages, and i18n (en/zh-cn).
+
 GitHub: [hiraethecho/lichtung](https://github.com/hiraethecho/lichtung)

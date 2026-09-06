@@ -84,6 +84,4 @@ favicon = "img/avatar.jpg"
 
 email = "wyz2016zxc[at]outlook.com"
 
-menu_items = [
-   { path = "/about", name = "关于" },
-]
+menu_items = []

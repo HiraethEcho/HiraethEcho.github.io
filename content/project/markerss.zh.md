@@ -15,3 +15,14 @@ description: 基于终端界面的 RSS 阅读器，以 Rust 编写。
 为此，我设计并实现了[这一阅读器](https://github.com/hiraethecho/markerss)。
 
 项目以 Rust 编写（基于 ratatui 与 feed-rs），采用设计优先（design-first）的开发流程：主分支存放 [SPEC](https://github.com/hiraethecho/markerss/blob/main/SPEC.md)、PLAN 与 DESIGN 文档，具体实现则分布在按语言划分的分支上（rust/go/cpp）。当前状态：功能已基本完成。
+
+## 用法
+
+```sh
+git clone https://github.com/hiraethecho/markerss
+cd markerss
+cargo run            # 开发运行
+cargo build --release
+```
+
+配置文件位于 `~/.config/markerss/`——参考 `config.default.toml` 与 `theme.default.toml` 模板；内含 Arch 的 `PKGBUILD`。`rust-comment` 分支带有密集的中英双语教学注释，`GUIDE.md` 则是与代码配套的 Rust 教程。

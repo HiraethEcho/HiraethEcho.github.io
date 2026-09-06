@@ -1,6 +1,6 @@
-// ZH detailed CV — outputs static/cv-zh.pdf
+// ZH one-page resume — outputs static/resume-zh.pdf
 #import "format-lib.typ": *
-#import "cv-data.typ": *
+#import "resume-content.typ": *
 
 #let t = T("zh")
 
@@ -9,6 +9,7 @@
   name: t.name,
   primary: t.primary,
   secondary: t.secondary,
+  compact: true,
 )
 
-#cv("zh")
+#resume("zh")

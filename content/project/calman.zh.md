@@ -13,3 +13,19 @@ description: 终端下的任务与事件管理工具。Rust 编写，采用 iCal
 该项目以 JSONL 或 ICS（兼容 CalDAV）格式存储任务与事件；数据同步则交由外部工具完成（如 git、vdirsyncer、rclone）。
 
 当前状态：核心功能已基本可用，但规划中的部分特性尚待实现。
+
+## 用法
+
+```sh
+cargo build --release        # 二进制：target/release/calman
+calman add "buy milk" due:tomorrow pri:H +home
+calman next                  # 不带参数的 `calman` 等价于 next
+calman list / done / start / stop / count / sync
+```
+
+- 过滤器：`+OVERDUE`、`type:event`、`rc.` 覆盖
+- 循环：`recur:daily` / RFC 5545 RRULE
+- 可选 cargo 特性（如 `tui`、`recur-expand`）
+- 两套配置层级：`*.default.toml`（自包含）vs `*.example.toml`（带注释）
+
+更多文档见 `docs/`（安装、用法、循环、iCalendar、报告、过滤器）以及 `SPEC.md` / `DESIGN.md` / `PLAN.md`。

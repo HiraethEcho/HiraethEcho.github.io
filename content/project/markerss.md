@@ -15,3 +15,14 @@ There are many great TUI RSS readers, but they are all a little bit different fr
 So I vibe-coded [this one](https://github.com/hiraethecho/markerss).
 
 Written in Rust (ratatui + feed-rs), design-first: main branch holds [SPEC](https://github.com/hiraethecho/markerss/blob/main/SPEC.md)/PLAN/DESIGN, implementations live on per-language branches (rust/go/cpp). Status: basically complete.
+
+## Usage
+
+```sh
+git clone https://github.com/hiraethecho/markerss
+cd markerss
+cargo run            # dev run
+cargo build --release
+```
+
+Config lives in `~/.config/markerss/` — see `config.default.toml` and `theme.default.toml` templates; an Arch `PKGBUILD` is included. The `rust-comment` branch adds dense bilingual teaching comments, and `GUIDE.md` is a Rust tutorial tied to the code.

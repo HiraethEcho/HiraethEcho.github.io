@@ -1,319 +1,369 @@
 // =============================================================
-// CV shared content layer — single source for 4 PDFs
-//   (lang: en|zh) × (variant: academic|industry)
+// cv-data.typ — content (both languages) for the detailed 2-3 page
+// CV PDFs. Format/layout lives in format-lib.typ.
 // =============================================================
-#import "@preview/acadennial-cv:0.1.0": *
-
-#let col-cfg = (
-  c1-len: 15%,
-  c2-len: 1fr,
-  c3-len: auto,
-  col-gutter: 1em,
-)
-
-#let employment-head-item = employment-head-item.with(..col-cfg)
-#let employment-head-item-list = employment-head-item-list.with(..col-cfg)
-#let meta-entry-item = meta-entry-item.with(..col-cfg)
-#let meta-entry-item-list = meta-entry-item-list.with(..col-cfg)
-#let pub-item = pub-item.with(..col-cfg)
-#let pub-item-list = pub-item-list.with(..col-cfg)
+#import "format-lib.typ": *
 
 // pick by language
 #let zh(lang, cn, en) = if lang == "zh" { cn } else { en }
 
 // -------------------------------------------------------------
-// strings
+// content
 // -------------------------------------------------------------
-#let T(lang) = ({
-  (
-    name: zh(lang, "王延泽", "Wang Yanze"),
-    primary: zh(lang, [
-      数学博士生（双有理几何方向）\
-      预计 2027 年 6 月毕业\
-      北京市海淀区中关村东路 55 号，100190
-    ], [
-      Ph.D. Candidate in Mathematics\
-      Expected Graduation: June 2027\
-      No. 55 Zhongguancun East Road,\
-      Beijing 100190, China
-    ]),
-    secondary-email: link("mailto:wangyanze@amss.ac.cn")[wangyanze\@amss.ac.cn],
-    secondary-site: link("https://keinmal.top")[keinmal.top],
-    secondary-github: link("https://github.com/hiraethecho")[github.com/hiraethecho],
-    secondary-icons: [
-      #link("https://github.com/hiraethecho")[#github-icon()]
-      #link("https://orcid.org/0009-0003-3661-1890")[#orcid-icon()]
+#let T(lang) = (
+  // ---- header ----
+  name: zh(lang, "王延泽", "Yanze Wang"),
+  primary: zh(lang, [
+    数学博士生（双有理几何方向）\
+    预计 2027 年 6 月毕业\
+    中国科学院数学与系统科学研究院（中国科学院大学）\
+    北京市海淀区中关村东路 55 号，100190
+  ], [
+    Ph.D. Candidate in Mathematics (Birational Geometry)\
+    Expected Graduation: June 2027\
+    AMSS, University of Chinese Academy of Sciences\
+    No. 55 Zhongguancun East Road, Beijing 100190, China
+  ]),
+  secondary: zh(lang, [
+    #link("mailto:wangyanze@amss.ac.cn")[wangyanze\@amss.ac.cn]\
+    155 3825 5707\
+    #link("https://keinmal.top")[keinmal.top]\
+    #link("https://github.com/hiraethecho")[github.com/hiraethecho]\
+    #link("https://orcid.org/0009-0003-3661-1890")[ORCID: 0009-0003-3661-1890]
+  ], [
+    #link("mailto:wangyanze@amss.ac.cn")[wangyanze\@amss.ac.cn]\
+    +86 155 3825 5707\
+    #link("https://keinmal.top")[keinmal.top]\
+    #link("https://github.com/hiraethecho")[github.com/hiraethecho]\
+    #link("https://orcid.org/0009-0003-3661-1890")[ORCID: 0009-0003-3661-1890]
+  ]),
+
+  // ---- section headings ----
+  h-interests: zh(lang, "研究方向", "Research Interests"),
+  h-edu: zh(lang, "教育背景", "Education"),
+  h-awards: zh(lang, "荣誉奖励", "Awards and Honors"),
+  h-pubs: zh(lang, "发表论文", "Publications"),
+  h-pre: zh(lang, "预印本", "Preprints"),
+  h-theses: zh(lang, "学位论文", "Theses"),
+  h-talks: zh(lang, "学术报告", "Invited Talks"),
+  h-software: zh(lang, "软件与开源", "Software and Open Source"),
+  h-ai4math: zh(lang, "AI4Math 工程", "AI4Math Engineering"),
+
+  // ---- interests (detailed) ----
+  interests: zh(lang, [
+    双有理几何与极小模型纲领：Sarkisov 纲领、代数可积叶层化、模空间。近期投入 AI 辅助数学（AI4Math）：
+    AI 生成数学结果的人工验证、Lean 4 形式化、数学专用模型的训练思路、以及研究 harness 的搭建。
+    正在学习 PyTorch / libtorch、LLM 预训练与后训练（post-training）、数学数据处理等相关知识。
+  ], [
+    Birational geometry and the minimal model program: Sarkisov program, algebraically integrable
+    foliations, and moduli spaces. Currently also working on AI-assisted mathematics (AI4Math):
+    human verification of AI-generated mathematical results, Lean 4 formalization, training
+    approaches for math-specialized models, and research-harness building. Learning PyTorch /
+    libtorch, LLM pre-training and post-training, and mathematical data processing.
+  ]),
+
+  // ---- education ----
+  edu: zh(lang, (
+    (
+      at: [2024 – 至今],
+      body: [*数学博士（在读）*，中国科学院数学与系统科学研究院（中国科学院大学），预计 2027 年 6 月毕业。\_指导教师：\_陈亦飞 教授。研究方向：双有理几何——Sarkisov 纲领、代数可积叶层化。],
+    ),
+    (
+      at: [2022 – 2024],
+      body: [*理学硕士*，中国科学院数学与系统科学研究院（中国科学院大学），2024 年 5 月。\_学位论文：\_《叶层化对的 Sarkisov 纲领》。\_指导教师：\_陈亦飞 教授。],
+    ),
+    (
+      at: [2016 – 2020],
+      body: [*理学学士*，北京航空航天大学，2020 年 6 月。\_学位论文：\_《曲线模空间》。],
+    ),
+  ), (
+    (
+      at: [2024 – present],
+      body: [*Ph.D. in Mathematics (in progress)*, AMSS, University of Chinese Academy of Sciences — expected June 2027. _Advisor:_ Prof. Yifei Chen. Research: birational geometry — Sarkisov program, algebraically integrable foliations.],
+    ),
+    (
+      at: [2022 – 2024],
+      body: [*M.S. in Mathematics*, AMSS, University of Chinese Academy of Sciences — May 2024. _Thesis:_ "Sarkisov program for foliated pairs". _Advisor:_ Prof. Yifei Chen.],
+    ),
+    (
+      at: [2016 – 2020],
+      body: [*B.S. in Mathematics*, Beihang University — June 2020. _Thesis:_ "Moduli space of curves".],
+    ),
+  )),
+
+  // ---- awards ----
+  awards: zh(lang, (
+    [美国大学生数学建模竞赛（MCM/ICM）— 一等奖（Meritorious Winner，两次）],
+    [北京航空航天大学华罗庚奖学金（两次）],
+    [中国科学院三好学生],
+  ), (
+    [MCM/ICM — Meritorious Winner (twice)],
+    [Hua Luogeng Scholarship, Beihang University (twice)],
+    [CAS — Merit Student of the Chinese Academy of Sciences],
+  )),
+
+  // ---- talks ----
+  talks: zh(lang, (
+    (
+      at: [2026],
+      body: [报告人，《代数可积与三维叶层化的 Sarkisov 纲领》，西交利物浦大学。],
+    ),
+  ), (
+    (
+      at: [2026],
+      body: [Speaker, *Sarkisov Program for Algebraically Integrable and Threefold Foliations*, Xi'an Jiaotong-Liverpool University.],
+    ),
+  )),
+
+  // ---- publications (with abstracts) ----
+  pubs: (
+    (
+      cite: [Yifei Chen, Jihao Liu, and Yanze Wang. \
+        *Sarkisov Program for Algebraically Integrable Adjoint Foliated Structures*. \
+        _International Mathematics Research Notices, 2026(6): rnag045._ 2026],
+      abstract: zh(lang, [
+        借助伴随叶层化结构的极小模型纲领理论，我们建立 klt 簇上代数可积叶层化的 Sarkisov 纲领：此类结构的任意两个 Mori 纤维空间由一列 Sarkisov 链环连接。结合 R. Mascharak 的结果，我们建立具有温和奇点的至多三维叶层化的 Sarkisov 纲领；其对数版本与伴随叶层化版本亦被建立。
+      ], [
+        By applying the theory of the minimal model program for adjoint foliated structures, we establish the Sarkisov program for algebraically integrable foliations on klt varieties: any two Mori fiber spaces of such a structure are connected by a sequence of Sarkisov links. Combining with a result of R. Mascharak, we establish the Sarkisov program for foliations in dimension at most 3 with mild singularities. Log and adjoint-foliated versions of the aforementioned Sarkisov programs are also established.
+      ]),
+    ),
+    (
+      cite: [Yifei Chen, Jihao Liu, and Yanze Wang. \
+        *Flop between algebraically integrable foliations on potentially KLT varieties*. \
+        _International Journal of Mathematics, 36(11):2550035._ 2025],
+      abstract: zh(lang, [
+        我们证明：对潜 klt 簇上 lc 代数可积叶层化三元组的任意两个极小模型，存在由一列 flop 连接的小双有理模型。特别地，ℚ-阶乘 klt 簇上 lc 代数可积叶层化三元组的任意两个极小模型由一列 flop 连接。在假设广义叶层化四元组极小模型纲领成立的前提下，我们还讨论三维簇上可能非代数可积叶层化的极小模型之间的联系。
+      ], [
+        We prove that for any two minimal models of an lc algebraically integrable foliated triple on potentially klt varieties, there exist small birational models that are connected by a sequence of flops. In particular, any two minimal models of lc algebraically integrable foliated triples on ℚ-factorial klt varieties are connected by a sequence of flops. We also discuss the connection between minimal models for possibly non-algebraically integrable foliations on threefolds, assuming the minimal model program for generalized foliated quadruples.
+      ]),
+    ),
+    (
+      cite: [Yifei Chen and Yanze Wang. \
+        *A Note on the Sarkisov Program*. \
+        _Higher Dimensional Algebraic Geometry: A Volume in Honor of V. V. Shokurov, London Mathematical Society Lecture Note Series, pages 231–263, Cambridge University Press._ 2025],
+      abstract: zh(lang, [
+        本文介绍 Sarkisov 纲领的三种方法：该纲领将对数 Mori 纤维空间之间的双有理映射分解为初等 Sarkisov 链环。
+      ], [
+        This note introduces three methods of the Sarkisov program, which factorizes birational maps of log Mori fibre spaces into elementary Sarkisov links.
+      ]),
+    ),
+  ),
+
+  // ---- preprints (with abstracts) ----
+  pres: (
+    (
+      cite: [Jihao Liu and Yanze Wang. \
+        *A klt generalized pair with infinitely generated canonical ring* (AI-generated, human-verified). \
+        _arXiv:2608.03258._ 2026],
+      abstract: zh(lang, [
+        我们构造一个射影 klt 广义对 (X, B, M)，其广义对数典范环 R(X, K_X+B+M) 无限生成。这给出首个 −K_X nef 且反典范环 R(X, −K_X) 非有限生成的 klt 簇 X 的例子。
+      ], [
+        We construct a projective klt generalized pair (X, B, M) with infinitely generated generalized log canonical ring R(X, K_X+B+M). This gives the first example of a klt variety X with −K_X nef whose anticanonical ring R(X, −K_X) is not finitely generated.
+      ]),
+    ),
+    (
+      cite: [Jihao Liu and Yanze Wang. \
+        *Twelve common flex lines in a general pencil of cubics* (AI-generated, human-verified). \
+        _arXiv:2607.26396._ 2026],
+      abstract: zh(lang, [
+        我们证明 ℂ 上一般平面三次曲线束恰有 12 条公共拐线，回答 Ciliberto、Miranda 与 Roe 的一个问题。
+      ], [
+        We prove that a general pencil of plane cubics over ℂ has exactly 12 common flex lines. This answers a question of Ciliberto, Miranda, and Roe.
+      ]),
+    ),
+    (
+      cite: [Jihao Liu and Yanze Wang. \
+        *A counterexample to the odd-dimensional rank bound for abelian p-group actions* (AI-generated, human-verified). \
+        _arXiv:2607.04891._ 2026],
+      abstract: zh(lang, [
+        我们给出 Moraga 所猜测的、光滑 Calabi-Yau 簇上忠实阿贝尔 p-群作用之秩界的奇维推广的反例。
+      ], [
+        We give a counterexample to the odd-dimensional extension of the rank bound for faithful abelian p-group actions on smooth Calabi-Yau varieties, conjectured by Moraga.
+      ]),
+    ),
+  ),
+
+  // ---- theses (with abstracts) ----
+  theses: zh(lang, (
+    [
+      *硕士：* 《叶层化对的 Sarkisov 纲领》（2024）。\
+      摘要：极小模型纲领在每一固定的双有理等价类中寻找好代表元，它们分为极小模型与 Mori 纤维空间两类。本文介绍 Sarkisov 纲领的三种方法，并尝试建立叶层化对的 Sarkisov 纲领：通过将 F-dlt 叶层化对约化为 klt 对，得到叶层化 Mori 纤维空间之间双有理映射的弱分解。
     ],
-    phone: "155 3825 5707",
+    [
+      *学士：* 《曲线模空间》（2020）。\
+      摘要：本文借助几何不变量理论（GIT）与叠理论构造曲线模空间及其紧化：介绍光滑曲线与 DM 稳定曲线，给出范畴论、叠理论、Hilbert 概形与 GIT 等工具，构造两类曲线模空间，最后提出进一步问题并讨论其它模空间。
+    ],
+  ), (
+    [
+      *M.S.:* "Sarkisov program for foliated pairs" (2024).\
+      Abstract: the minimal model program seeks a good representative in each birational equivalence class; these representatives split into minimal models and Mori fiber spaces. The thesis introduces the three methods of the Sarkisov program and establishes it for foliated pairs — by reducing F-dlt foliated pairs to klt pairs, one obtains a weak decomposition of birational maps between foliated Mori fiber spaces.
+    ],
+    [
+      *B.S.:* "Moduli space of curves" (2020).\
+      Abstract: this report constructs moduli spaces of curves and their compactifications via geometric invariant theory (GIT) and stack theory — introducing smooth and DM stable curves, developing the necessary tools (category theory, stack theory, Hilbert scheme, GIT), constructing two kinds of curve moduli spaces, and closing with further questions.
+    ],
+  )),
 
-    // ---- section headings ----
-    h_interests: zh(lang, "研究方向", "Research Interests"),
-    h_edu: zh(lang, "教育背景", "Education"),
-    h_awards: zh(lang, "荣誉奖励", "Awards and Honors"),
-    h_pubs: zh(lang, "发表论文", "Publications"),
-    h_pre: zh(lang, "预印本", "Preprints"),
-    h_sel_pubs: zh(lang, "代表论文", "Selected Publications"),
-    h_talks: zh(lang, "学术报告", "Invited Talks"),
-    h_sw: zh(lang, "软件与开源", "Software and Open Source"),
-    h_summary: zh(lang, "个人总结", "Summary"),
-    h_skills: zh(lang, "技术能力", "Technical Skills"),
-    h_projects: zh(lang, "项目经历", "Projects"),
-    h_exp: zh(lang, "研究经历", "Research Experience"),
+  // ---- software: languages & tools ----
+  skills-sw: zh(lang, [
+    *语言与工具：* C++（libtorch）、Rust、C、Shell；Arch Linux + Neovim 日常开发环境；Git；LaTeX；TUI 开发（ratatui）。
+  ], [
+    *Languages & tools:* C++ (libtorch), Rust, C, Shell; daily development on Arch Linux + Neovim; Git; LaTeX; TUI development (ratatui).
+  ]),
 
-    // ---- content ----
-    interests: zh(lang,
-      [双有理几何、极小模型纲领；模空间。近期关注 AI 辅助数学（AI4Math）：AI 生成数学结果的人工验证、Lean 4 形式化、数学专用模型的训练思路，以及研究 harness 搭建。],
-      [Birational Geometry, Minimal Model Program; Moduli Spaces. Currently also working on AI-assisted mathematics (AI4Math): human verification of AI-generated results, Lean 4 formalization, training approaches for math-specialized models, and research-harness building.]),
+  // ---- software: projects (detailed) ----
+  projects: zh(lang, (
+    (
+      at: [#link("https://github.com/hiraethecho/calman")[Calman]],
+      body: [终端任务与事件管理器（CLI + TUI，Rust）。JSONL / ICS 存储，兼容 CalDAV，配合自建 Radicale 服务器多端同步；同步委托给 git / vdirsyncer / rclone。vibe coding 开发。],
+    ),
+    (
+      at: [#link("https://github.com/hiraethecho/markerss")[Markerss]],
+      body: [TUI RSS 阅读器（Rust，ratatui + feed-rs）：Markdown 导出、仅存 URL 的收藏模式。设计文档驱动：主分支维护 SPEC / PLAN / DESIGN，实现按语言分支（rust / go / cpp）。vibe coding 开发。],
+    ),
+    (
+      at: [#link("https://github.com/hiraethecho/lichtung")[Lichtung]],
+      body: [Hugo 主题（Go 模板 / SCSS），以对话式 AI 辅助开发完成，支撑两个个人站点（技术文档与博客）。],
+    ),
+    (
+      at: [#link("https://github.com/hiraethecho/suckless")[suckless]],
+      body: [自行 fork 的 dwm / dwmblocks（X11 动态平铺窗口管理器等桌面组件，C 语言），以手工补丁方式维护（未经 AI 辅助）。],
+    ),
+    (
+      at: [#link("https://github.com/hiraethecho/AiKit")[AiKit]],
+      body: [面向编码智能体的 AI 工具集合（尤其 pi）：代理（pi、opencode、codex、claude code 等）、pi 扩展（rtk、cave、toon、doc、role）、skills、人设与快速部署脚本。],
+    ),
+    (
+      at: [#link("https://github.com/hiraethecho/Rethlas")[Rethlas]],
+      body: [fork 并改进了 Rethlas：一个围绕两个 Codex 智能体的自然语言数学推理系统——生成智能体书写非形式证明蓝图，验证智能体检查蓝图并给出结构化结论，run.sh 驱动迭代式证明与修复循环。],
+    ),
+    (
+      at: [#link("https://github.com/hiraethecho/mumble")[mumble]],
+      body: [一个简单留言板页面（JavaScript），基于 Cloudflare Worker，可独立部署或嵌入其他页面。],
+    ),
+    (
+      at: [#link("https://github.com/hiraethecho/cutui")[cutui]],
+      body: [简单的 TUI 视频编辑器（Rust）。],
+    ),
+  ), (
+    (
+      at: [#link("https://github.com/hiraethecho/calman")[Calman]],
+      body: [Task & event manager with CLI and TUI (Rust). JSONL/ICS storage, CalDAV-compatible; syncs across devices with a self-hosted Radicale server by delegating to git / vdirsyncer / rclone. Vibe-coded.],
+    ),
+    (
+      at: [#link("https://github.com/hiraethecho/markerss")[Markerss]],
+      body: [TUI RSS reader (Rust, ratatui + feed-rs): Markdown export, URL-only bookmarks. Design-first repo: main branch keeps SPEC / PLAN / DESIGN; implementations on per-language branches (rust / go / cpp). Vibe-coded.],
+    ),
+    (
+      at: [#link("https://github.com/hiraethecho/lichtung")[Lichtung]],
+      body: [Hugo theme (Go templates / SCSS) built with conversational AI-assisted development; powers two personal sites (docs & blog).],
+    ),
+    (
+      at: [#link("https://github.com/hiraethecho/suckless")[suckless]],
+      body: [Personal fork of dwm / dwmblocks (X11 dynamic tiling window manager and related desktop components, written in C), patched and maintained by hand (no AI assistance).],
+    ),
+    (
+      at: [#link("https://github.com/hiraethecho/AiKit")[AiKit]],
+      body: [AI tool collection for coding agents (especially pi): agents (pi, opencode, codex, claude code, …), pi extensions (rtk, cave, toon, doc, role), skills, personas, and quick-deploy scripts.],
+    ),
+    (
+      at: [#link("https://github.com/hiraethecho/Rethlas")[Rethlas]],
+      body: [Forked and extended Rethlas: a natural-language math-reasoning system built around two Codex agents — a generation agent writes informal proof blueprints, a verification agent checks them and issues structured verdicts; run.sh drives an iterative proof-and-repair loop.],
+    ),
+    (
+      at: [#link("https://github.com/hiraethecho/mumble")[mumble]],
+      body: [A simple message-board page (JavaScript) on a Cloudflare Worker: deploy standalone or embed into other pages.],
+    ),
+    (
+      at: [#link("https://github.com/hiraethecho/cutui")[cutui]],
+      body: [A simple TUI video editor (Rust).],
+    ),
+  )),
 
-    amss: zh(lang, "中国科学院数学与系统科学研究院（中国科学院大学）",
-             "Academy of Mathematics and Systems Science, Chinese Academy of Sciences"),
-    buaa: zh(lang, "北京航空航天大学", "Beihang University"),
-    beijing: zh(lang, "北京", "Beijing, China"),
-    phd_title: zh(lang, [数学博士（2024 – 至今）], [Ph.D. in Mathematics (2024 – present)]),
-    ms_title: zh(lang, "硕士，2024 年 5 月", "M.S. in Mathematics, May 2024"),
-    bs_title: zh(lang, "学士，2020 年 6 月", "B.S. in Mathematics, June 2020"),
-    advisor: zh(lang, [_指导教师：_ 陈亦飞 教授], [_Advisor:_ Prof. Yifei Chen]),
-    ms_thesis: zh(lang, [_学位论文：_《叶层化对的 Sarkisov 纲领》], [_Thesis:_ Sarkisov program for foliated pairs]),
-    bs_thesis: zh(lang, [_学位论文：_《曲线模空间》], [_Thesis:_ Moduli space of Curves]),
-
-    award1: zh(lang, [美国大学生数学建模竞赛（MCM/ICM）— 一等奖（Meritorious Winner，两次）],
-                [MCM/ICM — Meritorious Winner (twice)]),
-    award2: zh(lang, [北京航空航天大学华罗庚奖学金（两次）],
-                [Hua Luogeng Scholarship, Beihang University (twice)]),
-    award3: zh(lang, [中国科学院三好学生],
-                [CAS — Merit Student of the Chinese Academy of Sciences]),
-
-    talk1: zh(lang, [报告人，《代数可积与三维叶层化的 Sarkisov 纲领》\@西交利物浦大学],
-              [Speaker, *Sarkisov Program for Algebraically Integrable and Threefold Foliations* \@_Xi'an Jiaotong-Liverpool University_]),
-
-    // publications: canonical English citations in both languages
-    pub1: [Yifei Chen, Jihao Liu, and Yanze Wang. \
-      *Sarkisov Program for Algebraically Integrable Adjoint Foliated Structures*. \
-      _International Mathematics Research Notices, 2026(6): rnag045._ 2026],
-    pub2: [Yifei Chen, Jihao Liu, and Yanze Wang. \
-      *Flop between algebraically integrable foliations on potentially KLT varieties*. \
-      _International Journal of Mathematics, 36(11):2550035._ 2025],
-    pub3: [Yifei Chen and Yanze Wang. \
-      *A Note on the Sarkisov Program*. \
-      _Higher Dimensional Algebraic Geometry: A Volume in Honor of V. V. Shokurov, London Mathematical Society Lecture Note Series, pages 231–263, Cambridge University Press._ 2025],
-    pre1: [Jihao Liu and Yanze Wang. \
-      *A klt generalized pair with infinitely generated canonical ring* (AI-generated, human-verified). \
-      _arXiv:2608.03258._ 2026],
-    pre2: [Jihao Liu and Yanze Wang. \
-      *Twelve common flex lines in a general pencil of cubics* (AI-generated, human-verified). \
-      _arXiv:2607.26396._ 2026],
-    pre3: [Jihao Liu and Yanze Wang. \
-      *A counterexample to the odd-dimensional rank bound for abelian p-group actions* (AI-generated, human-verified). \
-      _arXiv:2607.04891._ 2026],
-
-    // ---- software section (academic variant, compact) ----
-    sw_skills: zh(lang, [_语言与工具：_ C++（libtorch）、Rust、C、Shell；Arch Linux + Neovim 日常开发环境；Git。],
-                  [_Languages & tools:_ C++ (libtorch), Rust, C, Shell; daily development on Arch Linux + Neovim; Git.]),
-    sw_projects: zh(lang, [_项目：_ Calman（Rust，任务与事件管理器，JSONL/ICS、兼容 CalDAV）、Markerss（Rust ratatui，TUI RSS 阅读器，设计文档驱动）、Lichtung（Hugo 主题，支撑两个个人站点）、#link("https://github.com/hiraethecho/suckless")[suckless]（手写 C 的 dwm/dwmblocks 个性化补丁）。],
-                   [_Projects:_ Calman (Rust, task & event manager, JSONL/ICS, CalDAV-compatible), Markerss (Rust ratatui, TUI RSS reader, design-doc-driven), Lichtung (Hugo theme powering two personal sites), #link("https://github.com/hiraethecho/suckless")[suckless] (my own fork of dwm/dwmblocks, patched by hand in C).)]),
-    sw_ai4math: zh(lang, [_AI4Math 工程：_ 搭建 AI 数学研究 harness；学习模型预训练、后训练与微调、数学数据处理，以及 Lean 4 形式化语言。],
-                   [_AI4Math engineering:_ built a research harness for AI-assisted mathematics; learning model pre-training, post-training & fine-tuning, mathematical data processing, and the Lean 4 formalization language.]),
-
-    // ---- industry summary ----
-    summary: zh(lang,
-      [数学博士生（双有理几何，中国科学院大学 AMSS），持续投入 AI4Math 实践：人工验证 AI 生成预印本 3 篇，搭建 AI 辅助数学研究 harness，探索 Lean 4 形式化。日常使用 Arch Linux（两年以上）与 Neovim，偏好 Rust / C，正学习 C++ / Python（libtorch / PyTorch）。求职方向：大模型数学能力的提升。感兴趣的方向包括：大模型训练、（数学）数据标注、面向推理的后训练（post-training）、PyTorch / libtorch 与 Lean 4 形式化。],
-      [Ph.D. candidate in pure mathematics (birational geometry, AMSS–UCAS), active in AI4Math: three AI-generated, human-verified preprints, a research harness for AI-assisted mathematics, and ongoing Lean 4 exploration. Daily user of Arch Linux (2+ years) and Neovim; prefers Rust and C, currently learning C++ / Python (libtorch / PyTorch). Seeking an AI4Math role improving LLM mathematical capability. Areas of interest: LLM training, (mathematical) data annotation, post-training for reasoning, PyTorch / libtorch, and Lean 4 formalization.]),
-
-    sk_lang: zh(lang, [_编程语言：_ C++（libtorch）、Rust、C、Shell。],
-                [_Languages:_ C++ (libtorch), Rust, C, Shell.]),
-    sk_sys: zh(lang, [_系统与工具：_ Linux（Arch，日常使用两年以上）、Git、Neovim；TUI 开发（ratatui）。],
-               [_Systems & tooling:_ Linux (Arch, daily for 2+ years), Git, Neovim; TUI development (ratatui).]),
-    sk_human: zh(lang, [_自然语言：_ 中文（母语）、英语（专业工作水平）。],
-                 [_Human languages:_ Chinese (native), English (professional working).]),
-
-    pj_calman: [Calman],
-    pj_calman_short: "hiraethecho/calman",
-    pj_calman_body: zh(lang,
-      [终端任务与事件管理器（CLI + TUI，Rust）。JSONL / ICS 存储，兼容 CalDAV，配合自建 Radicale 服务器多端同步；同步委托给 git / vdirsyncer / rclone。],
-      [Task & event manager with CLI and TUI (Rust). JSONL/ICS storage, CalDAV-compatible; syncs across devices with a self-hosted Radicale server by delegating to git / vdirsyncer / rclone.]),
-    pj_markerss: [Markerss],
-    pj_markerss_short: "hiraethecho/markerss",
-    pj_markerss_body: zh(lang,
-      [TUI RSS 阅读器（Rust，ratatui + feed-rs）：Markdown 导出、仅存 URL 的收藏模式。设计文档驱动：主分支维护 SPEC / PLAN / DESIGN，实现按语言分支（rust / go / cpp）。],
-      [TUI RSS reader (Rust, ratatui + feed-rs): Markdown export, URL-only bookmarks. Design-first repo: main branch keeps SPEC / PLAN / DESIGN; implementations on per-language branches (rust / go / cpp).]),
-    pj_lichtung: [Lichtung],
-    pj_lichtung_short: "hiraethecho/lichtung",
-    pj_lichtung_body: zh(lang,
-      [Hugo 主题（Go 模板 / SCSS），以对话式 AI 辅助开发完成，支撑两个个人站点（技术文档与博客）。],
-      [Hugo theme (Go templates / SCSS) built with conversational AI-assisted development; powers two personal sites (docs & blog).]),
-    pj_suckless: [suckless],
-    pj_suckless_short: "hiraethecho/suckless",
-    pj_suckless_body: zh(lang,
-      [自行 fork 的 dwm / dwmblocks（X11 动态平铺窗口管理器等桌面组件，C 语言），以手工补丁方式维护（未经 AI 辅助）。],
-      [My personal fork of dwm / dwmblocks (the X11 dynamic tiling window manager and related desktop components, written in C), patched and maintained by hand (no AI assistance).]),
-  )
-})
+  // ---- AI4Math engineering ----
+  ai4math: zh(lang, [
+    *research harness：* 搭建并维护 AI 辅助数学研究的工作流（Rethlas 的 fork 与改进）；
+    *Lean 4：* 学习正式化与证明仓库维护；*mathran*（微软 AI4Math 项目，目前私有）：贡献者；
+    持续学习模型预训练、后训练（post-training）与数学数据处理，探索 PyTorch / libtorch 在数学场景的应用。
+  ], [
+    *Research harness:* built and maintained an AI-assisted mathematics workflow (fork and extension of Rethlas);
+    *Lean 4:* learning formalization and proof-repo maintenance; *mathran* (a Microsoft AI4Math project, currently private): contributor;
+    continuously learning LLM pre-training, post-training, and mathematical data processing; exploring PyTorch / libtorch applications in mathematics.
+  ]),
+)
 
 // -------------------------------------------------------------
-// header / show-rule
+// rendering helpers (cv-specific)
 // -------------------------------------------------------------
-#let init(lang, phone: none) = {
-  let t = T(lang)
-  let fonts = if lang == "zh" {
-    (text: ("Alegreya", "LXGW Neo XiHei"), head: ("Arial", "LXGW Neo XiHei"))
-  } else {
-    (text: ("Alegreya",), head: ("Arial",))
-  }
-  let secondary = if phone != none {
-    [#t.secondary-email \ #phone \ #t.secondary-site \ #t.secondary-github \ #t.secondary-icons]
-  } else {
-    [#t.secondary-email \ #t.secondary-site \ #t.secondary-github \ #t.secondary-icons]
-  }
-  resume.with(
-    col-args: (
-      c1-len: col-cfg.c1-len,
-      c2-len: col-cfg.c2-len,
-      col-gutter: col-cfg.col-gutter,
-    ),
-    text-args: (font-family: fonts.text, font-size: 10pt),
-    heading-args: (font-family: fonts.head, level1-font-size: 20pt, level3-align: right),
-    author-info: (
-      name: t.name,
-      primary-info: t.primary,
-      secondary-info: secondary,
-    ),
+#let math-item(cite, abstract) = {
+  block(
+    above: 0.4em,
+    below: 0.4em,
+    [
+      #cite
+      #if abstract != [] [
+        #v(0.18em)
+        #text(size: 9.3pt, fill: rgb("#444444"))[_Abstract:_ #abstract]
+      ]
+    ],
   )
 }
 
-// -------------------------------------------------------------
-// sections
-// -------------------------------------------------------------
-#let section_interests(lang) = ({
+// ---- render all CV sections for a language ----
+#let cv(lang) = {
   let t = T(lang)
+  let headings = (
+    interests: t.h-interests,
+    edu: t.h-edu,
+    awards: t.h-awards,
+    pubs: t.h-pubs,
+    pre: t.h-pre,
+    theses: t.h-theses,
+    talks: t.h-talks,
+    software: t.h-software,
+    ai4math: t.h-ai4math,
+  )
   [
-== #t.h_interests
+= #headings.interests
 
 #t.interests
+
+= #headings.edu
+
+#entry-list(t.edu)
+
+= #headings.awards
+
+#tight-list(t.awards)
+
+= #headings.pubs
+
+#for (i, p) in t.pubs.enumerate() [
+  #text(weight: "bold")[(#(i + 1))] #math-item(p.cite, p.abstract)
+]
+
+= #headings.pre
+
+#for (i, p) in t.pres.enumerate() [
+  #text(weight: "bold")[(#(i + 1))] #math-item(p.cite, p.abstract)
+]
+
+= #headings.theses
+
+#tight-list(t.theses)
+
+= #headings.talks
+
+#entry-list(t.talks)
+
+= #headings.software
+
+#t.skills-sw
+
+#entry-list(t.projects)
+
+= #headings.ai4math
+
+#t.ai4math
   ]
-})
-
-#let education(lang) = ({
-  let t = T(lang)
-  [
-== #t.h_edu
-
-#employment-head-item-list(
-  (
-    c2: t.amss,
-    c3: t.beijing,
-    body: [#t.phd_title\ #t.advisor],
-  ),
-  (
-    c2: t.amss,
-    c3: t.beijing,
-    body: [#t.ms_title\ #t.ms_thesis\ #t.advisor],
-  ),
-  (
-    c2: t.buaa,
-    c3: t.beijing,
-    body: [#t.bs_title\ #t.bs_thesis],
-  ),
-)
-  ]
-})
-
-#let awards(lang) = ({
-  let t = T(lang)
-  [
-== #t.h_awards
-
-#meta-entry-item-list(
-  c2-text-args: (weight: "regular"),
-  item-spacing: 0.8em,
-  (c1: [], c2: t.award1),
-  (c1: [], c2: t.award2),
-  (c1: [], c2: t.award3),
-)
-  ]
-})
-
-#let publications_full(lang) = ({
-  let t = T(lang)
-  [
-== #t.h_pubs
-
-#pubs-reset()
-#pub-item-list(t.pub1, t.pub2, t.pub3)
-
-== #t.h_pre
-
-#pubs-reset()
-#pub-item-list(t.pre1, t.pre2, t.pre3)
-  ]
-})
-
-#let publications_selected(lang) = ({
-  let t = T(lang)
-  [
-== #t.h_sel_pubs
-
-#pubs-reset()
-#pub-item-list(t.pub1, t.pub2, t.pre1)
-  ]
-})
-
-#let talks(lang) = ({
-  let t = T(lang)
-  [
-== #t.h_talks
-
-#meta-entry-item-list(
-  c2-text-args: (weight: "regular"),
-  (c1: "2026", c2: t.talk1),
-)
-  ]
-})
-
-#let software_academic(lang) = ({
-  let t = T(lang)
-  [
-== #t.h_sw
-
-- #t.sw_skills
-- #t.sw_projects
-- #t.sw_ai4math
-  ]
-})
-
-#let summary_industry(lang) = ({
-  let t = T(lang)
-  [
-== #t.h_summary
-
-#t.summary
-  ]
-})
-
-#let skills_industry(lang) = ({
-  let t = T(lang)
-  [
-== #t.h_skills
-
-#meta-entry-item-list(
-  c2-text-args: (weight: "regular"),
-  (c1: [], c2: t.sk_lang),
-  (c1: [], c2: t.sk_sys),
-
-  (c1: [], c2: t.sk_human),
-)
-  ]
-})
-
-#let projects_industry(lang) = ({
-  let t = T(lang)
-  [
-== #t.h_projects
-
-#employment-head-item-list(
-  (c1: [], c2: [#t.pj_calman — #link("https://github.com/hiraethecho/calman")[#t.pj_calman_short]], c3: [], body: t.pj_calman_body),
-  (c1: [], c2: [#t.pj_markerss — #link("https://github.com/hiraethecho/markerss")[#t.pj_markerss_short]], c3: [], body: t.pj_markerss_body),
-  (c1: [], c2: [#t.pj_lichtung — #link("https://github.com/hiraethecho/lichtung")[#t.pj_lichtung_short]], c3: [], body: t.pj_lichtung_body),
-  (c1: [], c2: [#t.pj_suckless — #link("https://github.com/hiraethecho/suckless")[#t.pj_suckless_short]], c3: [], body: t.pj_suckless_body),
-)
-  ]
-})
+}

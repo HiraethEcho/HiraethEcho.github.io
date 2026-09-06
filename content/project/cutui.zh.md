@@ -2,7 +2,6 @@
 title: "Cutui"
 date: 2026-08-29
 description: 一款基于终端界面的视频编辑工具
-draft: true
 ---
 
 ## 项目缘起
@@ -18,5 +17,24 @@ draft: true
 ## 当前进展
 
 该项目距离完善仍有相当距离，目前仅实现了最小可用版本（MVP），代码以 Rust 编写。
+
+## 使用（MVP）
+
+```sh
+cargo build   # 或 cargo run
+```
+
+键位操作（vim 风格）：
+
+- `i` / `o` — 标记入点 / 出点
+- `a` — 将片段加入时间线（V1）
+- `x` — 删除
+- `h` / `l` — 移动播放头
+- `Space` — mpv 预览
+- `e` — 导出（裁剪 / 拼接，保留音频）
+- `t` — 转场选择
+- `u`、`Ctrl+r` — 撤销 / 重做
+
+基于 Rust + ratatui 构建；mpv 通过 Unix socket JSON IPC 提供预览。设计文档：`SPEC.md`、`PLAN.md`、`CHANGELOG.md`（Go 双分支实验保留在 `go` 分支）。
 
 GitHub：[hiraethecho/cutui](https://github.com/hiraethecho/cutui)

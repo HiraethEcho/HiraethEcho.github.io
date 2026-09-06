@@ -15,3 +15,19 @@ Therefore I vibe-coded [this one](https://github.com/hiraethecho/calman). Writte
 
 Stores tasks and events as JSONL or ICS (CalDAV-compatible); sync is delegated to external tools (git, vdirsyncer, rclone).
 Status: mostly usable, but not every planned feature is implemented yet.
+
+## Usage
+
+```sh
+cargo build --release        # binary: target/release/calman
+calman add "buy milk" due:tomorrow pri:H +home
+calman next                  # bare `calman` == next
+calman list / done / start / stop / count / sync
+```
+
+- Filters: `+OVERDUE`, `type:event`, `rc.` overrides
+- Recurrence: `recur:daily` / RFC 5545 RRULE
+- Optional cargo features (e.g. `tui`, `recur-expand`)
+- Two config tiers: `*.default.toml` (self-contained) vs `*.example.toml` (annotated)
+
+More docs live in `docs/` (install, usage, recurrence, iCalendar, reports, filters) plus `SPEC.md` / `DESIGN.md` / `PLAN.md`.

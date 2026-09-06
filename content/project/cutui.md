@@ -2,7 +2,6 @@
 title: "Cutui"
 date: 2026-08-29
 description: A TUI video editor
-draft: true
 ---
 
 ## Motivation
@@ -18,5 +17,24 @@ Inspired by [ninve](https://github.com/Niedzwiedzw/ninve), I decide to build a T
 ## Progress
 
 This is far from finished; for now it is just an MVP, written in Rust.
+
+## Usage (MVP)
+
+```sh
+cargo build   # or: cargo run
+```
+
+Keyboard-driven (vim-style):
+
+- `i` / `o` — mark in / out point
+- `a` — add clip to timeline (V1)
+- `x` — delete
+- `h` / `l` — move playhead
+- `Space` — mpv preview
+- `e` — export (trim / concat, audio preserved)
+- `t` — transition picker
+- `u`, `Ctrl+r` — undo / redo
+
+Built with Rust + ratatui; mpv provides preview via Unix-socket JSON IPC. Design docs: `SPEC.md`, `PLAN.md`, `CHANGELOG.md` (the dual-branch Go experiment lives on branch `go`).
 
 GitHub: [hiraethecho/cutui](https://github.com/hiraethecho/cutui)

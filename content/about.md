@@ -9,9 +9,9 @@ I am a Ph.D. candidate at the Academy of Mathematics and Systems Science (AMSS),
 
 My research centers on the Sarkisov program for algebraically integrable foliations, together with related questions in the minimal model program. A complete list of my work is on the [Papers](/paper/) page.
 
-Recently, I have been exploring **AI4Math**: human verification of AI-generated mathematical papers, building research harnesses, and formalization in Lean 4. Beyond that, I am interested in AI infrastructure — LLM training and (mathematical) data annotation — including post-training tailored to mathematical research.
+Recently, I have been exploring **AI4Math**: human verification of AI-generated mathematical papers, building research harnesses (e.g. forking and extending [Rethlas](/project/rethlas)), and formalization in Lean 4. I am also a contributor to a Microsoft AI4Math project (currently private). Beyond that, I am interested in AI infrastructure — LLM training and (mathematical) data annotation — including post-training tailored to mathematical research.
 
-I am open to research positions in both academia and industry. Further details can be found in my [CV](/cv.pdf).
+I am open to research positions in both academia and industry. A short [resume](/resume.pdf) and a detailed [CV](/cv.pdf) are also available.
 
 ## Experience
 
@@ -39,7 +39,7 @@ I am open to research positions in both academia and industry. Further details c
 
 ## Code
 
-Besides research, I am passionate about programming and exploring the Linux ecosystem. I maintain my own build of dwm (a dynamic tiling window manager on X11 for Linux) and several other [suckless components](/project/suckless), wrote a Hugo theme (powering two of my sites), and developed a number of command-line and TUI tools with AI assistance. See the [Project](/project/) page (e.g. Calman, Markerss, Lichtung).
+Besides research, I am passionate about programming and exploring the Linux ecosystem. I maintain my own build of dwm (a dynamic tiling window manager on X11 for Linux) and several other [suckless components](/project/suckless), wrote a Hugo theme (powering two of my sites), and developed a number of command-line and TUI tools with AI assistance. I also build AI4Math tooling: [Rethlas](/project/rethlas) (a fork of a two-agent math-reasoning harness), [AiKit](/project/aikit) (a collection of skills/plugins/agents for coding agents, especially pi), [mumble](/project/mumble) (a Cloudflare Worker message board that can be embedded in pages), and [cutui](/project/cutui) (a simple TUI video editor). See the [Project](/project/) page (e.g. Calman, Markerss, Lichtung).
 
 ## Links
 

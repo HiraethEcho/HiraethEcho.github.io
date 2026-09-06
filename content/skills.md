@@ -6,15 +6,14 @@ draft: true
 ## Mathematics
 
 - Birational geometry
-- Minimal model program
-- Sarkisov program
-- Algebraically integrable foliations
+    - Minimal model program - Sarkisov program
+    - Algebraically integrable foliations
+- linear algebra/ abstract algebra
+- (Algebraic) Topology
 
 ## Programming
 
 - C
-- Rust
-- TUI application development
 - Git
 - Daily driver: Arch Linux + Neovim
 

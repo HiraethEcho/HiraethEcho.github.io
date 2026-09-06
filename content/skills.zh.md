@@ -13,8 +13,6 @@ draft: true
 ## 编程
 
 - C
-- Rust
-- TUI 应用开发
 - Git
 - 日常使用 Arch Linux + Neovim
 

@@ -8,11 +8,11 @@ description: 王延泽 — 中国科学院大学数学专业博士研究生，�
 我目前就读于中国科学院数学与系统科学研究院（AMSS，隶属中国科学院大学，UCAS），师从陈亦飞教授，攻读博士学位，预计于 2027 年 6 月毕业。
 我的研究集中于代数可积叶层化的 Sarkisov 纲领，以及极小模型纲领中的若干相关问题。完整的论文列表见[论文](/zh/paper/)页面。
 
-近期，我也在积极探索 **AI4Math** 这一方向，包括人工验证 AI 生成的数学论文、搭建数学研究 harness、探索形式化证明语言 Lean 4 等。
+近期，我也在积极探索 **AI4Math** 这一方向，包括人工验证 AI 生成的数学论文、搭建数学研究 harness（例如 fork 并改进 [Rethlas](/zh/project/rethlas)）、探索形式化证明语言 Lean 4 等；同时也是微软一个 AI4Math 项目（目前私有）的贡献者。
 此外，我对大模型训练、（数学）数据标注等 AI 基础设施（AI infra）方向，以及面向数学研究的后训练（post-training）也抱有浓厚兴趣。
 
 无论是学术界还是工业界的研究岗位，我都持开放态度，欢迎垂询与合作。
-其他信息可见我的[个人简历](/cv-zh.pdf)。
+简版[简历](/resume-zh.pdf)与详细[履历](/cv-zh.pdf)可供下载。
 
 ## 教育经历
 
@@ -40,7 +40,10 @@ description: 王延泽 — 中国科学院大学数学专业博士研究生，�
 
 ## 编程与开源
 
-除学术研究外，我亦热衷于编程与 Linux 生态的探索。我维护了自己的 dwm（Linux 下基于 X11 协议的动态平铺窗口管理器）及若干其他 [suckless 组件](/zh/project/suckless) 的个性化分支，独立开发了一个 Hugo 主题（我的两个个人网站均基于此主题构建），并在 AI 辅助下开发了若干命令行与 TUI 工具。具体项目见[项目](/zh/project/)页面（如 Calman、Markerss、Lichtung 等）。
+除学术研究外，我亦热衷于编程与 Linux 生态的探索。我维护了自己的 dwm（Linux 下基于 X11 协议的动态平铺窗口管理器）及若干其他 [suckless 组件](/zh/project/suckless) 的个性化分支，独立开发了一个 Hugo 主题（我的两个个人网站均基于此主题构建），并在 AI 辅助下开发了若干命令行与 TUI 工具。
+
+此外，我也在构建 AI4Math 工具：[Rethlas](/zh/project/rethlas)（双智能体数学推理 harness 的 fork）、[AiKit](/zh/project/aikit)（面向编码智能体、尤其是 pi 的技能/插件/代理集合）、[mumble](/zh/project/mumble)（基于 Cloudflare Worker 的留言板，可嵌入页面）以及 [cutui](/zh/project/cutui)（简易 TUI 视频编辑器）。
+具体项目见[项目](/zh/project/)页面（如 Calman、Markerss、Lichtung 等）。
 
 ## 联系方式
 
