@@ -28,14 +28,14 @@
     #link("mailto:wangyanze@amss.ac.cn")[wangyanze\@amss.ac.cn]\
     155 3825 5707\
     #link("https://keinmal.top")[keinmal.top]\
-    #link("https://github.com/hiraethecho")[github.com/hiraethecho]\
-    #link("https://orcid.org/0009-0003-3661-1890")[ORCID: 0009-0003-3661-1890]
+    #github-icon() #link("https://github.com/hiraethecho")[github.com/hiraethecho]\
+    #orcid-icon() #link("https://orcid.org/0009-0003-3661-1890")[ORCID: 0009-0003-3661-1890]
   ], [
     #link("mailto:wangyanze@amss.ac.cn")[wangyanze\@amss.ac.cn]\
     +86 155 3825 5707\
     #link("https://keinmal.top")[keinmal.top]\
-    #link("https://github.com/hiraethecho")[github.com/hiraethecho]\
-    #link("https://orcid.org/0009-0003-3661-1890")[ORCID: 0009-0003-3661-1890]
+    #github-icon() #link("https://github.com/hiraethecho")[github.com/hiraethecho]\
+    #orcid-icon() #link("https://orcid.org/0009-0003-3661-1890")[ORCID: 0009-0003-3661-1890]
   ]),
 
   // ---- section headings ----
@@ -50,44 +50,64 @@
   h-ai4math: zh(lang, "AI4Math 工程", "AI4Math Engineering"),
 
   // ---- interests (detailed) ----
-  interests: zh(lang, [
-    双有理几何与极小模型纲领：Sarkisov 纲领、代数可积叶层化、模空间。近期投入 AI 辅助数学（AI4Math）：
-    AI 生成数学结果的人工验证、Lean 4 形式化、数学专用模型的训练思路、以及研究 harness 的搭建。
-    正在学习 PyTorch / libtorch、LLM 预训练与后训练（post-training）、数学数据处理等相关知识。
-  ], [
-    Birational geometry and the minimal model program: Sarkisov program, algebraically integrable
-    foliations, and moduli spaces. Currently also working on AI-assisted mathematics (AI4Math):
-    human verification of AI-generated mathematical results, Lean 4 formalization, training
-    approaches for math-specialized models, and research-harness building. Learning PyTorch /
-    libtorch, LLM pre-training and post-training, and mathematical data processing.
-  ]),
+  interests: zh(lang, (
+    [双有理几何与极小模型纲领：Sarkisov 纲领、代数可积叶层化、模空间。],
+    [AI4Math：AI 生成数学结果的人工验证、Lean 4 形式化、数学专用模型的训练思路、研究 harness 搭建。],
+    [正在学习：PyTorch / libtorch、LLM 预训练与后训练（post-training）、数学数据处理。],
+  ), (
+    [Birational geometry and the minimal model program: Sarkisov program, algebraically integrable foliations, and moduli spaces.],
+    [AI4Math: human verification of AI-generated mathematical results, Lean 4 formalization, training approaches for math-specialized models, and research-harness building.],
+    [Currently learning: PyTorch / libtorch, LLM pre-training and post-training, and mathematical data processing.],
+  )),
 
   // ---- education ----
   edu: zh(lang, (
     (
       at: [2024 – 至今],
-      body: [*数学博士（在读）*，中国科学院数学与系统科学研究院（中国科学院大学），预计 2027 年 6 月毕业。\_指导教师：\_陈亦飞 教授。研究方向：双有理几何——Sarkisov 纲领、代数可积叶层化。],
+      body: [
+        *数学博士（在读）*，中国科学院数学与系统科学研究院（中国科学院大学），预计 2027 年 6 月毕业。\
+        _指导教师：_ 陈亦飞 教授。\
+        研究方向：双有理几何——Sarkisov 纲领、代数可积叶层化。
+      ],
     ),
     (
       at: [2022 – 2024],
-      body: [*理学硕士*，中国科学院数学与系统科学研究院（中国科学院大学），2024 年 5 月。\_学位论文：\_《叶层化对的 Sarkisov 纲领》。\_指导教师：\_陈亦飞 教授。],
+      body: [
+        *理学硕士*，中国科学院数学与系统科学研究院（中国科学院大学），2024 年 5 月。\
+        _学位论文：_《叶层化对的 Sarkisov 纲领》。\
+        _指导教师：_ 陈亦飞 教授。
+      ],
     ),
     (
       at: [2016 – 2020],
-      body: [*理学学士*，北京航空航天大学，2020 年 6 月。\_学位论文：\_《曲线模空间》。],
+      body: [
+        *理学学士*，北京航空航天大学，2020 年 6 月。\
+        _学位论文：_《曲线模空间》。
+      ],
     ),
   ), (
     (
       at: [2024 – present],
-      body: [*Ph.D. in Mathematics (in progress)*, AMSS, University of Chinese Academy of Sciences — expected June 2027. _Advisor:_ Prof. Yifei Chen. Research: birational geometry — Sarkisov program, algebraically integrable foliations.],
+      body: [
+        *Ph.D. in Mathematics (in progress)*, AMSS, University of Chinese Academy of Sciences — expected June 2027.\
+        _Advisor:_ Prof. Yifei Chen.\
+        _Research:_ birational geometry — Sarkisov program, algebraically integrable foliations.
+      ],
     ),
     (
       at: [2022 – 2024],
-      body: [*M.S. in Mathematics*, AMSS, University of Chinese Academy of Sciences — May 2024. _Thesis:_ "Sarkisov program for foliated pairs". _Advisor:_ Prof. Yifei Chen.],
+      body: [
+        *M.S. in Mathematics*, AMSS, University of Chinese Academy of Sciences — May 2024.\
+        _Thesis:_ "Sarkisov program for foliated pairs".\
+        _Advisor:_ Prof. Yifei Chen.
+      ],
     ),
     (
       at: [2016 – 2020],
-      body: [*B.S. in Mathematics*, Beihang University — June 2020. _Thesis:_ "Moduli space of curves".],
+      body: [
+        *B.S. in Mathematics*, Beihang University — June 2020.\
+        _Thesis:_ "Moduli space of curves".
+      ],
     ),
   )),
 
@@ -106,7 +126,7 @@
   talks: zh(lang, (
     (
       at: [2026],
-      body: [报告人，《代数可积与三维叶层化的 Sarkisov 纲领》，西交利物浦大学。],
+      body: [报告人，《代数可积与三维叶状结构的 Sarkisov 纲领》，西交利物浦大学。],
     ),
   ), (
     (
@@ -118,9 +138,8 @@
   // ---- publications (with abstracts) ----
   pubs: (
     (
-      cite: [Yifei Chen, Jihao Liu, and Yanze Wang. \
-        *Sarkisov Program for Algebraically Integrable Adjoint Foliated Structures*. \
-        _International Mathematics Research Notices, 2026(6): rnag045._ 2026],
+      cite: [*Sarkisov Program for Algebraically Integrable Adjoint Foliated Structures*. \
+        Yifei Chen, Jihao Liu, and Yanze Wang. _International Mathematics Research Notices, 2026(6): rnag045._ 2026],
       abstract: zh(lang, [
         借助伴随叶层化结构的极小模型纲领理论，我们建立 klt 簇上代数可积叶层化的 Sarkisov 纲领：此类结构的任意两个 Mori 纤维空间由一列 Sarkisov 链环连接。结合 R. Mascharak 的结果，我们建立具有温和奇点的至多三维叶层化的 Sarkisov 纲领；其对数版本与伴随叶层化版本亦被建立。
       ], [
@@ -128,9 +147,8 @@
       ]),
     ),
     (
-      cite: [Yifei Chen, Jihao Liu, and Yanze Wang. \
-        *Flop between algebraically integrable foliations on potentially KLT varieties*. \
-        _International Journal of Mathematics, 36(11):2550035._ 2025],
+      cite: [*Flop between algebraically integrable foliations on potentially KLT varieties*. \
+        Yifei Chen, Jihao Liu, and Yanze Wang. _International Journal of Mathematics, 36(11):2550035._ 2025],
       abstract: zh(lang, [
         我们证明：对潜 klt 簇上 lc 代数可积叶层化三元组的任意两个极小模型，存在由一列 flop 连接的小双有理模型。特别地，ℚ-阶乘 klt 簇上 lc 代数可积叶层化三元组的任意两个极小模型由一列 flop 连接。在假设广义叶层化四元组极小模型纲领成立的前提下，我们还讨论三维簇上可能非代数可积叶层化的极小模型之间的联系。
       ], [
@@ -138,9 +156,8 @@
       ]),
     ),
     (
-      cite: [Yifei Chen and Yanze Wang. \
-        *A Note on the Sarkisov Program*. \
-        _Higher Dimensional Algebraic Geometry: A Volume in Honor of V. V. Shokurov, London Mathematical Society Lecture Note Series, pages 231–263, Cambridge University Press._ 2025],
+      cite: [*A Note on the Sarkisov Program*. \
+        Yifei Chen and Yanze Wang. _Higher Dimensional Algebraic Geometry: A Volume in Honor of V. V. Shokurov, London Mathematical Society Lecture Note Series, pages 231–263, Cambridge University Press._ 2025],
       abstract: zh(lang, [
         本文介绍 Sarkisov 纲领的三种方法：该纲领将对数 Mori 纤维空间之间的双有理映射分解为初等 Sarkisov 链环。
       ], [
@@ -152,9 +169,8 @@
   // ---- preprints (with abstracts) ----
   pres: (
     (
-      cite: [Jihao Liu and Yanze Wang. \
-        *A klt generalized pair with infinitely generated canonical ring* (AI-generated, human-verified). \
-        _arXiv:2608.03258._ 2026],
+      cite: [*A klt generalized pair with infinitely generated canonical ring* (AI-generated, human-verified). \
+        Jihao Liu and Yanze Wang. _arXiv:2608.03258._ 2026],
       abstract: zh(lang, [
         我们构造一个射影 klt 广义对 (X, B, M)，其广义对数典范环 R(X, K_X+B+M) 无限生成。这给出首个 −K_X nef 且反典范环 R(X, −K_X) 非有限生成的 klt 簇 X 的例子。
       ], [
@@ -162,9 +178,8 @@
       ]),
     ),
     (
-      cite: [Jihao Liu and Yanze Wang. \
-        *Twelve common flex lines in a general pencil of cubics* (AI-generated, human-verified). \
-        _arXiv:2607.26396._ 2026],
+      cite: [*Twelve common flex lines in a general pencil of cubics* (AI-generated, human-verified). \
+        Jihao Liu and Yanze Wang. _arXiv:2607.26396._ 2026],
       abstract: zh(lang, [
         我们证明 ℂ 上一般平面三次曲线束恰有 12 条公共拐线，回答 Ciliberto、Miranda 与 Roe 的一个问题。
       ], [
@@ -172,9 +187,8 @@
       ]),
     ),
     (
-      cite: [Jihao Liu and Yanze Wang. \
-        *A counterexample to the odd-dimensional rank bound for abelian p-group actions* (AI-generated, human-verified). \
-        _arXiv:2607.04891._ 2026],
+      cite: [*A counterexample to the odd-dimensional rank bound for abelian p-group actions* (AI-generated, human-verified). \
+        Jihao Liu and Yanze Wang. _arXiv:2607.04891._ 2026],
       abstract: zh(lang, [
         我们给出 Moraga 所猜测的、光滑 Calabi-Yau 簇上忠实阿贝尔 p-群作用之秩界的奇维推广的反例。
       ], [
@@ -206,9 +220,9 @@
 
   // ---- software: languages & tools ----
   skills-sw: zh(lang, [
-    *语言与工具：* C++（libtorch）、Rust、C、Shell；Arch Linux + Neovim 日常开发环境；Git；LaTeX；TUI 开发（ratatui）。
+    *语言与工具：* C++（libtorch）、Rust、C、Shell；Arch Linux（Niri/dwm）+ Neovim 日常开发环境；Git；LaTeX；TUI 开发（ratatui）。
   ], [
-    *Languages & tools:* C++ (libtorch), Rust, C, Shell; daily development on Arch Linux + Neovim; Git; LaTeX; TUI development (ratatui).
+    *Languages & tools:* C++ (libtorch), Rust, C, Shell; daily development on Arch Linux (Niri/dwm) + Neovim; Git; LaTeX; TUI development (ratatui).
   ]),
 
   // ---- software: projects (detailed) ----
@@ -281,26 +295,26 @@
   )),
 
   // ---- AI4Math engineering ----
-  ai4math: zh(lang, [
-    *research harness：* 搭建并维护 AI 辅助数学研究的工作流（Rethlas 的 fork 与改进）；
-    *Lean 4：* 学习正式化与证明仓库维护；*mathran*（微软 AI4Math 项目，目前私有）：贡献者；
-    持续学习模型预训练、后训练（post-training）与数学数据处理，探索 PyTorch / libtorch 在数学场景的应用。
-  ], [
-    *Research harness:* built and maintained an AI-assisted mathematics workflow (fork and extension of Rethlas);
-    *Lean 4:* learning formalization and proof-repo maintenance; *mathran* (a Microsoft AI4Math project, currently private): contributor;
-    continuously learning LLM pre-training, post-training, and mathematical data processing; exploring PyTorch / libtorch applications in mathematics.
-  ]),
+  ai4math: zh(lang, (
+    [*研究 harness：* 搭建并维护 AI 辅助数学研究的工作流（Rethlas 的 fork 与改进）。],
+    [*Lean 4：* 学习形式化与证明仓库维护。],
+    [*学习与探索：* LLM 预训练、后训练与数学数据处理；PyTorch / libtorch 在数学场景的应用。],
+  ), (
+    [*Research harness:* built and maintained an AI-assisted mathematics workflow (fork and extension of Rethlas).],
+    [*Lean 4:* learning formalization and proof-repo maintenance.],
+    [*Learning & exploring:* LLM pre-training, post-training, and mathematical data processing; PyTorch / libtorch applications in mathematics.],
+  )),
 )
 
 // -------------------------------------------------------------
 // rendering helpers (cv-specific)
 // -------------------------------------------------------------
-#let math-item(cite, abstract) = {
+#let math-item(n, cite, abstract) = {
   block(
     above: 0.4em,
     below: 0.4em,
     [
-      #cite
+      #text(weight: "bold")[(#n)] #cite
       #if abstract != [] [
         #v(0.18em)
         #text(size: 9.3pt, fill: rgb("#444444"))[_Abstract:_ #abstract]
@@ -326,35 +340,49 @@
   [
 = #headings.interests
 
-#t.interests
+#tight-list(t.interests)
+
+#section-divider()
 
 = #headings.edu
 
 #entry-list(t.edu)
 
+#section-divider()
+
 = #headings.awards
 
 #tight-list(t.awards)
 
+#section-divider()
+
 = #headings.pubs
 
 #for (i, p) in t.pubs.enumerate() [
-  #text(weight: "bold")[(#(i + 1))] #math-item(p.cite, p.abstract)
+  #math-item(i + 1, p.cite, p.abstract)
 ]
+
+#section-divider()
 
 = #headings.pre
 
 #for (i, p) in t.pres.enumerate() [
-  #text(weight: "bold")[(#(i + 1))] #math-item(p.cite, p.abstract)
+  #math-item(i + 1, p.cite, p.abstract)
 ]
+
+#section-divider()
 
 = #headings.theses
 
 #tight-list(t.theses)
 
+#section-divider()
+
 = #headings.talks
 
 #entry-list(t.talks)
+
+#section-divider()
 
 = #headings.software
 
@@ -362,8 +390,10 @@
 
 #entry-list(t.projects)
 
+#section-divider()
+
 = #headings.ai4math
 
-#t.ai4math
+#tight-list(t.ai4math)
   ]
 }

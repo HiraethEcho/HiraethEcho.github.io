@@ -23,14 +23,14 @@
     #link("mailto:wangyanze@amss.ac.cn")[wangyanze\@amss.ac.cn]\
     155 3825 5707\
     #link("https://keinmal.top")[keinmal.top]\
-    #link("https://github.com/hiraethecho")[github.com/hiraethecho]\
-    #link("https://orcid.org/0009-0003-3661-1890")[ORCID: 0009-0003-3661-1890]
+    #github-icon() #link("https://github.com/hiraethecho")[github.com/hiraethecho]\
+    #orcid-icon() #link("https://orcid.org/0009-0003-3661-1890")[ORCID: 0009-0003-3661-1890]
   ], [
     #link("mailto:wangyanze@amss.ac.cn")[wangyanze\@amss.ac.cn]\
     +86 155 3825 5707\
     #link("https://keinmal.top")[keinmal.top]\
-    #link("https://github.com/hiraethecho")[github.com/hiraethecho]\
-    #link("https://orcid.org/0009-0003-3661-1890")[ORCID: 0009-0003-3661-1890]
+    #github-icon() #link("https://github.com/hiraethecho")[github.com/hiraethecho]\
+    #orcid-icon() #link("https://orcid.org/0009-0003-3661-1890")[ORCID: 0009-0003-3661-1890]
   ]),
 
   // ---- section headings ----
@@ -39,6 +39,12 @@
   h-math: zh(lang, "数学", "Mathematics"),
   h-projects: zh(lang, "项目", "Projects"),
   h-skills: zh(lang, "技能", "Skills"),
+  // sub-headings
+  h-edu: zh(lang, "教育", "Education"),
+  h-honors: zh(lang, "荣誉", "Honors"),
+  h-talks: zh(lang, "报告", "Talks"),
+  h-pubs-sub: zh(lang, "发表论文", "Publications"),
+  h-ai4math: zh(lang, "AI4Math 实践", "AI4Math Practice"),
 
   // ---- interests ----
   interests: zh(lang, [
@@ -78,38 +84,33 @@
     ),
   )),
 
-  // ---- honors + talks (one bullet each, compact) ----
+  // ---- honors + talks ----
   honors: zh(lang, [
-    *荣誉：* MCM/ICM 一等奖（两次）；华罗庚奖学金，北航（两次）；中国科学院三好学生。
+    MCM/ICM 一等奖（两次）；华罗庚奖学金，北航（两次）；中国科学院三好学生。
   ], [
-    *Honors:* MCM/ICM Meritorious Winner (twice); Hua Luogeng Scholarship, Beihang (twice); CAS Merit Student.
+    MCM/ICM Meritorious Winner (twice); Hua Luogeng Scholarship, Beihang (twice); CAS Merit Student.
   ]),
   talk: zh(lang, [
-    *报告：* 《代数可积与三维叶层化的 Sarkisov 纲领》，西交利物浦大学，2026。
+    报告人，《代数可积与三维叶状结构的 Sarkisov 纲领》，西交利物浦大学，2026。
   ], [
-    *Talk:* Sarkisov Program for Algebraically Integrable and Threefold Foliations, Xi'an Jiaotong-Liverpool University, 2026.
+    Speaker, *Sarkisov Program for Algebraically Integrable and Threefold Foliations*, Xi'an Jiaotong-Liverpool University, 2026.
   ]),
 
-  // ---- publications (standard reference format) ----
+  // ---- publications (title on the numbered line; authors + journal below) ----
   pubs: (
-    [Yifei Chen, Jihao Liu, and Yanze Wang. \
-      *Sarkisov Program for Algebraically Integrable Adjoint Foliated Structures*. \
-      _International Mathematics Research Notices, 2026(6): rnag045._ 2026],
-    [Yifei Chen, Jihao Liu, and Yanze Wang. \
-      *Flop between algebraically integrable foliations on potentially KLT varieties*. \
-      _International Journal of Mathematics, 36(11):2550035._ 2025],
-    [Yifei Chen and Yanze Wang. \
-      *A Note on the Sarkisov Program*. \
-      _Higher Dimensional Algebraic Geometry: A Volume in Honor of V. V. Shokurov, LMS Lecture Note Series, pp. 231–263, Cambridge University Press._ 2025],
+    [*Sarkisov Program for Algebraically Integrable Adjoint Foliated Structures*. \
+      Yifei Chen, Jihao Liu, and Yanze Wang. _International Mathematics Research Notices, 2026(6): rnag045._ 2026],
+    [*Flop between algebraically integrable foliations on potentially KLT varieties*. \
+      Yifei Chen, Jihao Liu, and Yanze Wang. _International Journal of Mathematics, 36(11):2550035._ 2025],
+    [*A Note on the Sarkisov Program*. \
+      Yifei Chen and Yanze Wang. _Higher Dimensional Algebraic Geometry: A Volume in Honor of V. V. Shokurov, LMS Lecture Note Series, pp. 231–263, Cambridge University Press._ 2025],
   ),
 
-  // ---- AI4Math software contributions (math section) ----
+  // ---- AI4Math practice ----
   math-sw: zh(lang, (
     [*Rethlas*（#link("https://github.com/hiraethecho/Rethlas")[github.com/hiraethecho/Rethlas]）：fork 并改进了基于两个 Codex 智能体的自然语言数学推理系统（生成 + 验证）。],
-    [*mathran*（微软 AI4Math 项目）：贡献者（项目目前为私有）。],
   ), (
     [*Rethlas* (#link("https://github.com/hiraethecho/Rethlas")[github.com/hiraethecho/Rethlas]): forked & extended a two-agent natural-language math-reasoning harness (generation + verification).],
-    [*mathran* (Microsoft AI4Math project): contributor (currently private).],
   )),
 
   // ---- projects ----
@@ -160,11 +161,11 @@
   // ---- skills ----
   skills: zh(lang, (
     [*数学：* 双有理几何——极小模型纲领、Sarkisov 纲领、叶层化。],
-    [*工程：* Linux（Arch，日常使用）、Git、C、LaTeX。],
+    [*工程：* Arch Linux（Niri/dwm）+ Neovim、Git、C、LaTeX。],
     [*语言：* 中文（母语）、英语（专业工作水平）。],
   ), (
     [*Mathematics:* birational geometry — MMP, Sarkisov program, foliations.],
-    [*Engineering:* Linux (Arch, daily), Git, C, LaTeX.],
+    [*Engineering:* Arch Linux (Niri/dwm) + Neovim, Git, C, LaTeX.],
     [*Languages:* Chinese (native), English (professional).],
   )),
 )
@@ -177,24 +178,44 @@
 
 #t.interests
 
+#section-divider(compact: true)
+
 = #t.h-experience
 
-#entry-list(t.edu)
+== #t.h-edu
 
-#tight-list((t.honors, t.talk))
+#entry-list(t.edu, compact: true)
+
+== #t.h-honors
+
+#t.honors
+
+== #t.h-talks
+
+#t.talk
+
+#section-divider(compact: true)
 
 = #t.h-math
 
-#pubs(t.pubs)
+== #t.h-pubs-sub
 
-#tight-list(t.math-sw)
+#pubs(t.pubs, compact: true)
+
+== #t.h-ai4math
+
+#tight-list(t.math-sw, compact: true)
+
+#section-divider(compact: true)
 
 = #t.h-projects
 
-#entry-list(t.projects)
+#entry-list(t.projects, compact: true)
+
+#section-divider(compact: true)
 
 = #t.h-skills
 
-#tight-list(t.skills)
+#tight-list(t.skills, compact: true)
   ]
 }
