@@ -1,5 +1,5 @@
 ---
-title: Sarkisov 纲领札记
+title: Sarkisov 纲领笔记
 date: 2024-12-06
 weight: 3
 description: 关于 Sarkisov 纲领的一篇综述。共三种途径。

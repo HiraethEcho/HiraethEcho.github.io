@@ -86,7 +86,7 @@
 
   // ---- honors + talks ----
   honors: zh(lang, [
-    MCM/ICM 一等奖（两次）；华罗庚奖学金，北航（两次）；中国科学院三好学生。
+    美国大学生建模竞赛 M等奖（两次）；华罗庚奖学金，北航（两次）；中国科学院三好学生。
   ], [
     MCM/ICM Meritorious Winner (twice); Hua Luogeng Scholarship, Beihang (twice); CAS Merit Student.
   ]),
@@ -117,7 +117,7 @@
   projects: zh(lang, (
     (
       at: [#link("https://github.com/hiraethecho/suckless")[suckless]],
-      body: [X11 桌面组件（dwm/dwmblocks）fork，手写 C 补丁维护（未经 AI）。],
+      body: [X11 桌面组件（dwm/dwmblocks）fork，通过 C 语言补丁增强（未经 AI）。],
     ),
     (
       at: [#link("https://github.com/hiraethecho/lichtung")[lichtung]],
@@ -138,7 +138,7 @@
   ), (
     (
       at: [#link("https://github.com/hiraethecho/suckless")[suckless]],
-      body: [X11 desktop components (dwm/dwmblocks) fork — hand-written C patches, no AI.],
+      body: [X11 desktop components (dwm/dwmblocks) fork — enhanced by C patches, no AI.],
     ),
     (
       at: [#link("https://github.com/hiraethecho/lichtung")[lichtung]],

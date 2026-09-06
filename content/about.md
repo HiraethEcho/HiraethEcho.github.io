@@ -9,7 +9,7 @@ I am a Ph.D. candidate at the Academy of Mathematics and Systems Science (AMSS),
 
 My research centers on the Sarkisov program for algebraically integrable foliations, together with related questions in the minimal model program. A complete list of my work is on the [Papers](/paper/) page.
 
-Recently, I have been exploring **AI4Math**: human verification of AI-generated mathematical papers, building research harnesses (e.g. forking and extending [Rethlas](/project/rethlas)), and formalization in Lean 4. I am also a contributor to a Microsoft AI4Math project (currently private). Beyond that, I am interested in AI infrastructure — LLM training and (mathematical) data annotation — including post-training tailored to mathematical research.
+Recently, I have been exploring **AI4Math**: human verification of AI-generated mathematical papers, building research harnesses (e.g. forking and extending [Rethlas](/project/rethlas)), and formalization in Lean 4. Beyond that, I am interested in AI infrastructure — LLM training and (mathematical) data annotation — including post-training tailored to mathematical research.
 
 I am open to research positions in both academia and industry. A short [resume](/resume.pdf) and a detailed [CV](/cv.pdf) are also available.
 

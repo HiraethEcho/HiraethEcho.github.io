@@ -25,7 +25,7 @@
 {% endcomponent macros.toc %}
 
 {% component macros.homepage_section(page, lang: string) %}
-<div class="flex sm:flex-row flex-col py-4">
+<div class="flex sm:flex-row flex-col py-3">
   <div class="sm:basis-2/5 grow pb-4 sm:pb-0">
     <div class="prose">
       <h2>{{ page.title }}</h2>
@@ -51,7 +51,7 @@
 {% component macros.section_index_summary(config, section_path: string, lang: string, show_wordcount: bool = false, show_element: integer = 2, show_description: bool = true) %}
   {% set section = get_section(path=section_path) -%}
   {% set title = section.extra.index_title | default(value=section.title) -%}
-  <div class="flex sm:flex-row flex-col py-4">
+  <div class="flex sm:flex-row flex-col py-3">
     <div class="sm:basis-2/5 grow pb-4 sm:pb-0">
       <div class="prose">
       <h2> {{ title }}</h2>

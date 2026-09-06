@@ -16,13 +16,11 @@
   primary: zh(lang, [
     数学博士生（双有理几何方向）\
     预计 2027 年 6 月毕业\
-    中国科学院数学与系统科学研究院（中国科学院大学）\
-    北京市海淀区中关村东路 55 号，100190
+    中国科学院数学与系统科学研究院（中国科学院大学）
   ], [
     Ph.D. Candidate in Mathematics (Birational Geometry)\
     Expected Graduation: June 2027\
-    AMSS, University of Chinese Academy of Sciences\
-    No. 55 Zhongguancun East Road, Beijing 100190, China
+    AMSS, University of Chinese Academy of Sciences
   ]),
   secondary: zh(lang, [
     #link("mailto:wangyanze@amss.ac.cn")[wangyanze\@amss.ac.cn]\
