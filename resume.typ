@@ -1,8 +1,10 @@
 // EN one-page resume — outputs static/resume.pdf
-#import "format-lib.typ": *
-#import "resume-content.typ": *
+#import "cv-lib.typ": *
+#import "cv-data.typ": *
 
-#let t = T("en")
+#let t = T_resume("en")
+
+#set document(author: t.name, title: t.name)
 
 #show: init(
   "en",

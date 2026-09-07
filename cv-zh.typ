@@ -1,8 +1,10 @@
 // ZH detailed CV — outputs static/cv-zh.pdf
-#import "format-lib.typ": *
+#import "cv-lib.typ": *
 #import "cv-data.typ": *
 
-#let t = T("zh")
+#let t = T_cv("zh")
+
+#set document(author: t.name, title: t.name)
 
 #show: init(
   "zh",

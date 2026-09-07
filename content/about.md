@@ -21,6 +21,10 @@ I am open to research positions in both academia and industry. A short [resume](
 - **M.S. in Mathematics**, AMSS, UCAS — 2024. Thesis: _Sarkisov program for foliated pairs_. Advisor: Prof. Yifei Chen
 - **B.S. in Mathematics**, Beihang University — 2020. Thesis: _Moduli space of curves_
 
+### Teaching
+
+- **Teaching Assistant**, Beihang University — undergraduate years: Linear Algebra, Algebraic Geometry
+
 ### Awards
 
 - **MCM/ICM** — Meritorious Winner (twice)

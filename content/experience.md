@@ -8,6 +8,10 @@ title: Experience
 - **M.S. in Mathematics** — UCAS, 2024
 - **B.S. in Mathematics** — Beihang University (BUAA), 2020
 
+## Teaching
+
+- **Teaching Assistant**, Beihang University (undergraduate) — Linear Algebra, Algebraic Geometry
+
 ## Awards
 
 - **MCM/ICM** — Meritorious Winner (twice)

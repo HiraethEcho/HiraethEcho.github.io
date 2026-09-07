@@ -1,8 +1,10 @@
 // ZH one-page resume — outputs static/resume-zh.pdf
-#import "format-lib.typ": *
-#import "resume-content.typ": *
+#import "cv-lib.typ": *
+#import "cv-data.typ": *
 
-#let t = T("zh")
+#let t = T_resume("zh")
+
+#set document(author: t.name, title: t.name)
 
 #show: init(
   "zh",

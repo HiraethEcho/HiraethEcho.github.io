@@ -1,5 +1,5 @@
 // =============================================================
-// format-lib.typ — minimal shared format for resume.pdf & cv.pdf
+// cv-lib.typ — shared format for resume.pdf & cv.pdf
 //
 // Layout (the part that is identical across documents):
 //   - A4, two-column header (name/affiliation left, links right)
@@ -8,26 +8,40 @@
 //   - sub-headings (level 2) for grouped content
 //   - small helpers: entry-list, pubs, tight-list
 //
-// Content lives in resume-content.typ / cv-data.typ; entry files
-// just `import "format-lib.typ": *` and `#show: init(...)`.
+// Typography follows the acadennial-cv template
+// (~/.local/lib/typst/cache/preview/acadennial-cv/0.1.0):
+//   - body: Alegreya (proportional), headings: Liberation Sans
+//     (Arial metric-compatible), contact/web info: CodeNewRoman
+//     Nerd Font (monospace, like acadennial's Courier New)
+//   - justified paragraphs, first-line-indent 0pt, tight leading
+//   - links underlined with a light stroke
+//   - PDF metadata (author/title) set from the header name
+//
+// Content lives in cv-data.typ; entry files just
+// `import "cv-lib.typ": *` and `#show: init(...)`.
 // =============================================================
 
 // ---- fonts ----
-// compact (resume) keeps the proportional Alegreya look;
-// CV uses the monospace CodeNewRoman Nerd Font for English text.
-#let font-set(lang, compact) = if compact {
-  if lang == "zh" {
-    (body: ("Alegreya", "LXGW Neo XiHei"), head: ("Liberation Sans", "LXGW Neo XiHei"))
+// Body uses Alegreya everywhere (the acadennial look); headings use
+// Liberation Sans; the monospace CodeNewRoman Nerd Font is reserved
+// for the contact block, like acadennial uses Courier New.
+#let font-set(lang) = (
+  body: if lang == "zh" {
+    ("Alegreya", "LXGW Neo XiHei")
   } else {
-    (body: ("Alegreya",), head: ("Liberation Sans",))
-  }
-} else {
-  if lang == "zh" {
-    (body: ("CodeNewRoman Nerd Font", "Alegreya", "LXGW Neo XiHei"), head: ("CodeNewRoman Nerd Font", "Liberation Sans", "LXGW Neo XiHei"))
+    ("Alegreya",)
+  },
+  head: if lang == "zh" {
+    ("Liberation Sans", "LXGW Neo XiHei")
   } else {
-    (body: ("CodeNewRoman Nerd Font",), head: ("CodeNewRoman Nerd Font",))
-  }
-}
+    ("Liberation Sans",)
+  },
+  mono: if lang == "zh" {
+    ("CodeNewRoman Nerd Font", "LXGW Neo XiHei")
+  } else {
+    ("CodeNewRoman Nerd Font",)
+  },
+)
 
 // ---- inline SVG icons (borrowed style from the previous acadennial-cv template) ----
 #let github-svg = ```
@@ -36,12 +50,13 @@
 #let orcid-svg = ```
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zM7.375 17.156H5.281V6.844h2.094v10.312zm4.312 0H9.594V6.844h2.094c2.904 0 4.625 1.749 4.625 4.531 0 2.781-1.721 4.531-4.626 4.531zm0-2.55c1.545 0 2.531-.768 2.531-2.062 0-1.276-.966-2.063-2.531-2.063h-2.062v4.125h2.062z"/></svg>```.text
 
-#let github-icon(fill: "#444444", height: 0.9em, baseline: 20%) = {
-  box(height: height, baseline: baseline, image(bytes(github-svg.replace("currentColor", fill))))
+// Icon defaults follow acadennial-cv: dark gray, 0.95em, baseline 20%.
+#let github-icon(fill: rgb("#333333"), height: 0.95em, baseline: 20%) = {
+  box(height: height, baseline: baseline, image(bytes(github-svg.replace("currentColor", fill.to-hex()))))
 }
 
-#let orcid-icon(fill: "#444444", height: 0.9em, baseline: 20%) = {
-  box(height: height, baseline: baseline, image(bytes(orcid-svg.replace("currentColor", fill))))
+#let orcid-icon(fill: rgb("#333333"), height: 0.95em, baseline: 20%) = {
+  box(height: height, baseline: baseline, image(bytes(orcid-svg.replace("currentColor", fill.to-hex()))))
 }
 
 // ---- document init: page setup + header + heading style ----
@@ -53,21 +68,31 @@
   secondary: [],
   compact: false,
 ) = {
-  let f = font-set(lang, compact)
+  let f = font-set(lang)
   let text-lang = if lang == "zh" { "zh" } else { "en" }
 
   // compact = larger, airier spacing for the 1-page resume (fills the page)
-  let m = if compact { (x: 1.6cm, y: 1.2cm) } else { (x: 1.7cm, y: 1.6cm) }
-  let base-size = if compact { 10pt } else { 10pt }
-  let base-leading = if compact { 0.97em } else { 0.9em }
-  let head-size = if compact { 16.5pt } else { 14pt }
+  let m = if compact { (x: 1.6cm, y: 1.15cm) } else { (x: 1.7cm, y: 1.45cm) }
+  let base-size = 10pt
+  // tight leading, like acadennial-cv; a bit looser for CJK to stay readable
+  let base-leading = if lang == "zh" {
+    if compact { 0.72em } else { 0.65em }
+  } else {
+    if compact { 0.6em } else { 0.55em }
+  }
+  let par-spacing = if compact { 0.5em } else { 0.65em }
+  let head-size = if compact { 16pt } else { 14pt }
   let subhead-size = if compact { 10.5pt } else { 10pt }
   let name-size = if compact { 23pt } else { 22pt }
-  let sec-above = if compact { 1.2em } else { 0.8em }
-  let sec-below = if compact { 0.5em } else { 0.35em }
+  let sec-above = if compact { 1.1em } else { 0.8em }
+  let sec-below = if compact { 0.45em } else { 0.3em }
   let sub-above = if compact { 0.9em } else { 0.65em }
   let sub-below = if compact { 0.35em } else { 0.28em }
   let contact-size = if compact { 9.8pt } else { 9.5pt }
+
+  // PDF metadata (author/title) is set in the entry files, e.g.
+  // `#set document(title: t.name, author: t.name)` — putting it inside
+  // this show-rule closure breaks Typst 0.15 (`set document` in a rule).
 
   body => {
     // page & text basics
@@ -85,12 +110,14 @@
         }
       },
     )
-    set text(font: f.body, size: base-size, lang: text-lang)
-    set par(leading: base-leading, justify: true)
+    // acadennial typography: proportional body, no ligatures
+    set text(font: f.body, size: base-size, lang: text-lang, ligatures: false)
+    set par(leading: base-leading, spacing: par-spacing, justify: true, first-line-indent: 0pt)
     set block(above: 0.3em, below: 0.3em)
+    set align(left)
 
-    // subtle underline for links (as in the previous template)
-    show link: it => underline(stroke: 0.5pt + rgb("#c8c8c8"), offset: 2pt, it)
+    // subtle underline for links (as in the acadennial template)
+    show link: it => underline(stroke: 0.5pt + luma(200), offset: 2pt, it)
 
     // section headings (level-1 `= ...`) — big & bold, no rule under the title
     show heading.where(level: 1): it => block(
@@ -111,7 +138,7 @@
     // keep headings with the following block
     show heading: set block(breakable: false)
 
-    // header: left = name/affiliation, right = contact links
+    // header: left = name/affiliation, right = contact links (monospace)
     grid(
       columns: (1fr, auto),
       column-gutter: 1.6em,
@@ -121,7 +148,7 @@
         #text(font: f.body, size: contact-size)[#primary]
       ],
       align(right)[
-        #text(font: ("CodeNewRoman Nerd Font", "LXGW Neo XiHei"), size: contact-size)[#secondary]
+        #text(font: f.mono, size: contact-size)[#secondary]
       ],
     )
     v(if compact { 0.5em } else { 0.6em })
@@ -147,6 +174,7 @@
       columns: (auto, 1fr),
       column-gutter: 1.1em,
       row-gutter: if compact { 0.35em } else { 0.25em },
+      align: (left, left),
       [#text(size: if compact { 10pt } else { 9pt }, weight: "semibold")[#e.at]],
       [#e.body],
     )
@@ -157,7 +185,7 @@
 // ---- numbered publication references ----
 // items: array of content (each one full citation), renders 1. 2. 3. ...
 #let pubs(items, compact: false) = {
-  set par(leading: if compact { 0.6em } else { 0.45em })
+  set par(leading: if compact { 0.55em } else { 0.45em })
   for (i, it) in items.enumerate() {
     block(
       above: if compact { 0.42em } else { 0.22em },

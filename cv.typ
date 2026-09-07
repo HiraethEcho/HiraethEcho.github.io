@@ -1,8 +1,10 @@
 // EN detailed CV — outputs static/cv.pdf
-#import "format-lib.typ": *
+#import "cv-lib.typ": *
 #import "cv-data.typ": *
 
-#let t = T("en")
+#let t = T_cv("en")
+
+#set document(author: t.name, title: t.name)
 
 #show: init(
   "en",
