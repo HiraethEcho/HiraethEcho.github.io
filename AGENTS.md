@@ -30,4 +30,4 @@ readme.md（完整自我）──▶ content/about*（求职过滤版）──�
 ## General
 
 - Never commit before the user approves.
-- Keep CV/resume PDFs buildable: `./build-cv.sh`.
+- Keep CV/resume PDFs buildable: `./build.sh`.
