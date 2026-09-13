@@ -30,12 +30,14 @@
     #link("mailto:wangyanze@amss.ac.cn")[wangyanze\@amss.ac.cn]\
     155 3825 5707\
     #link("https://keinmal.top")[keinmal.top]\
+    #link("https://hiraethecho.github.io")[hiraethecho.github.io]\
     #github-icon() #link("https://github.com/hiraethecho")[github.com/hiraethecho]\
     #orcid-icon() #link("https://orcid.org/0009-0003-3661-1890")[ORCID: 0009-0003-3661-1890]
   ], [
     #link("mailto:wangyanze@amss.ac.cn")[wangyanze\@amss.ac.cn]\
     +86 155 3825 5707\
     #link("https://keinmal.top")[keinmal.top]\
+    #link("https://hiraethecho.github.io")[hiraethecho.github.io]\
     #github-icon() #link("https://github.com/hiraethecho")[github.com/hiraethecho]\
     #orcid-icon() #link("https://orcid.org/0009-0003-3661-1890")[ORCID: 0009-0003-3661-1890]
   ]),
@@ -66,7 +68,6 @@
   // ---- education ----
   edu: zh(lang, (
     (
-      at: [2024 – 至今],
       body: [
         *数学博士（在读）*，中国科学院数学与系统科学研究院（中国科学院大学），预计 2027 年 6 月毕业。\
         _指导教师：_ 陈亦飞 教授。\
@@ -74,7 +75,6 @@
       ],
     ),
     (
-      at: [2022 – 2024],
       body: [
         *理学硕士*，中国科学院数学与系统科学研究院（中国科学院大学），2024 年 5 月。\
         _学位论文：_《叶层化对的 Sarkisov 纲领》。\
@@ -82,7 +82,6 @@
       ],
     ),
     (
-      at: [2016 – 2020],
       body: [
         *理学学士*，北京航空航天大学，2020 年 6 月。\
         _学位论文：_《曲线模空间》。
@@ -90,7 +89,6 @@
     ),
   ), (
     (
-      at: [2024 – present],
       body: [
         *Ph.D. in Mathematics (in progress)*, AMSS, University of Chinese Academy of Sciences — expected June 2027.\
         _Advisor:_ Prof. Yifei Chen.\
@@ -98,7 +96,6 @@
       ],
     ),
     (
-      at: [2022 – 2024],
       body: [
         *M.S. in Mathematics*, AMSS, University of Chinese Academy of Sciences — May 2024.\
         _Thesis:_ "Sarkisov program for foliated pairs".\
@@ -106,7 +103,6 @@
       ],
     ),
     (
-      at: [2016 – 2020],
       body: [
         *B.S. in Mathematics*, Beihang University — June 2020.\
         _Thesis:_ "Moduli space of curves".
@@ -236,9 +232,9 @@
 
   // ---- software: languages & tools ----
   skills-sw: zh(lang, [
-    *语言与工具：* C++（libtorch）、Rust、C、Shell；Arch Linux（Niri/dwm）+ Neovim 日常开发环境；Git；LaTeX；TUI 开发（ratatui）。
+    *语言与工具：* C++（libtorch）、Rust、C、Shell；Arch Linux（Niri/dwm）+ Neovim + Git；LaTeX。
   ], [
-    *Languages & tools:* C++ (libtorch), Rust, C, Shell; daily development on Arch Linux (Niri/dwm) + Neovim; Git; LaTeX; TUI development (ratatui).
+    *Languages & tools:* C++ (libtorch), Rust, C, Shell; Arch Linux (Niri/dwm) + Neovim + Git; LaTeX.
   ]),
 
   // ---- software: projects (detailed) ----
@@ -249,7 +245,7 @@
     ),
     (
       at: [#link("https://github.com/hiraethecho/markerss")[Markerss]],
-      body: [TUI RSS 阅读器（Rust，ratatui + feed-rs）：Markdown 导出、仅存 URL 的收藏模式。设计文档驱动：主分支维护 SPEC / PLAN / DESIGN，实现按语言分支（rust / go / cpp）。vibe coding 开发。],
+      body: [TUI RSS 阅读器（Rust，ratatui + feed-rs）：Markdown 导出、仅存 URL 的收藏模式。vibe coding 开发。],
     ),
     (
       at: [#link("https://github.com/hiraethecho/lichtung")[Lichtung]],
@@ -271,10 +267,6 @@
       at: [#link("https://github.com/hiraethecho/mumble")[mumble]],
       body: [一个简单留言板页面（JavaScript），基于 Cloudflare Worker，可独立部署或嵌入其他页面。],
     ),
-    (
-      at: [#link("https://github.com/hiraethecho/cutui")[cutui]],
-      body: [简单的 TUI 视频编辑器（Rust）。],
-    ),
   ), (
     (
       at: [#link("https://github.com/hiraethecho/calman")[Calman]],
@@ -282,7 +274,7 @@
     ),
     (
       at: [#link("https://github.com/hiraethecho/markerss")[Markerss]],
-      body: [TUI RSS reader (Rust, ratatui + feed-rs): Markdown export, URL-only bookmarks. Design-first repo: main branch keeps SPEC / PLAN / DESIGN; implementations on per-language branches (rust / go / cpp). Vibe-coded.],
+      body: [TUI RSS reader (Rust, ratatui + feed-rs): Markdown export, URL-only bookmarks. Vibe-coded.],
     ),
     (
       at: [#link("https://github.com/hiraethecho/lichtung")[Lichtung]],
@@ -303,10 +295,6 @@
     (
       at: [#link("https://github.com/hiraethecho/mumble")[mumble]],
       body: [A simple message-board page (JavaScript) on a Cloudflare Worker: deploy standalone or embed into other pages.],
-    ),
-    (
-      at: [#link("https://github.com/hiraethecho/cutui")[cutui]],
-      body: [A simple TUI video editor (Rust).],
     ),
   )),
 
@@ -476,28 +464,22 @@
   // ---- education ----
   edu: zh(lang, (
     (
-      at: [2024 – 至今],
       body: [*数学博士（在读）*，中国科学院数学与系统科学研究院（中国科学院大学），预计 2027 年 6 月毕业],
     ),
     (
-      at: [2022 – 2024],
       body: [*理学硕士*，中国科学院数学与系统科学研究院（中国科学院大学）],
     ),
     (
-      at: [2016 – 2020],
       body: [*理学学士*，北京航空航天大学],
     ),
   ), (
     (
-      at: [2024 – now],
       body: [*Ph.D. in Mathematics*, AMSS–UCAS (in progress; expected June 2027)],
     ),
     (
-      at: [2022 – 2024],
       body: [*M.S. in Mathematics*, AMSS–UCAS],
     ),
     (
-      at: [2016 – 2020],
       body: [*B.S. in Mathematics*, Beihang University],
     ),
   )),

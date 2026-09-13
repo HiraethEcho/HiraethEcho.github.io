@@ -2,9 +2,18 @@
 
 ## Personal information: `readme.md` is the canonical standard
 
+`readme.md` 是**完整的自我描述**（姓名、经历、教育、论文、项目、哲学背景、写作、联系方式……），是唯一的单一事实源。内容向下游分层过滤：
+
+```
+readme.md（完整自我）──▶ content/about*（求职过滤版）──▶ cv-data.typ / cv / resume（再筛选、结构化）
+```
+
 - `readme.md` in the repo root is the **single source of truth** for all personal
   information (姓名/name, 经历/experience, 教育/education, 论文/publications,
-  项目/projects, 联系方式/contacts, 技能/skills, etc.).
+  项目/projects, 哲学背景/philosophy, 写作/writing, 联系方式/contacts,
+  技能/skills, etc.).
+- **传播顺序**：个人信息变更先改 `readme.md`，再按过滤链向下传播——`content/about*` 取 readme 中适合求职公开的部分；`cv-data.typ`/`cv`/`resume` 再筛选合并为求职用简历。
+- 适合求职公开 vs 纯私人记录（如哲学自省、个人志趣细节）由用户判断；拿不准就问。
 - All other content that describes the person — including `cv-data.typ`
   (CV/resume PDF sources), `content/about*`, `content/experience*`,
   `content/skills*`, `content/_index*`, project profiles, etc. — must be

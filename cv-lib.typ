@@ -72,7 +72,7 @@
   let text-lang = if lang == "zh" { "zh" } else { "en" }
 
   // compact = larger, airier spacing for the 1-page resume (fills the page)
-  let m = if compact { (x: 1.6cm, y: 1.15cm) } else { (x: 1.7cm, y: 1.45cm) }
+  let m = if compact { (x: 1.6cm, y: 1.15cm) } else { (x: 3.0cm, y: 3.0cm) }
   let base-size = 10pt
   // tight leading, like acadennial-cv; a bit looser for CJK to stay readable
   let base-leading = if lang == "zh" {
@@ -170,14 +170,18 @@
 // entries: array of (at: content, body: content)
 #let entry-list(entries, compact: false) = {
   for e in entries {
-    grid(
-      columns: (auto, 1fr),
-      column-gutter: 1.1em,
-      row-gutter: if compact { 0.35em } else { 0.25em },
-      align: (left, left),
-      [#text(size: if compact { 10pt } else { 9pt }, weight: "semibold")[#e.at]],
-      [#e.body],
-    )
+    if "at" in e {
+      grid(
+        columns: (auto, 1fr),
+        column-gutter: 1.1em,
+        row-gutter: if compact { 0.35em } else { 0.25em },
+        align: (left, left),
+        [#text(size: if compact { 10pt } else { 9pt }, weight: "semibold")[#e.at]],
+        [#e.body],
+      )
+    } else {
+      [#e.body]
+    }
     v(if compact { 0.85em } else { 0.5em })
   }
 }

@@ -3,11 +3,15 @@ title: 关于我
 description: 王延泽 — 中国科学院大学数学专业博士研究生，研究方向为双有理几何。
 ---
 
+这一页是我的职业形象。
+
 我目前就读于中国科学院数学与系统科学研究院（AMSS，隶属中国科学院大学，UCAS），导师陈亦飞教授，攻读博士学位，预计于 2027 年 6 月毕业。
 我的研究集中于代数可积叶层化的 Sarkisov 纲领，以及极小模型纲领中的若干相关问题。完整的论文列表见[论文](/zh/paper/)页面。
 
 近期，我也在积极探索 **AI4Math** 这一方向，包括人工验证 AI 生成的数学论文、搭建数学研究 harness（例如 fork 并改进 [Rethlas](/zh/project/rethlas)）、探索形式化证明语言 Lean 4 等。
+
 <!-- 同时也是微软一个 AI4Math 项目（目前私有）的贡献者。 -->
+
 此外，我对大模型训练、（数学）数据标注等 AI 基础设施（AI infra）方向，以及面向数学研究的后训练（post-training）和智能体框架（harness）也抱有浓厚兴趣。
 
 无论是学术界还是工业界的研究岗位，我都持开放态度，欢迎垂询与合作。
@@ -54,4 +58,8 @@ description: 王延泽 — 中国科学院大学数学专业博士研究生，�
 - **GitHub**：[hiraethecho](https://github.com/hiraethecho) — 代码与开源项目
 - **ORCID**：[0009-0003-3661-1890](https://orcid.org/0009-0003-3661-1890) — 学术发表记录
 - **技术笔记**：[docs.keinmal.top](https://docs.keinmal.top) — 技术文档与笔记
-- **个人网站 MEMEX**：[memex.keinmal.top](https://memex.keinmal.top) — 杂文博客
+
+## 写作
+
+另一部分的我，以笔名 **Hiraeth** 在 [memex](https://memex.keinmal.top) 书写关于存在、哲学、现代性、文学与文化工业的随笔，书评影评、个人内省，以及偶尔的诗。随笔全部手工写作：不借助 AI 生成或润色，以保护语言能力、进而保护思考能力（知识获取则乐于借助 AI）。部分文章同步发布在个人公众号。  
+域名 _keinmal.top_ 出自德语谚语 _einmal ist keinmal_，即"只有一次等于没有"。
