@@ -18,11 +18,11 @@
   // ---- header ----
   name: zh(lang, "王延泽", "Yanze Wang"),
   primary: zh(lang, [
-    数学博士生（双有理几何方向）\
+    数学博士生（双有理几何 / AI4Math）\
     预计 2027 年 6 月毕业\
     中国科学院数学与系统科学研究院（中国科学院大学）
   ], [
-    Ph.D. Candidate in Mathematics (Birational Geometry)\
+    Ph.D. Candidate in Mathematics (Birational Geometry & AI4Math)\
     Expected Graduation: June 2027\
     AMSS, University of Chinese Academy of Sciences
   ]),
@@ -43,69 +43,83 @@
   ]),
 
   // ---- section headings ----
-  h-interests: zh(lang, "研究方向", "Research Interests"),
-  h-edu: zh(lang, "教育背景", "Education"),
-  h-awards: zh(lang, "荣誉奖励", "Awards and Honors"),
+  h-research: zh(lang, "研究与实践", "Research & Practice"),
+  h-papers: zh(lang, "论文与报告", "Papers & Talks"),
   h-pubs: zh(lang, "发表论文", "Publications"),
   h-pre: zh(lang, "预印本", "Preprints"),
-  h-theses: zh(lang, "学位论文", "Theses"),
   h-talks: zh(lang, "学术报告", "Invited Talks"),
-  h-teaching: zh(lang, "教学经历", "Teaching"),
-  h-software: zh(lang, "软件与开源", "Software and Open Source"),
+  h-projects: zh(lang, "项目", "Projects"),
+  h-edu: zh(lang, "教育背景", "Education"),
+  h-theses: zh(lang, "学位论文", "Theses"),
+  h-teaching: zh(lang, "助教经历", "Teaching"),
+  // kept for reference, no longer rendered (2026-09 outline)
+  h-awards: zh(lang, "荣誉奖励", "Awards and Honors"),
   h-ai4math: zh(lang, "AI4Math 工程", "AI4Math Engineering"),
 
   // ---- interests (detailed) ----
   interests: zh(lang, (
-    [双有理几何与极小模型纲领：Sarkisov 纲领、代数可积叶层化、模空间。],
-    [AI4Math：AI 生成数学结果的人工验证、Lean 4 形式化、数学专用模型的训练思路、研究 harness 搭建。],
-    [正在学习：PyTorch / libtorch、LLM 预训练与后训练（post-training）、数学数据处理。],
+    [*数学：* 双有理几何与极小模型纲领——Sarkisov 纲领、代数可积叶层化、模空间。],
+    [*AI 实践：* 本地训练——PyTorch / libtorch 小项目。],
+    [*AI4Math：* AI 生成数学结果的人工验证；fork 并改进双智能体数学推理 harness（Rethlas）；参与 Lean 4 社区项目 prove2.me。],
+    [*工程：* C++（libtorch）、Rust、C、Shell；Arch Linux（Niri/dwm）+ Neovim + Git；LaTeX；TUI 开发（ratatui）。],
+    [*语言：* 中文（母语）、英语（专业工作水平）。],
   ), (
-    [Birational geometry and the minimal model program: Sarkisov program, algebraically integrable foliations, and moduli spaces.],
-    [AI4Math: human verification of AI-generated mathematical results, Lean 4 formalization, training approaches for math-specialized models, and research-harness building.],
-    [Currently learning: PyTorch / libtorch, LLM pre-training and post-training, and mathematical data processing.],
+    [*Mathematics:* birational geometry and the minimal model program — Sarkisov program, algebraically integrable foliations, moduli spaces.],
+    [*AI practice:* local training — small projects with PyTorch / libtorch.],
+    [*AI4Math:* human verification of AI-generated mathematical results; forked & extended the two-agent math-reasoning harness Rethlas; contributing to the Lean 4 community project prove2.me.],
+    [*Engineering:* C++ (libtorch), Rust, C, Shell; Arch Linux (Niri/dwm) + Neovim, Git, LaTeX; TUI development (ratatui).],
+    [*Languages:* Chinese (native), English (professional).],
   )),
 
   // ---- education ----
   edu: zh(lang, (
     (
+      at: [博士（在读）],
       body: [
-        *数学博士（在读）*，中国科学院数学与系统科学研究院（中国科学院大学），预计 2027 年 6 月毕业。\
+        理学博士（在读），中国科学院数学与系统科学研究院（中国科学院大学），预计 2027 年 6 月毕业。\
         _指导教师：_ 陈亦飞 教授。\
         研究方向：双有理几何——Sarkisov 纲领、代数可积叶层化。
       ],
     ),
     (
+      at: [硕士],
       body: [
-        *理学硕士*，中国科学院数学与系统科学研究院（中国科学院大学），2024 年 5 月。\
-        _学位论文：_《叶层化对的 Sarkisov 纲领》。\
-        _指导教师：_ 陈亦飞 教授。
+        理学硕士，中国科学院数学与系统科学研究院（中国科学院大学），2024 年 5 月。\
+        _指导教师：_ 陈亦飞 教授。\
+        _学位论文：_《叶层化对的 Sarkisov 纲领》。
       ],
     ),
     (
+      at: [学士],
       body: [
-        *理学学士*，北京航空航天大学，2020 年 6 月。\
-        _学位论文：_《曲线模空间》。
+        理学学士，北京航空航天大学，2020 年 6 月。\
+        _学位论文：_《曲线模空间》。\
+        本科期间任助教：线性代数、代数几何。
       ],
     ),
   ), (
     (
+      at: [Ph.D.],
       body: [
-        *Ph.D. in Mathematics (in progress)*, AMSS, University of Chinese Academy of Sciences — expected June 2027.\
+        Mathematics PhD (in progress), AMSS, University of Chinese Academy of Sciences — expected June 2027.\
         _Advisor:_ Prof. Yifei Chen.\
         _Research:_ birational geometry — Sarkisov program, algebraically integrable foliations.
       ],
     ),
     (
+      at: [M.S.],
       body: [
-        *M.S. in Mathematics*, AMSS, University of Chinese Academy of Sciences — May 2024.\
-        _Thesis:_ "Sarkisov program for foliated pairs".\
-        _Advisor:_ Prof. Yifei Chen.
+        Mathematics M.S., AMSS, University of Chinese Academy of Sciences, May 2024.\
+        _Advisor:_ Prof. Yifei Chen.\
+        _Thesis:_ "Sarkisov program for foliated pairs".
       ],
     ),
     (
+      at: [B.S.],
       body: [
-        *B.S. in Mathematics*, Beihang University — June 2020.\
-        _Thesis:_ "Moduli space of curves".
+        Mathematics B.S., Beihang University, June 2020.\
+        _Thesis:_ "Moduli space of curves".\
+        Undergraduate teaching assistant: Linear Algebra, Algebraic Geometry.
       ],
     ),
   )),
@@ -212,30 +226,25 @@
   // ---- theses (with abstracts) ----
   theses: zh(lang, (
     [
-      *硕士：* 《叶层化对的 Sarkisov 纲领》（2024）。\
+      *硕士：* 《叶层化对的 Sarkisov 纲领》。\
       摘要：极小模型纲领在每一固定的双有理等价类中寻找好代表元，它们分为极小模型与 Mori 纤维空间两类。本文介绍 Sarkisov 纲领的三种方法，并尝试建立叶层化对的 Sarkisov 纲领：通过将 F-dlt 叶层化对约化为 klt 对，得到叶层化 Mori 纤维空间之间双有理映射的弱分解。
     ],
     [
-      *学士：* 《曲线模空间》（2020）。\
+      *学士：* 《曲线模空间》。\
       摘要：本文借助几何不变量理论（GIT）与叠理论构造曲线模空间及其紧化：介绍光滑曲线与 DM 稳定曲线，给出范畴论、叠理论、Hilbert 概形与 GIT 等工具，构造两类曲线模空间，最后提出进一步问题并讨论其它模空间。
     ],
   ), (
     [
-      *M.S.:* "Sarkisov program for foliated pairs" (2024).\
+      *M.S.:* "Sarkisov program for foliated pairs".\
       Abstract: the minimal model program seeks a good representative in each birational equivalence class; these representatives split into minimal models and Mori fiber spaces. The thesis introduces the three methods of the Sarkisov program and establishes it for foliated pairs — by reducing F-dlt foliated pairs to klt pairs, one obtains a weak decomposition of birational maps between foliated Mori fiber spaces.
     ],
     [
-      *B.S.:* "Moduli space of curves" (2020).\
+      *B.S.:* "Moduli space of curves".\
       Abstract: this report constructs moduli spaces of curves and their compactifications via geometric invariant theory (GIT) and stack theory — introducing smooth and DM stable curves, developing the necessary tools (category theory, stack theory, Hilbert scheme, GIT), constructing two kinds of curve moduli spaces, and closing with further questions.
     ],
   )),
 
-  // ---- software: languages & tools ----
-  skills-sw: zh(lang, [
-    *语言与工具：* C++（libtorch）、Rust、C、Shell；Arch Linux（Niri/dwm）+ Neovim + Git；LaTeX。
-  ], [
-    *Languages & tools:* C++ (libtorch), Rust, C, Shell; Arch Linux (Niri/dwm) + Neovim + Git; LaTeX.
-  ]),
+  // skills / skills-sw 已并入研究与实践（interests），2026-09 重构
 
   // ---- software: projects (detailed) ----
   projects: zh(lang, (
@@ -258,10 +267,6 @@
     (
       at: [#link("https://github.com/hiraethecho/AiKit")[AiKit]],
       body: [面向编码智能体的 AI 工具集合（尤其 pi）：代理（pi、opencode、codex、claude code 等）、pi 扩展（rtk、cave、toon、doc、role）、skills、人设与快速部署脚本。],
-    ),
-    (
-      at: [#link("https://github.com/hiraethecho/Rethlas")[Rethlas]],
-      body: [fork 并改进了 Rethlas：一个围绕两个 Codex 智能体的自然语言数学推理系统——生成智能体书写非形式证明蓝图，验证智能体检查蓝图并给出结构化结论，run.sh 驱动迭代式证明与修复循环。],
     ),
     (
       at: [#link("https://github.com/hiraethecho/mumble")[mumble]],
@@ -289,10 +294,6 @@
       body: [AI tool collection for coding agents (especially pi): agents (pi, opencode, codex, claude code, …), pi extensions (rtk, cave, toon, doc, role), skills, personas, and quick-deploy scripts.],
     ),
     (
-      at: [#link("https://github.com/hiraethecho/Rethlas")[Rethlas]],
-      body: [Forked and extended Rethlas: a natural-language math-reasoning system built around two Codex agents — a generation agent writes informal proof blueprints, a verification agent checks them and issues structured verdicts; run.sh drives an iterative proof-and-repair loop.],
-    ),
-    (
       at: [#link("https://github.com/hiraethecho/mumble")[mumble]],
       body: [A simple message-board page (JavaScript) on a Cloudflare Worker: deploy standalone or embed into other pages.],
     ),
@@ -302,11 +303,11 @@
   ai4math: zh(lang, (
     [*研究 harness：* 搭建并维护 AI 辅助数学研究的工作流（Rethlas 的 fork 与改进）。],
     [*Lean 4：* 学习形式化与证明仓库维护。],
-    [*学习与探索：* LLM 预训练、后训练与数学数据处理；PyTorch / libtorch 在数学场景的应用。],
+    [*学习与探索：* LLM 预训练、后训练与数学数据处理。],
   ), (
     [*Research harness:* built and maintained an AI-assisted mathematics workflow (fork and extension of Rethlas).],
     [*Lean 4:* learning formalization and proof-repo maintenance.],
-    [*Learning & exploring:* LLM pre-training, post-training, and mathematical data processing; PyTorch / libtorch applications in mathematics.],
+    [*Learning & exploring:* LLM pre-training, post-training, and mathematical data processing.],
   )),
 )
 
@@ -328,24 +329,48 @@
 }
 
 // ---- render all CV sections for a language ----
+// 2026-09 outline: 研究与实践(含技能) / 论文与报告(pubs+pre+talks, abstracts hidden) / 项目 / 教育背景(edu 含学位论文与助教, 末尾荣誉)
 #let cv(lang) = {
   let t = T_cv(lang)
   let headings = (
-    interests: t.h-interests,
-    edu: t.h-edu,
-    awards: t.h-awards,
+    research: t.h-research,
+    papers: t.h-papers,
     pubs: t.h-pubs,
     pre: t.h-pre,
-    theses: t.h-theses,
     talks: t.h-talks,
-    teaching: t.h-teaching,
-    software: t.h-software,
-    ai4math: t.h-ai4math,
+    projects: t.h-projects,
+    edu: t.h-edu,
   )
   [
-= #headings.interests
+= #headings.research
 
 #tight-list(t.interests)
+
+#section-divider()
+
+= #headings.papers
+
+== #headings.pubs
+
+#for (i, p) in t.pubs.enumerate() [
+  #math-item(i + 1, p.cite, [])
+]
+
+== #headings.pre
+
+#for (i, p) in t.pres.enumerate() [
+  #math-item(i + 1, p.cite, [])
+]
+
+== #headings.talks
+
+#entry-list(t.talks)
+
+#section-divider()
+
+= #headings.projects
+
+#entry-list(t.projects)
 
 #section-divider()
 
@@ -353,59 +378,7 @@
 
 #entry-list(t.edu)
 
-#section-divider()
-
-= #headings.awards
-
 #tight-list(t.awards)
-
-#section-divider()
-
-= #headings.pubs
-
-#for (i, p) in t.pubs.enumerate() [
-  #math-item(i + 1, p.cite, p.abstract)
-]
-
-#section-divider()
-
-= #headings.pre
-
-#for (i, p) in t.pres.enumerate() [
-  #math-item(i + 1, p.cite, p.abstract)
-]
-
-#section-divider()
-
-= #headings.theses
-
-#tight-list(t.theses)
-
-#section-divider()
-
-= #headings.talks
-
-#entry-list(t.talks)
-
-#section-divider()
-
-= #headings.teaching
-
-#entry-list(t.teaching)
-
-#section-divider()
-
-= #headings.software
-
-#t.skills-sw
-
-#entry-list(t.projects)
-
-#section-divider()
-
-= #headings.ai4math
-
-#tight-list(t.ai4math)
   ]
 }
 
@@ -416,11 +389,11 @@
   // ---- header ----
   name: zh(lang, "王延泽", "Yanze Wang"),
   primary: zh(lang, [
-    数学博士生（双有理几何方向）\
+    数学博士生（双有理几何 / AI4Math）\
     预计 2027 年 6 月毕业\
     中国科学院数学与系统科学研究院（中国科学院大学）
   ], [
-    Ph.D. Candidate in Mathematics (Birational Geometry)\
+    Ph.D. Candidate in Mathematics (Birational Geometry & AI4Math)\
     Expected Graduation: June 2027\
     AMSS, University of Chinese Academy of Sciences
   ]),
@@ -486,9 +459,9 @@
 
   // ---- honors + talks ----
   honors: zh(lang, [
-    美国大学生建模竞赛 M等奖（两次）；华罗庚奖学金，北航（两次）；中国科学院三好学生。
+    美国大学生建模竞赛 M等奖（两次）；华罗庚奖学金，北航（两次）。
   ], [
-    MCM/ICM Meritorious Winner (twice); Hua Luogeng Scholarship, Beihang (twice); CAS Merit Student.
+    MCM/ICM Meritorious Winner (twice); Hua Luogeng Scholarship, Beihang (twice).
   ]),
   talk: zh(lang, [
     报告人，《代数可积与三维叶状结构的 Sarkisov 纲领》，西交利物浦大学，2026。
