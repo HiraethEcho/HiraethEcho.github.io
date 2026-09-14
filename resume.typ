@@ -49,6 +49,22 @@ Teaching assistant for Linear Algebra and Algebraic Geometry during undergraduat
 - *AI4Math:* human verification of AI-generated mathematical results; research harnesses and Lean 4 formalization.
 - *Engineering:* torch (Python & C++); Rust, C, LaTeX; Linux and Git; vibe-coding personal CLI / TUI programs (Rust).
 
+= Projects
+
+== AI Practice
+
+- *Model training:* learned from llm-from-scratch and other tutorials — Transformer internals and training loops; reproducing small-parameter training: #link("https://github.com/hiraethecho/GPT_teacher-3.37M-cn")[*Chinese GPT*], #link("https://github.com/hiraethecho/tiny-reasoning-rl-lab")[*RL*], and LoRA fine-tuning.
+- *AI4Math:* learning and practicing workflows of agent architectures such as co-mathematician; adapting #link("https://github.com/hiraethecho/Rethlas")[Rethlas] to my own workflow. Formalization practice — reproducing #link("https://github.com/hiraethecho/toric-lean")[*toric-lean*] and others; contributing to the Lean 4 platform prove2.me.
+- #link("https://github.com/hiraethecho/AiKit")[*AiKit*] — agent toolkit for coding agents (pi, opencode, codex, claude code, etc.): skills / plugins, used for math research and SDD programming.
+
+== Programming
+
+- #link("https://github.com/hiraethecho/suckless")[*suckless*] — personal fork of dwm / dwmblocks (C), patched and maintained by hand, no AI assistance.
+- #link("https://github.com/hiraethecho/calman")[*Calman*] — terminal task & event manager (CLI, Rust). CalDAV-compatible; sync delegated to radicale / vdirsyncer / rclone.
+- #link("https://github.com/hiraethecho/markerss")[*Markerss*] — TUI RSS reader (Rust, ratatui): Markdown export, URL bookmarks.
+- #link("https://github.com/hiraethecho/lichtung")[*Lichtung*] — Hugo theme (Go templates / SCSS) powering two personal sites.
+- #link("https://github.com/hiraethecho/mumble")[*mumble*] — message board (JavaScript, Cloudflare Worker); standalone or embedded pages.
+
 = Papers & Talks
 
 == Published
@@ -100,20 +116,3 @@ _All AI-generated, human-verified._
   date: "2026",
   location: "Xi'an Jiaotong-Liverpool University",
 )
-
-= Projects
-
-== Programming
-
-- #link("https://github.com/hiraethecho/suckless")[*suckless*] — personal fork of dwm / dwmblocks (C), patched and maintained by hand, no AI assistance.
-- #link("https://github.com/hiraethecho/calman")[*Calman*] — terminal task & event manager (CLI, Rust). CalDAV-compatible; sync delegated to radicale / vdirsyncer / rclone.
-- #link("https://github.com/hiraethecho/markerss")[*Markerss*] — TUI RSS reader (Rust, ratatui): Markdown export, URL bookmarks.
-- #link("https://github.com/hiraethecho/lichtung")[*Lichtung*] — Hugo theme (Go templates / SCSS) powering two personal sites.
-- #link("https://github.com/hiraethecho/mumble")[*mumble*] — message board (JavaScript, Cloudflare Worker); standalone or embedded pages.
-
-== AI Practice
-
-- *Model training:* local mini-projects — pytorch-cpp, llm-from-scratch, build-llm-from-zero, tiny-reasoning-rl-lab, etc.
-- #link("https://github.com/hiraethecho/AiKit")[*AiKit*] — agent framework: agents / skills / plugins for coding agents (pi, opencode, codex, claude code, etc.).
-- *Open-source:* forks, improvements, and usage of #link("https://github.com/hiraethecho/Rethlas")[Rethlas] (natural-language math reasoning), co-mathematician, etc.; contribution to the Lean 4 platform prove2.me.
-- *Closed beta:* agentero, math research workstation & paper reader (temporarily closed-source).

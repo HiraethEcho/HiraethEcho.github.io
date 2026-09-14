@@ -32,6 +32,13 @@
 - LLM pre-training and post-training（LLM 预训练与后训练）
 - Mathematical data processing（数学数据处理）
 
+### Reproductions 正在复现
+
+- **[toric-lean](https://github.com/hiraethecho/toric-lean)** — 在 Lean 4 中复现 Cox–Little–Schenck《Toric varieties》的形式化（reproducing the Lean 4 formalization of *Toric Varieties* by Cox–Little–Schenck）。
+- **[GPT teacher](https://github.com/hiraethecho/GPT_teacher-3.37M-cn)** — 复现从 0 到 1 在 CPU 上训练一个 3.37M 参数的中文 GPT（含知识蒸馏实验）。
+- **[tiny-reasoning-rl-lab](https://github.com/hiraethecho/tiny-reasoning-rl-lab)** — 复现 41K 参数的 reasoning-RL 训练：两步算术任务上的 REINFORCE 式更新 + KL 惩罚，纯 CPU 可跑。
+- **Qwen3-0.6B 数学 LoRA 微调**（toy-tune，记录于 `~/WorkSpace/llm/toy-tune.md`）— 125 条 GSM8K 样本、LoRA、CPU 训练 27 分钟，跑通「数据 → 训练 → 追踪 → 产物」全链路并验证 Trackio 实验追踪。
+
 ## math
 
 ### Education 教育背景
@@ -94,7 +101,7 @@
 
 ### AI4Math engineering
 
-- 研究 harness：搭建并维护 AI 辅助数学研究的工作流（Rethlas 的 fork 与改进）。
+- 研究 harness：搭建并维护 AI 辅助数学研究的工作流（Rethlas 的 fork 与改进、co-mathematician 等智能体架构的学习与实践）。
 - Lean 4：学习形式化与证明仓库维护。
 - 学习与探索：LLM 预训练、后训练与数学数据处理；PyTorch / libtorch 在数学场景的应用。
 

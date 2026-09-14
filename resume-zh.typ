@@ -26,7 +26,7 @@
   name: "中国科学院数学与系统科学研究院",
   date: "预计 2027 年 6 月毕业",
 )
- *研究方向：* 双有理几何——Sarkisov 纲领、代数可积叶层化
+*研究方向：* 双有理几何——Sarkisov 纲领、代数可积叶层化
 
 #entry(
   title: "理学硕士",
@@ -50,6 +50,24 @@
 - *AI 实践：* 本地 PyTorch / libtorch 模型训练小项目；智能体框架搭建。
 - *AI4Math：* AI 生成数学结果的人工验证；研究 harness 与 Lean 4 形式化。
 - *工程：* torch（Python & C++）；Rust、C、LaTeX；熟悉 Linux 和 Git；vibe coding 开发个人使用的 CLI / TUI 程序（Rust）。
+
+= 项目
+
+
+== AI 实践
+
+- *模型训练：* 学习 llm-from-scratch 等教程，理解 Transformer 实现、训练循环；复现训练小参数#link("https://github.com/hiraethecho/GPT_teacher-3.37M-cn")[*中文 GPT*]、#link("https://github.com/hiraethecho/tiny-reasoning-rl-lab")[*强化学习*]和 LoRA 微调。
+- *AI4Math：* 学习和实践 co-mathematician 等智能体架构的工作流；对 #link("https://github.com/hiraethecho/Rethlas")[Rethlas] 进行小规模修改，适配个人工作流。实践数学推理形式化，复现#link("https://github.com/hiraethecho/toric-lean")[*toric-lean*]等项目；参与 Lean 4 平台 prove2.me。
+- #link("https://github.com/hiraethecho/AiKit")[*AiKit*]：智能体工具集，适用于 pi/opencode 等编码代理，包含 skills/插件等，用于数学研究和 SDD 编程。
+
+== 编程
+
+- #link("https://github.com/hiraethecho/suckless")[*suckless*] — 自行 fork 的 dwm / dwmblocks（C），通过补丁手工维护，未经 AI 辅助。
+- #link("https://github.com/hiraethecho/calman")[*Calman*] — 终端任务与事件管理器（CLI，Rust）。CalDAV 兼容，同步委托 radicale / vdirsyncer / rclone。
+- #link("https://github.com/hiraethecho/markerss")[*Markerss*] — TUI RSS 阅读器（Rust，ratatui）：Markdown 导出、URL 收藏。
+- #link("https://github.com/hiraethecho/lichtung")[*Lichtung*] — Hugo 主题（Go 模板 / SCSS），支撑两个个人站点。
+- #link("https://github.com/hiraethecho/mumble")[*mumble*] — 留言板（JavaScript，Cloudflare Worker），独立页面或嵌入页面。
+
 = 论文与报告
 
 == 发表论文
@@ -102,20 +120,4 @@ _All AI-generated, human-verified._
   location: "西交利物浦大学",
 )
 
-= 项目
-
-== 编程
-
-- #link("https://github.com/hiraethecho/suckless")[*suckless*] — 自行 fork 的 dwm / dwmblocks（C），通过补丁手工维护，未经 AI 辅助。
-- #link("https://github.com/hiraethecho/calman")[*Calman*] — 终端任务与事件管理器（CLI，Rust）。CalDAV 兼容，同步委托 radicale / vdirsyncer / rclone。
-- #link("https://github.com/hiraethecho/markerss")[*Markerss*] — TUI RSS 阅读器（Rust，ratatui）：Markdown 导出、URL 收藏。
-- #link("https://github.com/hiraethecho/lichtung")[*Lichtung*] — Hugo 主题（Go 模板 / SCSS），支撑两个个人站点。
-- #link("https://github.com/hiraethecho/mumble")[*mumble*] — 留言板（JavaScript，Cloudflare Worker），独立页面或嵌入页面。
-
-== AI 实践
-
-- *模型训练：* 本地简单项目实践——pytorch-cpp、llm-from-scratch、build-llm-from-zero、tiny-reasoning-rl-lab 等。
-- #link("https://github.com/hiraethecho/AiKit")[*AiKit*] — 智能体框架：面向编码智能体（pi、opencode、codex、claude code 等）的代理 / skills / 插件集合。
-- *开源项目：* fork、改进、使用 #link("https://github.com/hiraethecho/Rethlas")[Rethlas]（自然语言数学推理）、co-mathematician 等；参与 Lean 4 平台 prove2.me。
-- *参与内测：* agentero、数学研究工作台与论文阅读器（暂时闭源）。
 
