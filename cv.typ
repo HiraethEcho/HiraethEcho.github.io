@@ -1,32 +1,107 @@
-// EN detailed CV — cv-soft-and-hard template.
-// Content inline; content.typ is the plain reference source.
-#import "@preview/cv-soft-and-hard:0.1.0": entry, section, styling, subsection
+// EN detailed CV — cv-soft-and-hard template, modeled on its main.typ.
+// Content written inline; content.typ is the reference source of truth.
+#import "@preview/cv-soft-and-hard:0.1.0": styling, section, entry, subsection, rust, cplain, hugo, javascript
 
 #set document(author: "Yanze Wang", title: "Yanze Wang - Curriculum Vitae")
 #show: styling
-// #show heading: set text(size: 15pt)   // 连同 section 标题一起改
-// 或按层级
-#show heading.where(level: 2): set text(size: 15pt)
-#show heading.where(level: 3): set text(size: 12pt)
 
-= Yanze Wang - Curriculum Vitae
-  Academy of Mathematics and Systems Science, University of Chinese Academy of Sciences
-  Ph.D. Candidate in Pure Mathematics — expected June 2027\
-  #link("mailto:wangyanze@amss.ac.cn")[wangyanze\@amss.ac.cn] | +86 155 3825 5707 |
-  #link("https://orcid.org/0009-0003-3661-1890")[ORCID: 0009-0003-3661-1890] \
-  #link("https://keinmal.top")[keinmal.top] |
-  #link("https://github.com/hiraethecho")[github.com/hiraethecho]
+#align(center)[
+  = Yanze Wang - Curriculum Vitae\
+  Ph.D. Candidate in Pure Mathematics — expected June 2027 · AMSS, UCAS\
+  #link("mailto:wangyanze@amss.ac.cn", "wangyanze@amss.ac.cn") |
+  #link("tel:+8615538255707", "+86 155 3825 5707") |
+  #link("https://keinmal.top", "keinmal.top") |
+  #link("https://github.com/hiraethecho", "github.com/hiraethecho") |
+  #link("https://orcid.org/0009-0003-3661-1890", "ORCID: 0009-0003-3661-1890")
+]
 
-#section("Research & Practice")
+#section("Profile")
+Ph.D. candidate in Pure Mathematics at AMSS, UCAS (expected June 2027). Research in birational geometry — the minimal model program, Sarkisov program, and algebraically integrable foliations; also practicing AI4Math: human verification of AI-generated mathematical results, research harnesses, and Lean 4 formalization.
+
+#section("Experience")
+#entry([*Teaching Assistant* (_Beihang University_) — Linear Algebra, Algebraic Geometry], [_Undergraduate_])
+#entry([*Invited Talk* (_Xi'an Jiaotong-Liverpool University_) — Sarkisov Program for Algebraically Integrable and Threefold Foliations], [_2026_])
+
+#section("Education")
 #entry(
   [
-    - *Mathematics:* birational geometry and the minimal model program — Sarkisov program, algebraically integrable foliations, moduli spaces.
-    - *AI practice:* local small projects with PyTorch / libtorch; agent-framework building.
-    - *AI4Math:* human verification of AI-generated mathematical results; research harnesses and Lean 4 formalization.
-    - *Engineering:* torch (Python & C++); Rust, C, LaTeX; familiar with Linux and Git; personal CLI / TUI programs developed with vibe coding (Rust).
+    *Ph.D.*\
+    Mathematics PhD (in progress), AMSS, University of Chinese Academy of Sciences — expected June 2027.\
+    _Advisor:_ Prof. Yifei Chen.\
+    _Research:_ birational geometry — Sarkisov program, algebraically integrable foliations.
   ],
   [],
 )
+#entry(
+  [
+    *M.S.*\
+    Mathematics M.S., AMSS, University of Chinese Academy of Sciences.\
+    _Advisor:_ Prof. Yifei Chen.\
+    _Thesis:_ "Sarkisov program for foliated pairs".
+  ],
+  [],
+)
+#entry(
+  [
+    *B.S.*\
+    Mathematics B.S., Beihang University.\
+    _Thesis:_ "Moduli space of curves".
+  ],
+  [],
+)
+
+#section("Theses")
+#entry(
+  [
+    *M.S.:* "Sarkisov program for foliated pairs"
+  ],
+  [],
+  description: [
+    The minimal model program seeks a good representative in each birational equivalence class; these representatives split into minimal models and Mori fiber spaces. The thesis introduces the three methods of the Sarkisov program and establishes it for foliated pairs — by reducing F-dlt foliated pairs to klt pairs, one obtains a weak decomposition of birational maps between foliated Mori fiber spaces.
+  ],
+)
+#entry(
+  [
+    *B.S.:* "Moduli space of curves"
+  ],
+  [],
+  description: [
+    This report constructs moduli spaces of curves and their compactifications via geometric invariant theory (GIT) and stack theory — introducing smooth and DM stable curves, developing the necessary tools (category theory, stack theory, Hilbert scheme, GIT), constructing two kinds of curve moduli spaces, and closing with further questions.
+  ],
+)
+
+#section("Skills")
+#table(
+  align: left,
+  columns: (auto, 1fr),
+  stroke: none,
+  row-gutter: 0pt,
+  column-gutter: 5pt,
+  inset: (left: 0pt, top: 2pt),
+  text("Mathematics", weight: 600),
+  [birational geometry, minimal model program, Sarkisov program, algebraically integrable foliations, moduli spaces],
+  text("AI Practice", weight: 600),
+  [local PyTorch / libtorch projects, agent-framework building],
+  text("AI4Math", weight: 600),
+  [human verification of AI-generated results, research harnesses, Lean 4 formalization],
+  text("Engineering", weight: 600),
+  [torch (Python & C++), Rust, C, LaTeX, Linux, Git; CLI / TUI programs with vibe coding (Rust)],
+)
+
+
+#section("Projects")
+#subsection("Programming")
+#entry([#link("https://github.com/hiraethecho/suckless")[*suckless*] #cplain — personal fork of dwm / dwmblocks (X11 dynamic tiling window manager, C), patched and maintained by hand, no AI assistance.], [])
+#entry([#link("https://github.com/hiraethecho/calman")[*Calman*] #rust — terminal task & event manager (CLI + TUI). JSONL/ICS storage, CalDAV-compatible; syncs across devices via a self-hosted Radicale server, delegating to git / vdirsyncer / rclone.], [])
+#entry([#link("https://github.com/hiraethecho/markerss")[*Markerss*] #rust — TUI RSS reader (ratatui + feed-rs): Markdown export, URL-only bookmarks.], [])
+#entry([#link("https://github.com/hiraethecho/lichtung")[*Lichtung*] #hugo — Hugo theme (Go templates / SCSS) built with conversational AI-assisted development; powers two personal sites (docs & blog).], [])
+#entry([#link("https://github.com/hiraethecho/mumble")[*mumble*] #javascript — message board (JavaScript, Cloudflare Worker): deploy standalone or embed.], [])
+
+#subsection("AI Practice")
+#entry([*Model training:* local practice — pytorch-cpp, llm-from-scratch, build-llm-from-zero, tiny-reasoning-rl-lab, etc.], [])
+#entry([#link("https://github.com/hiraethecho/AiKit")[*AiKit*] — agent framework: agents / skills / plugins for coding agents (pi, opencode, codex, claude code, …), including pi extensions (rtk, cave, toon, doc, role) and quick-deploy scripts.], [])
+#entry([*Open-source:* forks, improvements & usage — #link("https://github.com/hiraethecho/Rethlas")[Rethlas] (natural-language math reasoning), co-mathematician, etc.; contribution to the Lean 4 platform prove2.me.], [])
+#entry([*Closed beta:* agentero, math research workstation & paper reader (temporarily closed-source).], [])
 
 #section("Publications")
 #entry(
@@ -92,103 +167,12 @@
   ],
 )
 
-#section("Theses")
+#section("Honors")
 #entry(
-  [
-    *M.S.:* "Sarkisov program for foliated pairs"
-  ],
-  [],
-  description: [
-    The minimal model program seeks a good representative in each birational equivalence class; these representatives split into minimal models and Mori fiber spaces. The thesis introduces the three methods of the Sarkisov program and establishes it for foliated pairs — by reducing F-dlt foliated pairs to klt pairs, one obtains a weak decomposition of birational maps between foliated Mori fiber spaces.
-  ],
-)
-#entry(
-  [
-    *B.S.:* "Moduli space of curves"
-  ],
-  [],
-  description: [
-    This report constructs moduli spaces of curves and their compactifications via geometric invariant theory (GIT) and stack theory — introducing smooth and DM stable curves, developing the necessary tools (category theory, stack theory, Hilbert scheme, GIT), constructing two kinds of curve moduli spaces, and closing with further questions.
-  ],
-)
-
-#section("Invited Talks")
-#entry(
-  [
-    Speaker, *Sarkisov Program for Algebraically Integrable and Threefold Foliations*, Xi'an Jiaotong-Liverpool University.
-  ],
-  [_2026_],
-)
-
-#section("Projects")
-#subsection("Programming")
-#entry(
-  [#link("https://github.com/hiraethecho/suckless")[*suckless*] — personal fork of dwm / dwmblocks (X11 dynamic tiling window manager, C), patched and maintained by hand, no AI assistance.],
+  [MCM/ICM — Meritorious Winner (twice)],
   [],
 )
 #entry(
-  [#link("https://github.com/hiraethecho/calman")[*Calman*] — terminal task & event manager (CLI + TUI, Rust). JSONL/ICS storage, CalDAV-compatible; syncs across devices via a self-hosted Radicale server, delegating to git / vdirsyncer / rclone.],
+  [Hua Luogeng Scholarship, Beihang University (twice)],
   [],
 )
-#entry(
-  [#link("https://github.com/hiraethecho/markerss")[*Markerss*] — TUI RSS reader (Rust, ratatui + feed-rs): Markdown export, URL-only bookmarks.],
-  [],
-)
-#entry(
-  [#link("https://github.com/hiraethecho/lichtung")[*Lichtung*] — Hugo theme (Go templates / SCSS) built with conversational AI-assisted development; powers two personal sites (docs & blog).],
-  [],
-)
-#entry(
-  [#link("https://github.com/hiraethecho/mumble")[*mumble*] — message board (JavaScript, Cloudflare Worker): deploy standalone or embed.],
-  [],
-)
-
-#subsection("AI Practice")
-#entry(
-  [*Model training:* local practice — pytorch-cpp, llm-from-scratch, build-llm-from-zero, tiny-reasoning-rl-lab, etc.],
-  [],
-)
-#entry(
-  [#link("https://github.com/hiraethecho/AiKit")[*AiKit*] — agent framework: agents / skills / plugins for coding agents (pi, opencode, codex, claude code, …), including pi extensions (rtk, cave, toon, doc, role) and quick-deploy scripts.],
-  [],
-)
-#entry(
-  [*Open-source:* forks, improvements & usage — #link("https://github.com/hiraethecho/Rethlas")[Rethlas] (natural-language math reasoning), co-mathematician, etc.; contribution to the Lean 4 platform prove2.me.],
-  [],
-)
-#entry(
-  [*Closed beta:* agentero, math research workstation & paper reader (temporarily closed-source).],
-  [],
-)
-
-#section("Education")
-#entry(
-  [
-    *Ph.D.*\
-    Mathematics PhD (in progress), AMSS, University of Chinese Academy of Sciences — expected June 2027.\
-    _Advisor:_ Prof. Yifei Chen.\
-    _Research:_ birational geometry — Sarkisov program, algebraically integrable foliations.
-  ],
-  [],
-)
-#entry(
-  [
-    *M.S.*\
-    Mathematics M.S., AMSS, University of Chinese Academy of Sciences.\
-    _Advisor:_ Prof. Yifei Chen.\
-    _Thesis:_ "Sarkisov program for foliated pairs".
-  ],
-  [],
-)
-#entry(
-  [
-    *B.S.*\
-    Mathematics B.S., Beihang University.\
-    _Thesis:_ "Moduli space of curves".\
-    Undergraduate teaching assistant: Linear Algebra, Algebraic Geometry.
-  ],
-  [],
-)
-
-- MCM/ICM — Meritorious Winner (twice)
-- Hua Luogeng Scholarship, Beihang University (twice)
