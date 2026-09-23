@@ -1,40 +1,40 @@
 ---
 title: "Cutui"
 date: 2026-08-29
-description: A TUI video editor
+description: 一款基于终端界面的视频编辑工具
 ---
 
-## Motivation
+## 项目缘起
 
-I have a DJI Action 4 shooting videos while riding, so I want to do some simple video editing quickly.
-The idea is to cut and concatenate videos using (of course) FFmpeg. So I have to find the in and out points of videos, and then concatenate them. If no rendering is needed, FFmpeg can just copy the videos losslessly (for example [LosslessCut](https://losslesscut.app/) is a GUI wrapper of FFmpeg to cut clips from videos).
-But it is almost impossible to type the CLI command by hand, and it is also hard to find the cut points.
+我拥有一台 DJI Action 4 运动相机，常在骑行过程中录制视频，因此希望以较为快捷的方式完成简单的视频剪辑工作。基本思路是借助 FFmpeg（理所当然的选择）对视频进行切分与拼接：首先需要确定各视频的入点与出点，随后完成拼接。若无需重新渲染，FFmpeg 可以直接以无损方式复制视频流（例如 [LosslessCut](https://losslesscut.app/) 便是基于 FFmpeg 的图形界面剪辑工具）。
 
-## Idea
+然而，手工编写命令行参数几乎不具可行性，而精确定位剪辑点同样颇为费时。
 
-Inspired by [ninve](https://github.com/Niedzwiedzw/ninve), I decide to build a TUI video editor that uses mpv for preview (and to find in and out points) and uses FFmpeg for export.
+## 设计思路
 
-## Progress
+受 [ninve](https://github.com/Niedzwiedzw/ninve) 项目的启发，我决定开发一款终端界面的视频编辑器：以 mpv 负责预览（并用于确定入点与出点），以 FFmpeg 负责导出。
 
-This is far from finished; for now it is just an MVP, written in Rust.
+## 当前进展
 
-## Usage (MVP)
+该项目距离完善仍有相当距离，目前仅实现了最小可用版本（MVP），代码以 Rust 编写。
+
+## 使用（MVP）
 
 ```sh
-cargo build   # or: cargo run
+cargo build   # 或 cargo run
 ```
 
-Keyboard-driven (vim-style):
+键位操作（vim 风格）：
 
-- `i` / `o` — mark in / out point
-- `a` — add clip to timeline (V1)
-- `x` — delete
-- `h` / `l` — move playhead
-- `Space` — mpv preview
-- `e` — export (trim / concat, audio preserved)
-- `t` — transition picker
-- `u`, `Ctrl+r` — undo / redo
+- `i` / `o` — 标记入点 / 出点
+- `a` — 将片段加入时间线（V1）
+- `x` — 删除
+- `h` / `l` — 移动播放头
+- `Space` — mpv 预览
+- `e` — 导出（裁剪 / 拼接，保留音频）
+- `t` — 转场选择
+- `u`、`Ctrl+r` — 撤销 / 重做
 
-Built with Rust + ratatui; mpv provides preview via Unix-socket JSON IPC. Design docs: `SPEC.md`, `PLAN.md`, `CHANGELOG.md` (the dual-branch Go experiment lives on branch `go`).
+基于 Rust + ratatui 构建；mpv 通过 Unix socket JSON IPC 提供预览。设计文档：`SPEC.md`、`PLAN.md`、`CHANGELOG.md`（Go 双分支实验保留在 `go` 分支）。
 
-GitHub: [hiraethecho/cutui](https://github.com/hiraethecho/cutui)
+GitHub：[hiraethecho/cutui](https://github.com/hiraethecho/cutui)

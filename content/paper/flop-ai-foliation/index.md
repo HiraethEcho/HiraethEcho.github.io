@@ -1,17 +1,17 @@
 ---
-title: Flop between algebraically integrable foliations on potentially KLT varieties
+title: 潜 klt 簇上代数可积叶层化之间的 flop
 weight: 2
 date: 2025-09-01
-description: "Two minimal models of two MMPs from one lc AI AFS are connected by flops."
+description: "单个 lc AI AFS 的两条 MMP 所得两个极小模型由一列 flop 连接。"
 extra:
   type: journals
   authors:
-    - Chen, Yifei
-    - Liu, Jihao
-    - Wang, Yanze
+    - 陈亦飞
+    - 刘济豪
+    - 王延泽
   featured: false
-  abstract: We prove that for any two minimal models of an lc algebraically integrable foliated triple on potentially klt varieties, there exist small birational models that are connected by a sequence of flops. In particular, any two minimal models of lc algebraically integrable foliated triples on $\mathbb{Q}$-factorial klt varieties are connected by a sequence of flops. We also discuss the connection between minimal models for possibly non-algebraically integrable foliations on threefolds, assuming the minimal model program for generalized foliated quadruples.
+  abstract: 我们证明：对潜 klt 簇上 lc 代数可积叶层化三元组的任意两个极小模型，存在由一列 flop 连接的小双有理模型。特别地，Q-阶乘 klt 簇上 lc 代数可积叶层化三元组的任意两个极小模型由一列 flop 连接。在假设广义叶层化四元组极小模型纲领成立的前提下，我们还讨论三维簇上可能非代数可积叶层化的极小模型之间的联系。
   publication: "International Journal of Mathematics, 36(11):2550035, 2025"
   url: https://doi.org/10.1142/S0129167X25500351
-  pdf: flop.pdf
+  url_pdf: /paper/flop-ai-foliation/flop.pdf
 ---

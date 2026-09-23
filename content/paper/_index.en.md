@@ -1,16 +1,16 @@
 ---
-title: 论文
+title: Paper
 sort_by: weight
 template: "publications.html"
 page_template: "publication-page.html"
 extra:
-  index_title: 论文
+  index_title: Papers
   index_show: true
   publications_types:
-    - title: "期刊论文"
+    - title: "Journal articles"
       type: journals
-    - title: "预印本"
+    - title: "Preprint"
       type: preprint
-    - title: "学位论文"
+    - title: "Thesis"
       type: thesis
 ---

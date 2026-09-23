@@ -1,16 +1,16 @@
 ---
-title: Sarkisov program for foliated pairs
-description: Sarkisov program for klt pairs and F-dlt foliated pairs.
+title: 叶层化对的 Sarkisov 纲领
+description: klt 对与 F-dlt 叶层化对的 Sarkisov 纲领。
 date: 2024-06-15
 weight: 7
 extra:
   type: thesis
-  authors: 
-    - Wang, Yanze
+  authors:
+    - 王延泽
   abstract: |
-    One of the goals of birational geometry is to classify varieties up to birational equivalence. The minimal model program is to find a good representative in every fixed birational equivalence class.
-    All of these good representatives can be divided into two classes. One is called the minimal model, and the other is called Mori fiber space, both of which are not unique.
-    Modulo isomorphism, any two MMP-related Mori fiber spaces are connected by a birational map, which can be decomposed into finitely many elementary birational maps by running the Sarkisov program. There are four types of elementary birational maps, called Sarkisov links.
-    The first goal of this paper is to introduce three methods of the Sarkisov program.
-    The second goal is trying to establish the Sarkisov program for foliated pairs. By reducing $F$-dlt foliated pairs to klt pairs, there is a weak decomposition of birational maps between foliated Mori fiber spaces.
+    双有理几何的目标之一是分类簇至双有理等价。极小模型纲领在每一固定的双有理等价类中寻找好代表元。
+    这些好代表元分为两类：极小模型与 Mori 纤维空间，二者均不唯一。
+    模同构之下，任意两个 MMP 相关的 Mori 纤维空间由一个双有理映射连接，而通过运行 Sarkisov 纲领，该映射可分解为有限多个初等双有理映射。初等双有理映射共有四种类型，称为 Sarkisov 链环。
+    本文的第一个目标是介绍 Sarkisov 纲领的三种方法。
+    第二个目标是尝试建立叶层化对的 Sarkisov 纲领。通过将 F-dlt 叶层化对约化为 klt 对，我们得到叶层化 Mori 纤维空间之间双有理映射的弱分解。
 ---

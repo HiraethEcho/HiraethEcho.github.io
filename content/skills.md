@@ -1,23 +1,22 @@
 ---
-title: Skills
+title: 技能
 draft: true
 ---
 
-## Mathematics
+## 数学
 
-- Birational geometry
-    - Minimal model program - Sarkisov program
-    - Algebraically integrable foliations
-- linear algebra/ abstract algebra
-- (Algebraic) Topology
+- 双有理几何
+- 极小模型纲领
+- Sarkisov 纲领
+- 代数可积叶层化
 
-## Programming
+## 编程
 
 - C
 - Git
-- Daily driver: Arch Linux + Neovim
+- 日常使用 Arch Linux + Neovim
 
-## Languages
+## 语言
 
-- Chinese (native)
-- English (professional working)
+- 中文（母语）
+- 英语（专业工作水平）

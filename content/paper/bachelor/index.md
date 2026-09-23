@@ -1,11 +1,11 @@
 ---
-title: Moduli of Curves
+title: 曲线模空间
 date: 2020-06-01
 weight: 8
-description: GIT course moduli spaces and DM stack
+description: GIT 粗模空间与 DM 叠上的模空间
 extra:
   type: thesis
-  authors: 
-    - Wang, Yanze
-  abstract: "In algebraic geometry, the classification of isomorphic classes of certain kinds of geometric objects is one of the major problems, and is usually called the moduli problem. Among all kinds of moduli problems, the moduli of curves started early, and has more mature tools and results. Many famous mathematicians have made many outstanding works, such as Riemann, Deligne and Mumford. The main purpose of this report is to construct moduli spaces of curves by geometric invariant theory (GIT) and stack theory, and their compactifications. First I introduce smooth curves and DM stable curves, which are the geometric objects to be classified. Then I give some general theories as tools constructing moduli spaces, including category theory, stack theory, Hilbert scheme and GIT. These form the major part of this article. Next I construct two kinds of moduli spaces of curves, using the properties of curves and the tools I've shown earlier. At last I give some further questions, and discuss some other moduli spaces."
+  authors:
+    - 王延泽
+  abstract: "在代数几何中，对某类几何对象的同构类进行分类是重要问题之一，通常称为模问题。在各类模问题中，曲线模空间起步较早，工具与结果也较为成熟。许多著名数学家做出过杰出工作，如 Riemann、Deligne 与 Mumford。本文的主要目的是借助几何不变量理论（GIT）与叠理论构造曲线模空间及其紧化。首先介绍光滑曲线与 DM 稳定曲线，即待分类的几何对象；其次给出构造模空间所需的一般理论工具，包括范畴论、叠理论、Hilbert 概形与 GIT，这些构成本文的主体；随后利用曲线的性质与前述工具构造两类曲线模空间；最后提出若干进一步的问题，并讨论其它模空间。"
 ---

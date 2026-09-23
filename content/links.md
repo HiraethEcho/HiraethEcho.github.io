@@ -1,5 +1,5 @@
 ---
-title: Links
+title: 链接
 template: links-page.html
 extra:
   links:
@@ -13,9 +13,9 @@ extra:
       name: ORCID
       link: https://orcid.org/0009-0003-3661-1890
     - icon: code
-      name: Notes
+      name: 技术笔记
       link: https://docs.keinmal.top
     - icon: book
-      name: Personal Site - MEMEX
+      name: 个人网站 MEMEX
       link: https://memex.keinmal.top
 ---

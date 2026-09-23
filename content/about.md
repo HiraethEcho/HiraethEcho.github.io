@@ -1,103 +1,105 @@
 ---
-title: About
-description: Yanze Wang — Ph.D. candidate in Mathematics at UCAS, working on birational geometry.
+title: 关于我
+description: 王延泽 — 中国科学院大学数学专业博士研究生，研究方向为双有理几何。
 ---
 
-This page is my professional face. The rest of me — essays on existence, modernity, and culture, written under the pen name **Hiraeth** — lives at [memex](https://memex.keinmal.top). The domain *keinmal.top* comes from the German proverb *einmal ist keinmal*, "what happens but once might as well not have happened" (Kundera, *The Unbearable Lightness of Being*, after Nietzsche's eternal recurrence): an attempt to take a single, unrepeatable life seriously.
+这一页是我的职业形象。
 
-I am a Ph.D. candidate at the Academy of Mathematics and Systems Science (AMSS), University of Chinese Academy of Sciences (UCAS), advised by Prof. Yifei Chen, expecting to graduate in June 2027. My research centers on the Sarkisov program for algebraically integrable foliations, together with related questions in the minimal model program.
+我目前就读于中国科学院数学与系统科学研究院（AMSS，隶属中国科学院大学，UCAS），导师陈亦飞教授，攻读博士学位，预计于 2027 年 6 月毕业。我的研究集中于代数可积叶层化的 Sarkisov 纲领，以及极小模型纲领中的若干相关问题。
 
-Recently, I have been exploring **AI4Math**: human verification of AI-generated mathematical papers, building research harnesses (e.g. forking and extending [Rethlas](/project/rethlas)), and formalization in Lean 4. Beyond that, I am interested in AI infrastructure — LLM training and (mathematical) data annotation — including post-training tailored to mathematical research. Details of the small-scale projects I am currently reproducing can be found in the [Projects](#projects) section below.
+近期，我也在积极探索 **AI4Math** 这一方向，包括人工验证 AI 生成的数学论文、搭建数学研究 harness（例如 fork 并改进 [Rethlas](/project/rethlas)）、探索形式化证明语言 Lean 4 等。
 
-A deliberate principle runs through all of this: AI is welcome where it augments my work — code, knowledge-gathering, drafting — but final judgment stays human. In mathematics, that means AI-generated results are only published after human verification; in my essays, writing is never delegated to AI.
+<!-- 同时也是微软一个 AI4Math 项目（目前私有）的贡献者。 -->
 
-I am open to research positions in both academia and industry. A short [resume](/resume.pdf) is available.
+此外，我对大模型训练、（数学）数据标注等 AI 基础设施（AI infra）方向，以及面向数学研究的后训练（post-training）和智能体框架（harness）也抱有浓厚兴趣。目前正在复现的小规模项目详见下文[项目](#xiang-mu)章节。
 
-## Experience
+无论是学术界还是工业界的研究岗位，我都持开放态度，欢迎垂询与合作。简版[简历](/resume-zh.pdf)可供下载。
 
-### Education
+## 经历
 
-- **Ph.D. in Mathematics** (in progress), AMSS, UCAS — 2024–2027 (expected). Research: birational geometry — Sarkisov program, algebraically integrable foliations. Advisor: Prof. Yifei Chen
-- **M.S. in Mathematics**, AMSS, UCAS — 2020–2024. M.S. thesis: [_Sarkisov program for foliated pairs_](/paper/master). Advisor: Prof. Yifei Chen
-- **B.S. in Mathematics**, Beihang University — 2016–2020. B.S. thesis: [_Moduli space of curves_](/paper/bachelor)
+### 教育背景
 
-#### Teaching
+- **理学博士（在读）**，中国科学院数学与系统科学研究院，中国科学院大学 — 2024 年至 2027 年（预计毕业）。研究方向：双有理几何——Sarkisov 纲领、代数可积叶层化。指导教师：陈亦飞教授
+- **理学硕士**，中国科学院数学与系统科学研究院，中国科学院大学 — 2020 年至 2024 年。硕士学位论文：[《叶层化对的 Sarkisov 纲领》](/paper/master)。指导教师：陈亦飞教授
+- **理学学士**，北京航空航天大学 — 2016 年至 2020 年。学士学位论文：[《曲线模空间》](/paper/bachelor)
 
-- **Teaching Assistant**, Beihang University — undergraduate years: Linear Algebra, Algebraic Geometry
+#### 教学
 
-### Honors & Awards
+- **助教**，北京航空航天大学（本科期间）：线性代数、代数几何
 
-- **MCM/ICM** — Meritorious Winner (twice)
-- **Hua Luogeng Scholarship**, Beihang University (twice)
-- **CAS** — Merit Student of the Chinese Academy of Sciences
+### 荣誉奖项
 
-## Skills
+- **美国大学生数学建模竞赛（MCM/ICM）** — 一等奖（Meritorious Winner，两次）
+- **北京航空航天大学华罗庚奖学金**（两次）
+- **中国科学院** — 三好学生
 
-- **Mathematics**: birational geometry and the minimal model program — Sarkisov program, algebraically integrable foliations; moduli spaces
-- **AI practice**: PyTorch / libtorch model-training mini-projects; agent-framework building
-- **AI4Math**: human verification of AI-generated mathematical results; research harnesses; Lean 4 formalization
-- **Engineering**: C, Rust, TUI application development (ratatui), Git; daily driver on Arch Linux with Neovim
-- **Languages**: Chinese (native), English (professional working)
+## 技能
 
-## Projects
+- **数学**：双有理几何与极小模型纲领——Sarkisov 纲领、代数可积叶层化；模空间
+- **AI 实践**：PyTorch / libtorch 模型训练小项目；智能体框架搭建
+- **AI4Math**：AI 生成数学结果的人工验证；研究 harness；Lean 4 形式化
+- **工程**：C、Rust、TUI 应用开发（ratatui）、Git；日常使用 Arch Linux + Neovim
+- **语言**：中文（母语）、英语（专业工作水平）
 
-### AI Practice
+## 项目
 
-**Model training** (reproducing small-parameter training)
+### AI 实践
 
-- [GPT teacher](https://github.com/hiraethecho/GPT_teacher-3.37M-cn) — a 3.37M-parameter Chinese GPT trained from scratch on CPU (incl. knowledge distillation)
-- [tiny-reasoning-rl-lab](https://github.com/hiraethecho/tiny-reasoning-rl-lab) — a 41K-parameter reasoning-RL experiment (REINFORCE + KL, CPU)
-- **Qwen3-0.6B math LoRA fine-tune** (toy-tune) — a toy fine-tune on a GSM8K subset, walking the data → train → track → artifact pipeline (Trackio)
+**模型训练**（复现小参数训练）
+
+- **[GPT teacher](https://github.com/hiraethecho/GPT_teacher-3.37M-cn)** — 从 0 到 1 在 CPU 上训练 3.37M 参数中文 GPT（含知识蒸馏）
+- **[tiny-reasoning-rl-lab](https://github.com/hiraethecho/tiny-reasoning-rl-lab)** — 41K 参数 reasoning-RL 实验（REINFORCE + KL，CPU）
+- **Qwen3-0.6B 数学 LoRA 微调**（toy-tune）— 在 GSM8K 子集上做玩具级微调，跑通「数据 → 训练 → 追踪 → 产物」全链路（Trackio 追踪）
 
 **AI4Math**
 
-- [toric-lean](https://github.com/hiraethecho/toric-lean) — reproducing the Lean 4 formalization of *Toric Varieties* (Cox–Little–Schenck)
-- Learning and practicing workflows of agent architectures such as co-mathematician
-- [Rethlas](/project/rethlas) — fork of a two-agent math-reasoning harness, adapted to my workflow
-- Math formalization practice on the Lean 4 platform [prove2.me](https://prove2.me)
-- [AiKit](/project/aikit) — agents / skills / plugins for coding agents (especially pi), used for math research and SDD programming
+- **[toric-lean](https://github.com/hiraethecho/toric-lean)** — 在 Lean 4 中复现 Cox–Little–Schenck《Toric varieties》的形式化
+- 学习和实践 co-mathematician 等智能体架构的工作流
+- [Rethlas](/project/rethlas) — 双智能体数学推理 harness 的 fork，适配个人工作流
+- 参与 Lean 4 平台 [prove2.me](https://prove2.me) 上的数学形式化实践
+- [AiKit](/project/aikit) — 面向编码智能体（尤其是 pi）的代理 / skills / 插件集合，用于数学研究与 SDD 编程
 
-### Programming & Open Source
+### 编程与开源
 
-Beyond research and AI4Math, I am passionate about programming and exploring the Linux ecosystem: I maintain my own build of dwm (a dynamic tiling window manager on X11) and several other [suckless](/project/suckless) components, wrote a Hugo theme powering two of my sites, and developed a number of command-line and TUI tools with AI assistance (vibe coding).
+除学术与 AI4Math 之外，我也热衷于编程与 Linux 生态的探索：维护自己的 dwm（X11 动态平铺窗口管理器）及若干 [suckless](/project/suckless) 组件的个性化分支，独立开发了支撑两个个人网站的 Hugo 主题，并在 AI 辅助（vibe coding）下开发了不少命令行与 TUI 工具。
 
-- [suckless](/project/suckless) — personal fork of dwm / dwmblocks and other desktop components (C), patched by hand, no AI assistance
-- [Calman](/project/calman) — terminal task & event manager (CLI, Rust): JSONL/ICS storage, CalDAV-compatible, sync delegated to radicale / vdirsyncer / rclone
-- [Markerss](/project/markerss) — TUI RSS reader (Rust, ratatui): Markdown export, URL bookmarks
-- [Lichtung](/project/lichtung) — Hugo theme (Go templates / SCSS) powering two personal sites
-- [mumble](/project/mumble) — message board (JavaScript, Cloudflare Worker); standalone or embedded pages
-- [cutui](/project/cutui) — simple TUI video editor (Rust)
+- [suckless](/project/suckless) — 自行 fork 的 dwm / dwmblocks 等桌面组件（C），以手工补丁方式维护，未经 AI 辅助
+- [Calman](/project/calman) — 终端任务与事件管理器（CLI，Rust）：JSONL/ICS 存储，CalDAV 兼容，同步委托 radicale / vdirsyncer / rclone
+- [Markerss](/project/markerss) — TUI RSS 阅读器（Rust，ratatui）：Markdown 导出、URL 收藏
+- [Lichtung](/project/lichtung) — Hugo 主题（Go 模板 / SCSS），支撑两个个人站点
+- [mumble](/project/mumble) — 基于 Cloudflare Worker 的留言板，可独立部署或嵌入页面
+- [cutui](/project/cutui) — 简易 TUI 视频编辑器（Rust）
 
-## Papers & Talks
+## 论文与报告
 
-### Publications
+### 发表论文
 
 - **Sarkisov Program for Algebraically Integrable Adjoint Foliated Structures** — Yifei Chen, Jihao Liu, Yanze Wang. [_International Mathematics Research Notices_, 2026(6): rnag045](/paper/sp4afs).
 - **Flop between algebraically integrable foliations on potentially KLT varieties** — Yifei Chen, Jihao Liu, Yanze Wang. [_International Journal of Mathematics_, 36(11): 2550035](/paper/flop-ai-foliation).
 - **A Note on the Sarkisov Program** — Yifei Chen, Yanze Wang. [_Higher Dimensional Algebraic Geometry: A Volume in Honor of V. V. Shokurov_, LMS Lecture Note Series, pp. 231–263, Cambridge University Press](/paper/note-sarkisov).
 
-### Preprints
+### 预印本
 
-_All AI-generated, human-verified._
+_均为 AI 生成、人工验证。_
 
-- **A klt generalized pair with infinitely generated canonical ring** — Jihao Liu, Yanze Wang. arXiv:2608.03258. [Details](/paper/klt-canonical-ring)
-- **Twelve common flex lines in a general pencil of cubics** — Jihao Liu, Yanze Wang. arXiv:2607.26396. [Details](/paper/flex-lines)
-- **A counterexample to the odd-dimensional rank bound for abelian p-group actions** — Jihao Liu, Yanze Wang. arXiv:2607.04891. [Details](/paper/rank-bound)
+- **A klt generalized pair with infinitely generated canonical ring** — Jihao Liu, Yanze Wang. arXiv:2608.03258. [详情](/paper/klt-canonical-ring)
+- **Twelve common flex lines in a general pencil of cubics** — Jihao Liu, Yanze Wang. arXiv:2607.26396. [详情](/paper/flex-lines)
+- **A counterexample to the odd-dimensional rank bound for abelian p-group actions** — Jihao Liu, Yanze Wang. arXiv:2607.04891. [详情](/paper/rank-bound)
 
-### Talks
+### 学术报告
 
-- **2026** — Speaker, *Sarkisov Program for Algebraically Integrable and Threefold Foliations*, Xi'an Jiaotong-Liverpool University
+- **2026 年** — 报告人，_代数可积与三维叶状结构的 Sarkisov 纲领_，西交利物浦大学
 
-The complete list is on the [Papers](/paper/) page.
+完整列表见[论文](/paper/)页面。
 
-## Writing
+## 另一个我
 
-On [memex](https://memex.keinmal.top) I write about existence, philosophy, modernity, literature, and the culture industry — book and film criticism, introspection, and the occasional poem. My essays are written by hand: no AI generation or polishing, as a matter of protecting language and therefore thought (I do happily use AI for knowledge-gathering). Some pieces are also published on a Chinese WeChat public account.
+另一部分的我，以笔名 **Hiraeth** 在 [memex](https://memex.keinmal.top) 记录关于存在、哲学、现代性、文学与文化工业的随笔，书评影评、个人内省，以及偶尔的诗。随笔全部手工写作：不借助 AI 生成或润色，以保护语言能力、进而保护思考能力（知识获取则乐于借助 AI）。部分文章同步发布在个人公众号。  
+域名 _keinmal.top_ 出自德语谚语 _einmal ist keinmal_，即"只有一次等于没有"。
 
-## Links
+## 联系方式
 
-- **Email**: wangyanze@amss.ac.cn — feel free to reach out about research or collaboration
-- **GitHub**: [hiraethecho](https://github.com/hiraethecho) — code and open-source work
-- **ORCID**: [0009-0003-3661-1890](https://orcid.org/0009-0003-3661-1890) — publication record
-- **Notes**: [docs.keinmal.top](https://docs.keinmal.top) — technical documentation and notes
-- **MEMEX**: [memex.keinmal.top](https://memex.keinmal.top) — essays on existence, modernity, and culture
+- **电子邮箱**：wangyanze@amss.ac.cn — 欢迎就研究与合作事宜联系
+- **GitHub**：[hiraethecho](https://github.com/hiraethecho) — 代码与开源项目
+- **ORCID**：[0009-0003-3661-1890](https://orcid.org/0009-0003-3661-1890) — 学术发表记录
+- **技术笔记**：[docs.keinmal.top](https://docs.keinmal.top) — 技术文档与笔记

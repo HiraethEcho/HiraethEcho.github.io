@@ -1,37 +1,37 @@
 ---
 title: "Mumble"
 date: 2026-08-29
-description: A minimalist cloud message board — Cloudflare Workers + D1, embeddable in other pages.
+description: 极简云端留言板——Cloudflare Workers + D1，可嵌入其它页面。
 ---
 
 # Mumble
 
-[Mumble](https://github.com/hiraethecho/mumble) is a minimalist cloud message board: a native HTML/CSS/JS frontend with a Cloudflare Workers + D1 backend. Zero framework, zero dependencies. It can be deployed as a standalone page or embedded into other pages (`/embed`).
+[Mumble](https://github.com/hiraethecho/mumble) 是一个极简云端留言板：原生 HTML/CSS/JS 前端，后端为 Cloudflare Workers + D1。零框架、零依赖。既可独立部署为独立页面，也可嵌入其它页面（`/embed`）。
 
-## Run locally
+## 本地运行
 
 ```sh
 npx wrangler dev --local
 ```
 
-Serves at <http://localhost:8787> (embed mode at `/embed`).
+服务地址 <http://localhost:8787>（嵌入模式为 `/embed`）。
 
-## Deploy
+## 部署
 
 ```sh
-npx wrangler d1 create mumble-db     # create the D1 database
-# put the returned database_id into wrangler.toml
+npx wrangler d1 create mumble-db     # 创建 D1 数据库
+# 将返回的 database_id 填入 wrangler.toml
 npx wrangler deploy
 ```
 
-## Configure
+## 配置
 
-- `public/config.js` — frontend configuration
-- `wrangler.toml` `[vars]` — `ADMIN_EMAIL`, `ADMIN_PASSWORD`, `SESSION_SECRET` (use Dashboard environment variables in production)
-- Custom styles: `public/static/css/custom.css` / `custom-embed.css`
+- `public/config.js` — 前端配置
+- `wrangler.toml` `[vars]` — `ADMIN_EMAIL`、`ADMIN_PASSWORD`、`SESSION_SECRET`（生产环境建议使用 Dashboard 环境变量）
+- 自定义样式：`public/static/css/custom.css` / `custom-embed.css`
 
-## Workflow
+## 工作流程
 
-Register → an admin approves the account → post/reply. Editing and deletion are admin-only.
+注册 → 管理员批准账号 → 发布/回复。编辑与删除仅限管理员。
 
-GitHub: [hiraethecho/mumble](https://github.com/hiraethecho/mumble)
+GitHub：[hiraethecho/mumble](https://github.com/hiraethecho/mumble)

@@ -1,33 +1,31 @@
 ---
 title: "Calman"
 date: 2026-08-29
-description: A task & event manager in the terminal. Rust, iCalendar.
+description: 终端下的任务与事件管理工具。Rust 编写，采用 iCalendar 格式存储。
 ---
 
 # Calman
 
-Inspired by Taskwarrior, which is a wonderful and powerful task manager in the CLI.
-However it is not convenient to sync tasks, and it does not support events. Also it is too powerful for me.
-Cfait uses ICS files for storage, which is easy to work with CalDAV (I use Radicale as a server and sync with my phone). But the UI is too fancy for me.
-Todoman is a cli that also uses ICS files, but I perfer Taskwarrior style commands.
+本项目的灵感来源于 Taskwarrior——一款功能出色且强大的命令行任务管理工具。然而，Taskwarrior 在任务同步方面不够便捷，且不支持事件管理，其功能复杂度也超出了我的实际需要。另一款工具 Cfait 采用 ICS 格式存储数据，便于与 CalDAV 协议协同工作（本人使用 Radicale 作为服务端，并与手机同步），但其界面过于繁复。Todoman 同样基于 ICS 文件，而我更倾向于 Taskwarrior 风格的命令交互。
 
-Therefore I vibe-coded [this one](https://github.com/hiraethecho/calman). Written in Rust.
+因此，我设计并实现了[这一工具](https://github.com/hiraethecho/calman)，全部代码以 Rust 编写。
 
-Stores tasks and events as JSONL or ICS (CalDAV-compatible); sync is delegated to external tools (git, vdirsyncer, rclone).
-Status: mostly usable, but not every planned feature is implemented yet.
+该项目以 JSONL 或 ICS（兼容 CalDAV）格式存储任务与事件；数据同步则交由外部工具完成（如 git、vdirsyncer、rclone）。
 
-## Usage
+当前状态：核心功能已基本可用，但规划中的部分特性尚待实现。
+
+## 用法
 
 ```sh
-cargo build --release        # binary: target/release/calman
+cargo build --release        # 二进制：target/release/calman
 calman add "buy milk" due:tomorrow pri:H +home
-calman next                  # bare `calman` == next
+calman next                  # 不带参数的 `calman` 等价于 next
 calman list / done / start / stop / count / sync
 ```
 
-- Filters: `+OVERDUE`, `type:event`, `rc.` overrides
-- Recurrence: `recur:daily` / RFC 5545 RRULE
-- Optional cargo features (e.g. `tui`, `recur-expand`)
-- Two config tiers: `*.default.toml` (self-contained) vs `*.example.toml` (annotated)
+- 过滤器：`+OVERDUE`、`type:event`、`rc.` 覆盖
+- 循环：`recur:daily` / RFC 5545 RRULE
+- 可选 cargo 特性（如 `tui`、`recur-expand`）
+- 两套配置层级：`*.default.toml`（自包含）vs `*.example.toml`（带注释）
 
-More docs live in `docs/` (install, usage, recurrence, iCalendar, reports, filters) plus `SPEC.md` / `DESIGN.md` / `PLAN.md`.
+更多文档见 `docs/`（安装、用法、循环、iCalendar、报告、过滤器）以及 `SPEC.md` / `DESIGN.md` / `PLAN.md`。

@@ -1,9 +1,9 @@
 ---
-title: Home
+title: 主页
 page_template: page.html
 
 extra:
-  # title: Yanze Wang
+  # title: 王延泽
   homepage_sections:
     - { type: page, name: experience }
     - { type: section, name: paper }
@@ -11,7 +11,7 @@ extra:
     - { type: page, name: links }
 ---
 
-Hi, I'm **Yanze Wang**, a Ph.D. candidate in Mathematics at UCAS. My research lies mainly in **birational geometry** — the minimal model program and foliation theory in particular.  
-Beyond research, programming and software development have long been a passion of mine. I develop daily on Arch Linux with Niri/dwm + Neovim, and I'm currently learning LLM training and agent building, especially in AI4Math — reproducing small-scale projects along the way (see the [About](/about) page for details).
+您好，我是**王延泽**，中国科学院大学数学专业博士研究生。我的主要研究方向为**双有理几何**，具体涉及极小模型纲领与叶层化理论。  
+此外，我也长期从事业余编程与软件开发，并抱有浓厚兴趣。日常在 Arch Linux + Niri/dwm + Neovim 下开发。现在在学习大模型训练、智能体搭建等，尤其在 AI4Math 领域的实践——一路也在复现一些小规模项目（详见[关于](/zh/about)页面）。
 
-See more on the [About](/about) page and my [blog](/blog), or download my [resume](/resume.pdf).
+欢迎通过[关于](/about)页面、[博客](/blog)，了解更多，或下载简版[简历](/resume-zh.pdf)。

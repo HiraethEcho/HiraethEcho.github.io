@@ -1,23 +1,23 @@
 ---
-title: Experience
+title: 经历
 ---
 
-## Education
+## 教育经历
 
-- **Ph.D. in Mathematics** (in progress) — UCAS, expected 2027
-- **M.S. in Mathematics** — UCAS, 2024
-- **B.S. in Mathematics** — Beihang University (BUAA), 2020
+- **理学博士（在读）** — 中国科学院大学，预计 2027 年毕业
+- **理学硕士** — 中国科学院大学，2024 年
+- **理学学士** — 北京航空航天大学，2020 年
 
-## Teaching
+## 教学
 
-- **Teaching Assistant**, Beihang University (undergraduate) — Linear Algebra, Algebraic Geometry
+- **助教**，北京航空航天大学（本科期间）：线性代数、代数几何
 
-## Awards
+## 荣誉奖励
 
-- **MCM/ICM** — Meritorious Winner (twice)
-- **Hua Luogeng Scholarship**, Beihang University (twice)
-- **CAS** — Merit Student of the Chinese Academy of Sciences
+- **美国大学生数学建模竞赛（MCM/ICM）** — 一等奖（Meritorious Winner，两次）
+- **北京航空航天大学华罗庚奖学金**（两次）
+- **中国科学院** — 三好学生
 
-## Talks
+## 学术报告
 
-- **2026** — Speaker, *Sarkisov Program for Algebraically Integrable and Threefold Foliations*, Xi'an Jiaotong-Liverpool University
+- **2026 年** — 报告人，*代数可积与三维叶层化的 Sarkisov 纲领*，西交利物浦大学
