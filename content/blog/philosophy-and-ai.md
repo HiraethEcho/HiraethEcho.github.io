@@ -2,6 +2,7 @@
 title: 哲学与人工智能
 date: 2026-09-23
 description: 虽然哲学很不科学，但似乎仍然能对新兴的人工智能有所指导
+categories: thoughts
 ---
 
 ## 什么是哲学和人工智能
