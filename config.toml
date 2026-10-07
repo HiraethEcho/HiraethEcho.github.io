@@ -50,6 +50,14 @@ anchors = "on"
 theme = "one-dark-pro"
 
 [extra]
+# Math (KaTeX) rendering, loaded from cdn.jsdelivr.net. See templates/base.html.
+#   absent -> auto: load KaTeX only on pages that contain "$" in their own
+#             content, description, extra.abstract, extra.summary or extra.tldr
+#   true   -> load KaTeX on every page. Use this when math appears in text the
+#             auto-detection cannot read, e.g. a bibtex `abstract` printed in a
+#             publication list.
+#   false  -> never load KaTeX
+# math = true
 header_title = "主页"
 bio_title = "王延泽"
 subtitle = "数学博士生"

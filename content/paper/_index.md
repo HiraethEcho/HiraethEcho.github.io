@@ -4,6 +4,7 @@ sort_by: weight
 template: "publications.html"
 page_template: "publication-page.html"
 extra:
+  hidden_nav: true
   index_title: 论文
   index_show: true
   publications_types:

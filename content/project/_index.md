@@ -3,9 +3,9 @@ title: 项目
 sort_by: date
 page_template: blog-page.html
 weight: 1
-# insert_anchor_links: right
 extra:
   index_show: true
+  hidden_nav: true
 ---
 
-关于编程及其他技术内容，欢迎参阅我的[技术笔记](https://docs.keinmal.top)。
+更多内容见[项目文档站点](https://docs.keinmal.top)和[计算机科学](https://memex.keinmal.top/forest/cs)学习记录。

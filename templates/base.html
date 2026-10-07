@@ -1,3 +1,13 @@
+{#- Math (KaTeX). See config.extra.math in config.toml: true = always, false = never, absent = auto-detect. -#}
+{%- set math_flag = config.extra.math | default(value="auto") -%}
+{%- set_global math_probe = "" -%}
+{%- if page is defined -%}
+{%- set_global math_probe = math_probe ~ page.content | default(value="") ~ page.description | default(value="") ~ page.extra.abstract | default(value="") ~ page.extra.summary | default(value="") ~ page.extra.tldr | default(value="") -%}
+{%- endif -%}
+{%- if section is defined -%}
+{%- set_global math_probe = math_probe ~ section.content | default(value="") ~ section.extra.description | default(value="") -%}
+{%- endif -%}
+{%- set use_math = math_flag == true or (math_flag == "auto" and "$" in math_probe) -%}
 <!DOCTYPE html>
 <html lang="{{ lang | default(value=config.default_language)}}">
 
@@ -14,6 +24,12 @@
   <!-- Custom header for users, includes custom css or js here -->
   {% block user_head -%}
   {% endblock user_head -%}
+
+  {% if use_math %}
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.19.0/dist/katex.min.css"
+        integrity="sha384-3rdsX6e5mueWyoweR9NIVmtEsUkokpBT/0ALqKKIBMr9j4qhHkaIkAcGgsE6uVlp" crossorigin="anonymous">
+  <link rel="stylesheet" href="{{ get_url(path="styles/math.css") | safe }}" />
+  {% endif %}
 
   <title>{% if section -%}{{ section.title }} | {% endif %} {{ config.title }}</title>
 
@@ -45,6 +61,15 @@
     </div>
   </footer>
   {% endblock footer -%}
+
+  {% if use_math %}
+  <!-- Math (KaTeX): renders $$...$$ as display and $...$ as inline math. -->
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.19.0/dist/katex.min.js"
+          integrity="sha384-QFFtAGzvvj+bfgCGxXJlNZZR1nXEZgvG8tDLCCY1F19xl20WlfTYgguB4VcNdxYk" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.19.0/dist/contrib/auto-render.min.js"
+          integrity="sha384-bjyGPfbij8/NDKJhSGZNP/khQVgtHUE5exjm4Ydllo42FwIgYsdLO2lXGmRBf5Mz" crossorigin="anonymous"
+          onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false});"></script>
+  {% endif %}
 </body>
 
 </html>

@@ -32,10 +32,10 @@ cd verification && uv venv && uv pip install -r requirements.txt && uv run uvico
 ## 查看结果
 
 ```sh
-./hugo.sh          # 或 ./site/serve.sh
+./hugo.sh
 ```
 
-站点由 Hugo 或 Zola（MATbook）构建，端口 3264。
+站点由 Hugo
 
 ## 目录结构
 
@@ -47,9 +47,3 @@ cd verification && uv venv && uv pip install -r requirements.txt && uv run uvico
 | `data/`          | 数学问题 markdown 文件                  |
 | `site/`          | 静态站点构建器                          |
 
-## 文档
-
-- `Rethlas-doc.md` — 更深入的架构说明
-- `add-agent-guide.md` — 如何添加更多智能体
-
-GitHub：[hiraethecho/Rethlas](https://github.com/hiraethecho/Rethlas)
