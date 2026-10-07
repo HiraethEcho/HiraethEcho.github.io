@@ -8,4 +8,4 @@ extra:
   hidden_nav: false
 ---
 
-For more blogs, see my [memex](https://memex.keinmal.top)
+For more blogs, see my [Memex](https://memex.keinmal.top).
