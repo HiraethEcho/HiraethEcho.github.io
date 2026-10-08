@@ -16,7 +16,7 @@ description: AI 智能体工具集合（skills、智能体、插件、人设等�
 
 大部分是搜集资源的整理，少部分是自己开发/vibe的工具。
 
-- [pi-board](/project/pi-board) 是比较满意的一个工具，但只是个开始，并非完整形态。
+- [pi-board](/projects/pi-board) 是比较满意的一个工具，但只是个开始，并非完整形态。
 - `pi-toolkit` 是 `pi` 的小工具合集，对我个人非常顺手
 - 一个 `night-run` 的 Skill，用来晚上睡觉时做长程任务
 - `teachme` Skill 初始化一个文件夹，教我学东西

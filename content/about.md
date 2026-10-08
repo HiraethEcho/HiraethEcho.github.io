@@ -16,8 +16,8 @@ description: 王延泽 — 中国科学院大学数学专业博士研究生，�
 ### 教育背景
 
 - **理学博士（在读）**，中国科学院数学与系统科学研究院，中国科学院大学 — 2024 年至 2027 年（预计毕业）。研究方向：双有理几何——Sarkisov 纲领、代数可积叶层化。指导教师：陈亦飞教授
-- **理学硕士**，中国科学院数学与系统科学研究院，中国科学院大学 — 2020 年至 2024 年。硕士学位论文：[《叶层化对的 Sarkisov 纲领》](/paper/master)。指导教师：陈亦飞教授
-- **理学学士**，北京航空航天大学 — 2016 年至 2020 年。学士学位论文：[《曲线模空间》](/paper/bachelor)
+- **理学硕士**，中国科学院数学与系统科学研究院，中国科学院大学 — 2020 年至 2024 年。硕士学位论文：[《叶层化对的 Sarkisov 纲领》](/papers/master)。指导教师：陈亦飞教授
+- **理学学士**，北京航空航天大学 — 2016 年至 2020 年。学士学位论文：[《曲线模空间》](/papers/bachelor)
 
 #### 教学
 
@@ -51,42 +51,42 @@ description: 王延泽 — 中国科学院大学数学专业博士研究生，�
 
 - **[toric-lean](https://github.com/hiraethecho/toric-lean)** — 在 Lean 4 中复现 Cox–Little–Schenck《Toric varieties》的形式化
 - 学习和实践 co-mathematician 等智能体架构的工作流
-- [Rethlas](/project/rethlas) — 双智能体数学推理 harness 的 fork，适配个人工作流
+- [Rethlas](/projects/rethlas) — 双智能体数学推理 harness 的 fork，适配个人工作流
 - 参与 Lean 4 平台 [prove2.me](https://prove2.me) 上的数学形式化实践
-- [AiKit](/project/aikit) — 面向编码智能体（尤其是 pi）的代理 / skills / 插件集合，用于数学研究与 SDD 编程
+- [AiKit](/projects/aikit) — 面向编码智能体（尤其是 pi）的代理 / skills / 插件集合，用于数学研究与 SDD 编程
 
 ### 编程与开源
 
-除学术与 AI4Math 之外，我也热衷于编程与 Linux 生态的探索：维护自己的 dwm（X11 动态平铺窗口管理器）及若干 [suckless](/project/suckless) 组件的个性化分支，独立开发了支撑两个个人网站的 Hugo 主题，并在 AI 辅助（vibe coding）下开发了不少命令行与 TUI 工具。
+除学术与 AI4Math 之外，我也热衷于编程与 Linux 生态的探索：维护自己的 dwm（X11 动态平铺窗口管理器）及若干 [suckless](/projects/suckless) 组件的个性化分支，独立开发了支撑两个个人网站的 Hugo 主题，并在 AI 辅助（vibe coding）下开发了不少命令行与 TUI 工具。
 
-- [suckless](/project/suckless) — 自行 fork 的 dwm / dwmblocks 等桌面组件（C），以手工补丁方式维护，未经 AI 辅助
-- [Calman](/project/calman) — 终端任务与事件管理器（CLI，Rust）：JSONL/ICS 存储，CalDAV 兼容，同步委托 radicale / vdirsyncer / rclone
-- [Markerss](/project/markerss) — TUI RSS 阅读器（Rust，ratatui）：Markdown 导出、URL 收藏
-- [Lichtung](/project/lichtung) — Hugo 主题（Go 模板 / SCSS），支撑两个个人站点
-- [mumble](/project/mumble) — 基于 Cloudflare Worker 的留言板，可独立部署或嵌入页面
-- [cutui](/project/cutui) — 简易 TUI 视频编辑器（Rust）
+- [suckless](/projects/suckless) — 自行 fork 的 dwm / dwmblocks 等桌面组件（C），以手工补丁方式维护，未经 AI 辅助
+- [Calman](/projects/calman) — 终端任务与事件管理器（CLI，Rust）：JSONL/ICS 存储，CalDAV 兼容，同步委托 radicale / vdirsyncer / rclone
+- [Markerss](/projects/markerss) — TUI RSS 阅读器（Rust，ratatui）：Markdown 导出、URL 收藏
+- [Lichtung](/projects/lichtung) — Hugo 主题（Go 模板 / SCSS），支撑两个个人站点
+- [mumble](/projects/mumble) — 基于 Cloudflare Worker 的留言板，可独立部署或嵌入页面
+- [cutui](/projects/cutui) — 简易 TUI 视频编辑器（Rust）
 
 ## 论文与报告
 
 ### 发表论文
 
-- **Sarkisov Program for Algebraically Integrable Adjoint Foliated Structures** — Yifei Chen, Jihao Liu, Yanze Wang. [_International Mathematics Research Notices_, 2026(6): rnag045](/paper/sp4afs).
-- **Flop between algebraically integrable foliations on potentially KLT varieties** — Yifei Chen, Jihao Liu, Yanze Wang. [_International Journal of Mathematics_, 36(11): 2550035](/paper/flop-ai-foliation).
-- **A Note on the Sarkisov Program** — Yifei Chen, Yanze Wang. [_Higher Dimensional Algebraic Geometry: A Volume in Honor of V. V. Shokurov_, LMS Lecture Note Series, pp. 231–263, Cambridge University Press](/paper/note-sarkisov).
+- **Sarkisov Program for Algebraically Integrable Adjoint Foliated Structures** — Yifei Chen, Jihao Liu, Yanze Wang. [_International Mathematics Research Notices_, 2026(6): rnag045](/papers/sp4afs).
+- **Flop between algebraically integrable foliations on potentially KLT varieties** — Yifei Chen, Jihao Liu, Yanze Wang. [_International Journal of Mathematics_, 36(11): 2550035](/papers/flop-ai-foliation).
+- **A Note on the Sarkisov Program** — Yifei Chen, Yanze Wang. [_Higher Dimensional Algebraic Geometry: A Volume in Honor of V. V. Shokurov_, LMS Lecture Note Series, pp. 231–263, Cambridge University Press](/papers/note-sarkisov).
 
 ### 预印本
 
 _均为 AI 生成、人工验证。_
 
-- **A klt generalized pair with infinitely generated canonical ring** — Jihao Liu, Yanze Wang. arXiv:2608.03258. [详情](/paper/klt-canonical-ring)
-- **Twelve common flex lines in a general pencil of cubics** — Jihao Liu, Yanze Wang. arXiv:2607.26396. [详情](/paper/flex-lines)
-- **A counterexample to the odd-dimensional rank bound for abelian p-group actions** — Jihao Liu, Yanze Wang. arXiv:2607.04891. [详情](/paper/rank-bound)
+- **A klt generalized pair with infinitely generated canonical ring** — Jihao Liu, Yanze Wang. arXiv:2608.03258. [详情](/papers/klt-canonical-ring)
+- **Twelve common flex lines in a general pencil of cubics** — Jihao Liu, Yanze Wang. arXiv:2607.26396. [详情](/papers/flex-lines)
+- **A counterexample to the odd-dimensional rank bound for abelian p-group actions** — Jihao Liu, Yanze Wang. arXiv:2607.04891. [详情](/papers/rank-bound)
 
 ### 学术报告
 
 - **2026 年** — 报告人，_代数可积与三维叶状结构的 Sarkisov 纲领_，西交利物浦大学
 
-完整列表见[论文](/paper/)页面。
+完整列表见[论文](/papers/)页面。
 
 ## 另一个我
 

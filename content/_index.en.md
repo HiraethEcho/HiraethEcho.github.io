@@ -1,13 +1,12 @@
 ---
 title: Home
 page_template: page.html
-
 extra:
   # title: Yanze Wang
   homepage_sections:
     - { type: page, name: experience }
-    - { type: section, name: paper }
-    - { type: section, name: project }
+    - { type: section, name: papers }
+    - { type: section, name: projects }
     - { type: page, name: links }
 ---
 
