@@ -1,0 +1,6 @@
+{{- if eq .Type "mermaid" -}}
+<pre class="mermaid">{{ .Inner }}</pre>
+{{- else -}}
+{{- $result := transform.HighlightCodeBlock . -}}
+{{- $result.Wrapped -}}
+{{- end -}}

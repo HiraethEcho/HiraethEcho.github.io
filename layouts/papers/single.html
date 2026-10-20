@@ -1,0 +1,20 @@
+{{ define "main" }}
+<main>
+  <article>
+    <header>
+      {{ partial "breadcrumbs.html" . }}
+      {{ partial "post-meta.html" . }}
+      {{ with .Params.authors }}<p>{{ delimit . "、" }}</p>{{ end }}
+      {{ with .Params.publication }}<p>{{ . }}</p>{{ end }}
+      {{ with .Params.paper_kind }}<p>{{ $labels := dict "journals" "期刊论文" "preprint" "预印本" "thesis" "学位论文" }}{{ index $labels . | default . }}</p>{{ end }}
+      {{ with .Params.publication_url }}<p><a href="{{ . }}" rel="external">出版信息 ↗</a></p>{{ end }}
+      {{ with .Params.online_url }}<p><a href="{{ . }}" rel="external">在线版本 ↗</a></p>{{ end }}
+      {{ with $.Resources.GetMatch $.Params.pdf_file }}<p><a href="{{ .RelPermalink }}">下载论文 PDF ↓</a></p>{{ end }}
+      {{ with $.Resources.GetMatch $.Params.slides_file }}<p><a href="{{ .RelPermalink }}">下载演示文稿 PDF ↓</a></p>{{ end }}
+    </header>
+    <hr>
+    {{ with .Params.abstract }}<section><h2>摘要</h2><p>{{ . }}</p></section>{{ end }}
+    {{ .Content }}
+  </article>
+</main>
+{{ end }}

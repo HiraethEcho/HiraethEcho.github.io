@@ -1,0 +1,19 @@
+{{ define "main" }}
+<main>
+  <header>
+    <h1>{{ .Title }}</h1>
+    {{ with .Description }}<p>{{ . }}</p>{{ end }}
+    {{ .Content }}
+  </header>
+  <ol>
+    {{ range .RegularPages.ByWeight }}
+    <li><article>
+      <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+      {{ with .Description }}<p>{{ . }}</p>{{ end }}
+      {{ with .Params.authors }}<p>{{ delimit . "、" }}</p>{{ end }}
+      {{ with .Date }}<time datetime="{{ .Format "2006-01-02" }}">{{ .Format "2006-01-02" }}</time>{{ end }}
+    </article></li>
+    {{ end }}
+  </ol>
+</main>
+{{ end }}

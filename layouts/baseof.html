@@ -1,0 +1,37 @@
+{{- /* Trigger render hooks before checking page.Store for math styles below. */ -}}
+{{- with .Content }}{{ end -}}
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="{{ .Description | default site.Params.description }}">
+  <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} · {{ site.Title }}{{ end }}</title>
+  <link rel="icon" href="{{ "favicon.svg" | relURL }}" type="image/svg+xml">
+  <link rel="stylesheet" href="{{ "css/site.css" | relURL }}">
+  {{ if .Store.Get "hasMath" }}
+  {{ partial "katex.html" . }}
+  {{ end }}
+  <script type="module" src="{{ "js/enhance.js" | relURL }}"></script>
+</head>
+<body>
+  <header>
+    <a href="{{ site.Home.RelPermalink }}" aria-label="Homepage">
+      <img src="{{ "favicon.svg" | relURL }}" width="32" height="32" alt="">
+      <span>{{ site.Title }}</span>
+    </a>
+    <nav aria-label="Main navigation">
+      <ul>
+        {{ range site.Menus.main }}
+        <li><a href="{{ .URL }}"{{ with .Page }}{{ if or (eq $.RelPermalink .RelPermalink) (and (ne $.Section "") (eq $.Section .Section)) }} aria-current="page"{{ end }}{{ end }}>{{ .Name }}</a></li>
+        {{ end }}
+      </ul>
+    </nav>
+  </header>
+  {{ block "main" . }}{{ end }}
+  <footer>
+    <p>由 <a href="https://gohugo.io/">Hugo</a> 驱动</p>
+  </footer>
+</body>
+</html>

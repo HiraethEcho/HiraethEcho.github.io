@@ -1,5 +1,11 @@
 ---
 title: 经历
+index_show: true
+weight: 1
+menus:
+  main:
+    name: 经历
+    weight: 2
 ---
 
 ## 教育经历

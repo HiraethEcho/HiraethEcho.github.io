@@ -1,13 +1,5 @@
 ---
 title: 主页
-page_template: page.html
-extra:
-  # title: 王延泽
-  homepage_sections:
-    - { type: page, name: experience }
-    - { type: section, name: papers }
-    - { type: section, name: projects }
-    - { type: page, name: links }
 ---
 
 我是**王延泽**，中国科学院大学数学专业博士研究生，主要研究方向为**双有理几何**，具体涉及极小模型纲领与叶层化理论。研究成果详见[论文列表](/papers)，另有[数学笔记](https://math.keinmal.top)。  

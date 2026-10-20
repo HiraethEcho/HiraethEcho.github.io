@@ -1,0 +1,26 @@
+baseURL = 'https://keinmal.top/'
+relativeURLs = true
+title = '个人主页'
+defaultContentLanguage = 'zh'
+locale = 'zh-CN'
+disableKinds = ['taxonomy', 'term']
+
+[markup]
+  [markup.highlight]
+    style = 'catppuccin-mocha'
+  [markup.goldmark]
+    duplicateResourceFiles = false
+    [markup.goldmark.extensions]
+      strikethrough = false
+      [markup.goldmark.extensions.passthrough]
+        enable = true
+        [markup.goldmark.extensions.passthrough.delimiters]
+          block = [['\[', '\]']]
+          inline = [['\(', '\)']]
+    [markup.goldmark.parser]
+      [markup.goldmark.parser.attribute]
+        block = true
+        title = true
+
+[params]
+  description = '个人主页与写作、项目和论文'

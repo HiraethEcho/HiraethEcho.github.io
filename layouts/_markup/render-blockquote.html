@@ -1,0 +1,17 @@
+{{- if eq .Type "alert" -}}
+  {{- $labels := dict "note" "说明" "tip" "建议" "important" "重要" "warning" "警告" "caution" "注意" -}}
+  {{- $label := or (index $labels .AlertType) (title .AlertType) -}}
+  {{- if .AlertSign -}}
+<details class="alert alert-{{ .AlertType }}"{{ if eq .AlertSign "+" }} open{{ end }}>
+  <summary>{{ with .AlertTitle }}{{ . }}{{ else }}{{ $label }}{{ end }}</summary>
+  {{ .Text }}
+</details>
+  {{- else -}}
+<blockquote class="alert alert-{{ .AlertType }}">
+  <p>{{ with .AlertTitle }}{{ . }}{{ else }}{{ $label }}{{ end }}</p>
+  {{ .Text }}
+</blockquote>
+  {{- end -}}
+{{- else -}}
+<blockquote>{{ .Text }}</blockquote>
+{{- end -}}

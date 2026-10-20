@@ -1,0 +1,35 @@
+{{ define "main" }}
+<main>
+  {{ .Content }}
+  {{ range site.Sections.ByWeight }}
+    {{ if .Params.index_show }}
+      {{ $limit := .Params.homepage_limit | default 5 }}
+  <section>
+    <header>
+      <h2><a href="{{ .RelPermalink }}">{{ .Params.index_title | default .LinkTitle }}</a></h2>
+      {{ with .Description }}<p>{{ . }}</p>{{ end }}
+      {{ .Content }}
+    </header>
+    <ol>
+      {{ range first $limit .RegularPages.ByDate.Reverse }}
+      <li><article>
+        <h3><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h3>
+        {{ with .Description }}<p>{{ . }}</p>{{ end }}
+        {{ with .Params.authors }}<p>{{ delimit . "、" }}</p>{{ end }}
+      </article></li>
+      {{ end }}
+    </ol>
+    <footer><a href="{{ .RelPermalink }}">查看全部「{{ .LinkTitle }}」 →</a></footer>
+  </section>
+    {{ end }}
+  {{ end }}
+  {{ range site.RegularPages.ByWeight }}
+    {{ if .Params.index_show }}
+  <section>
+    <header><h2>{{ .Params.index_title | default .LinkTitle }}</h2></header>
+    <article>{{ .Content }}</article>
+  </section>
+    {{ end }}
+  {{ end }}
+</main>
+{{ end }}

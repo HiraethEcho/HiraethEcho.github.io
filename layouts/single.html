@@ -1,0 +1,12 @@
+{{ define "main" }}
+<main>
+  <article>
+    <header>
+      {{ partial "breadcrumbs.html" . }}
+      {{ partial "post-meta.html" . }}
+    </header>
+    <hr>
+    {{ .Content }}
+  </article>
+</main>
+{{ end }}
