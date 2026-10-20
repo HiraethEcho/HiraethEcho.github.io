@@ -6,6 +6,9 @@ extra:
     - icon: mail
       name: wangyanze@amss.ac.cn
       link: mailto:wangyanze@amss.ac.cn
+    - icon: mail
+      name: wyz2016zxc@outlook.com
+      link: mailto:wyz2016zxc@outlook.com
     - icon: github
       name: GitHub
       link: https://github.com/hiraethecho
