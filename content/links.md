@@ -1,10 +1,6 @@
 ---
 title: 链接
-template: links-page.html
-menus:
-  main:
-    name: 链接
-    weight: 6
+weight: 5
 ---
 
 - [wangyanze@amss.ac.cn](mailto:wangyanze@amss.ac.cn)

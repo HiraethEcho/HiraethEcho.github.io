@@ -1,19 +1,16 @@
 ---
 title: 关于我
-description: 王延泽 — 中国科学院大学数学专业博士研究生，研究方向为双有理几何。
+description:
 menus:
   main:
     name: 关于
-    weight: 1
+    weight: 10
 ---
 
-目前就读于中国科学院数学与系统科学研究院（AMSS，隶属中国科学院大学，UCAS），导师陈亦飞教授，攻读博士学位，预计于 2027 年 6 月毕业。我的研究集中于代数可积叶层化的 Sarkisov 纲领，以及极小模型纲领中的若干相关问题。
+# 关于
 
-同时也在积极探索 **AI4Math** 这一方向，包括人工验证 AI 生成的数学论文、搭建数学研究 harness、探索形式化证明语言 Lean 4 等。
-
-此外，我对大模型训练、（数学）数据标注等 AI 基础设施（AI infra）方向，以及面向数学研究的后训练（post-training）和智能体框架（harness）也抱有浓厚兴趣。目前正在复现的小规模项目。
-
-另有[简历](/resume-zh.pdf)可供下载。
+当前为基础数学博士生。  
+计划转向 AI 方向，包括模型架构设计和训练、 AI4Math 智能体方案、数学形式化证明等。
 
 ## 技能
 
@@ -29,20 +26,20 @@ menus:
 
 小型项目复现与衍生：
 
-- 预训练：**[GPT teacher](https://github.com/hiraethecho/GPT_teacher-3.37M-cn)** ，**[MiniMind](https://github.com/hiraethecho/MiniMind)**
-- 后训练： 强化学习 **[tiny-reasoning-rl-lab](https://github.com/hiraethecho/tiny-reasoning-rl-lab)**， **Qwen3-0.6B 数学 LoRA 微调**
-- 模型架构实验：比较 AR 自回归模型与 Diffusion 扩散语言模型 **[ARnDlm](https://github.com/hiraethecho/ARnDlm)**
+- **[GPT teacher](https://github.com/hiraethecho/GPT_teacher-3.37M-cn)** ，**[MiniMind](https://github.com/hiraethecho/MiniMind)**： 小型模型训练项目复现
+- **[tiny-reasoning-rl-lab](https://github.com/hiraethecho/tiny-reasoning-rl-lab)**：小型强化学习，及**Qwen3-0.6B 数学 LoRA 微调**
+- **[ARnDlm](https://github.com/hiraethecho/ARnDlm)**：模型架构实验，比较 AR （自回归模型）与 Diffusion （扩散）语言模型
 
 ### 智能体研究
 
-- 极简 SWE 智能体框架 **[micro-agent](https://github.com/hiraethecho/micro-agent)**
-- 实验性非线性历史智能体 **[DiAgent](https://github.com/hiraethecho/DiAgent)**
-- 智能体工具合集 **[AiKit](/projects/aikit)**，包括各类项目的 harness，pi-coding-agent 插件（ask, subagent,board等）
+- **[micro-agent](https://github.com/hiraethecho/micro-agent)**：极简 SWE 智能体框架
+- **[DiAgent](https://github.com/hiraethecho/DiAgent)**：实验性非线性历史智能体，基于 `jujutsu`
+- **[AiKit](/projects/aikit)**：智能体工具合集，包括各类项目的 harness，pi-coding-agent 插件（ask, subagent, board, mcp, safe-bash 等）
 
 ### AI4Math
 
-- **[lean-toric](https://github.com/hiraethecho/lean-toric)** — 在 Lean 4 中对 Toric Variety 相关理论的形式化
-- [Rethlas](/projects/rethlas) — 双智能体数学推理 harness 的 fork，适配个人工作流
+- **[lean-toric](https://github.com/hiraethecho/lean-toric)**：在 Lean 4 中对 Toric Variety 相关理论的形式化
+- **[Rethlas](/projects/rethlas)**：双智能体数学推理 harness 的 fork，适配个人工作流
 - 参与 Lean 4 平台 [prove2.me](https://prove2.me) 上的数学形式化实践
 
 ### （Vibe） Coding
@@ -59,9 +56,9 @@ menus:
 另一部分的我，以笔名 **Hiraeth** 在 [memex](https://memex.keinmal.top) 记录关于存在、哲学、现代性、文学与文化工业的随笔，书评影评、个人内省，以及偶尔的诗。随笔全部手工写作：不借助 AI 生成或润色，以保护语言能力、进而保护思考能力（知识获取则乐于借助 AI）。部分文章同步发布在个人公众号。  
 域名 _keinmal.top_ 出自德语谚语 _einmal ist keinmal_，即"只有一次等于没有"。
 
-## 联系方式
+## 链接
 
-- **电子邮箱**：wangyanze@amss.ac.cn — 欢迎就研究与合作事宜联系
+- **电子邮箱**：[wangyanze at amss.ac.cn](mailto:wangyanze@amss.ac.cn), [wyz2016zxc at outlook.com](mailto:wyz2016zxc@outlook.com)
 - **GitHub**：[hiraethecho](https://github.com/hiraethecho) — 代码与开源项目
 - **ORCID**：[0009-0003-3661-1890](https://orcid.org/0009-0003-3661-1890) — 学术发表记录
-- **技术笔记**：[docs.keinmal.top](https://docs.keinmal.top) — 技术文档与笔记
+- **项目笔记**：[docs.keinmal.top](https://docs.keinmal.top) — 技术文档与笔记

@@ -1,9 +1,5 @@
 ---
 title: 博文
-index_show: true
-index_title: 最近文章
-homepage_limit: 3
-weight: 3
 menus:
   main:
     name: 博文

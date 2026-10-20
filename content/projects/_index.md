@@ -1,8 +1,7 @@
 ---
 title: 项目
-weight: 1
+weight: 2
 index_show: true
-homepage_limit: 4
 menus:
   main:
     name: 项目

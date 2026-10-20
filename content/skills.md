@@ -1,6 +1,5 @@
 ---
 title: 技能
-draft: true
 ---
 
 ## 数学

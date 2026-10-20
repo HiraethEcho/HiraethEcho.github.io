@@ -146,13 +146,7 @@
 
 **动机**：焦虑、抑郁和荒诞激情促使我企图用某种方式消耗掉自己——"我要在我耗尽的过程中写下我自己，非这样不可"（[我存在！Es Muss Sein!](https://memex.keinmal.top/glade/essay/existence)）。表达欲与某种"创作的紧迫"构成了持续写作的动力；文化产品评论（书影音）像半命题作文，既有写作主题，又有发挥空间。风格基调：**悲观但不消极，保持愤怒**；自嘲自贬是常态；避免空洞漂亮话。
 
-**博客体系**：[memex](https://memex.keinmal.top) 是一个五层结构的个人思维仓库（forest → morgue → glade → garden → diary）：
-
-- **forest 森林** —— 原始素材：摘抄、剪藏
-- **morgue 停尸房** —— 草稿坟场：idea、outline、未成形文本
-- **glade 林中空地（Lichtung）** —— 成熟表达：essay 长文与 memo 短文
-- **garden 知识花园** —— 外部习得后整理的知识
-- **diary 日记** —— 私人时间线
+**博客体系**：[memex](https://memex.keinmal.top) 是一个个人思维仓库：
 
 **写作观**：
 
@@ -173,15 +167,7 @@
 
 **来路与现状**：北漂近十年（自北航起）。大学期间经历过一段漫长的抑郁状态，侥幸保研后开始大量阅读（人文社科与小说），这构成了此后写作与哲学思考的起点（详见 [me](https://memex.keinmal.top/me)）。当下的生存隐喻：**每天获得 2000 大卡、寻找不会失温的过夜点**——以及，过一种不断自我审视的生活。
 
-**人生规划（坦率版）**：主线——完成博士学业、写论文；短期目标博士后，长期目标教职（见 [experience](#experience)）。支线/退路——考教资去中学教书、跳槽读其他专业、回家啃老，不仅啃老还要坑一笔开酒吧。someday：一个住下的地方，开一家酒吧（[关于酒吧的记忆](https://memex.keinmal.top/diary/bar)）。
-
 **生活志趣**：饮酒与调酒（[调酒](https://memex.keinmal.top/garden/rudiments/cocktail)、[酒吧指南](https://memex.keinmal.top/garden/rudiments/guide-bar)、[喝酒指南](https://memex.keinmal.top/garden/rudiments/guide-alcohol)）、咖啡、做饭；读书是日常，通过微信阅读整理笔记；长期生活追踪与锻炼习惯——但不会戒酒。
-
-**立场（Yep and Nope 精选，详见 [me](https://memex.keinmal.top/me)）**：
-
-- GNU 运动、RSS 订阅等反信息茧房的努力
-- 不穿有品牌标识的衣服（衣服是一种广告载体），但愿意穿表达自己观点的——如 Rick and Morty 周边、苏格拉底之死简笔画卫衣
-- 不在背后议论他人缺点（不在场者无法为自己辩护，这不公平；正当举报除外，并区分平台滥用举报机制的情形）
 
 ## web 网站体系
 
@@ -204,7 +190,3 @@
 - **Email**: wangyanze@amss.ac.cn wyz2016zxc@outlook.com
 - **GitHub**: [hiraethecho](https://github.com/hiraethecho)
 - **ORCID**: [0009-0003-3661-1890](https://orcid.org/0009-0003-3661-1890)
-
----
-
-This website is built on Zola with theme kodama (a [fork version](https://github.com/alexfikl/kodama-theme/tree/port-zola-0-23)).

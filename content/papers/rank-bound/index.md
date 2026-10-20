@@ -4,11 +4,9 @@ date: 2026-07-06
 description: 由人工智能生成，并经人工验证。
 weight: 6
 authors:
-- 刘济豪
-- 王延泽
+  - 刘济豪
+  - 王延泽
 abstract: 我们给出 Moraga 所猜测的、光滑 Calabi-Yau 簇上忠实阿贝尔 p-群作用之秩界的奇维推广的反例。
 paper_kind: preprint
 online_url: https://arxiv.org/abs/2607.04891
 ---
-
-
